@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/singupBtn"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout2_avail_3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout1_availoffer3">
+
+        <TextView
+            android:id="@+id/text1_avail_3"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:text="@string/avail3_text1"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/image_avail_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/text1_avail_3"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintStart_toStartOf="@+id/text1_avail_3"
+            app:layout_constraintTop_toBottomOf="@+id/text1_avail_3"
+            app:srcCompat="@drawable/ic_success" />
+
+        <Button
+            android:id="@+id/homeBtn_avail_3"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="16dp"
+            android:text="Back To Home"
+            android:background="@drawable/homebtn_avail_3"
+            android:textColor="#ffffff"
+            android:textAllCaps="false"
+            app:layout_constraintEnd_toEndOf="@+id/image_avail_3"
+            app:layout_constraintStart_toStartOf="@+id/image_avail_3"
+            app:layout_constraintTop_toBottomOf="@+id/image_avail_3" />
+
+
+        <TextView
+            android:id="@+id/text3_avail_3"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:text="@string/avail3_text2"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/text2_avail_3"
+            app:layout_constraintStart_toStartOf="@+id/text2_avail_3"
+            app:layout_constraintTop_toBottomOf="@+id/text2_avail_3"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/text2_avail_3"
+            android:layout_width="48dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="16dp"
+            android:text="Note : "
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/homeBtn_avail_3"
+            app:layout_constraintStart_toStartOf="@+id/homeBtn_avail_3"
+            app:layout_constraintTop_toBottomOf="@+id/homeBtn_avail_3" />
+
+        <TextView
+            android:id="@+id/text4_avail_3"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="116dp"
+            android:text="@string/avail3_text3"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/text3_avail_3"
+            app:layout_constraintStart_toStartOf="@+id/text3_avail_3"
+            app:layout_constraintTop_toBottomOf="@+id/text3_avail_3" />
+
+        <TextView
+            android:id="@+id/text5_avail_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/avail3_text4"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/text4_avail_3"
+            app:layout_constraintStart_toStartOf="@+id/text4_avail_3"
+            app:layout_constraintTop_toBottomOf="@+id/text4_avail_3" />
+
+        <TextView
+            android:id="@+id/text6_avail_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/avail3_text5"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="@+id/text5_avail_3"
+            app:layout_constraintStart_toStartOf="@+id/text5_avail_3"
+            app:layout_constraintTop_toBottomOf="@+id/text5_avail_3" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout1_availoffer3"
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:background="#F2F2F2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/signupBtn"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="16dp"
+            android:textSize="12dp"
+            android:textColor="#ffffff"
+            android:text="Signup"
+            android:textAllCaps="false"
+            android:background="@drawable/signup_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="12dp"
+            android:textAllCaps="false"
+            android:background="@drawable/login_bg"
+            android:text="Login"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/signupBtn"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/signupBtn"
+            app:layout_constraintTop_toBottomOf="@id/signupBtn"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/wcText_offer_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:text="Welcome to Uy Lab"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.655" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="#504D4D"
+            android:textSize="14sp"
+            android:text="Are you a student?"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/wcText_offer_3"
+            app:layout_constraintTop_toBottomOf="@+id/wcText_offer_3" />
+
+        <ImageButton
+            android:id="@+id/menuBtn_avail_3"
+            android:layout_width="25dp"
+            android:layout_height="22dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/menu" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
