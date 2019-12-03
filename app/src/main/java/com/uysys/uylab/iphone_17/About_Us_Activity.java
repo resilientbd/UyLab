@@ -1,10 +1,12 @@
-package com.uysys.uylab;
+package com.uysys.uylab.iphone_17;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+import com.uysys.uylab.R;
+
+public class About_Us_Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
