@@ -1,14 +1,16 @@
-package com.uysys.uylab;
+package com.uysys.uylab.dashboard_slide;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Main2Activity extends AppCompatActivity {
+import com.uysys.uylab.R;
+
+public class Dashboard_SlideActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_dashboard__slide);
     }
 }

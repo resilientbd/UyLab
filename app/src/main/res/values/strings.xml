@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">UyLab</string>
-    <string name="text1"><![CDATA[Shake & Get Offer]]></string>
-    <string name="text2">Note:\n You must need to share your contact information to avail the current offer.</string>
-    <string name="text3">80% Discount \n On Graphic Design</string>
+
+    <string name="text">UY LAB \n We Make Professionals</string>
+    <string name="text1">Your Data \n Successfully Saved!</string>
+    <string name="text2">How Many Mode \n Available for Pen Tool?</string>
+    <string name="text3">UY LAB\n We make professionals</string>
+    <string name="text4">Welcome To UYLAB! \n You Can Login Here, as guest or student</string>
 </resources>
