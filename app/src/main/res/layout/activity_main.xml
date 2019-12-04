@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -18,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
 
-        <ImageButton
+        <ImageView
             android:id="@+id/button5"
             android:layout_width="21.11dp"
             android:layout_height="25.33dp"
@@ -32,7 +33,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <Button
-            android:layout_width="13dp"
+            android:layout_width="10dp"
             android:layout_height="10dp"
             android:background="@drawable/buttonshap1"
             android:text="5"
@@ -144,7 +145,7 @@
             app:layout_constraintTop_toBottomOf="@+id/editText" />
 
         <TextView
-            android:id="@+id/imageView"
+            android:id="@+id/TextFacebook"
             android:layout_width="34dp"
             android:layout_height="36dp"
             android:layout_marginTop="20dp"
@@ -165,9 +166,9 @@
             android:layout_height="36dp"
             android:layout_marginStart="24dp"
             android:background="@drawable/buttonshap3"
-            app:layout_constraintBottom_toBottomOf="@+id/imageView"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
-            app:layout_constraintTop_toTopOf="@+id/imageView"
+            app:layout_constraintBottom_toBottomOf="@+id/TextFacebook"
+            app:layout_constraintStart_toEndOf="@+id/TextFacebook"
+            app:layout_constraintTop_toTopOf="@+id/TextFacebook"
             app:layout_constraintVertical_bias="0.0"
             app:srcCompat="@drawable/twitter" />
 
