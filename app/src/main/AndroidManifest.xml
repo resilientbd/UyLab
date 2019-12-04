@@ -9,6 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".open_page.Open_PageActivity"></activity>
+        <activity android:name=".test_finished.Test_Finished_Activity" />
+        <activity android:name=".save.SaveActivity" />
+        <activity android:name=".dashboard_slide.Dashboard_SlideActivity" />
+        <activity android:name=".dashboard.DashboardActivity" />
+        <activity android:name=".student_login.LoginActivity" />
+        <activity android:name=".iphone_29.Upcomming_Batch_Activity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
