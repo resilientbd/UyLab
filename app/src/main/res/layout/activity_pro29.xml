@@ -167,7 +167,6 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView17"
             app:layout_constraintTop_toTopOf="@+id/textView17" />
-
         <ScrollView
             android:layout_width="409dp"
             android:layout_height="454dp"
