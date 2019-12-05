@@ -1,8 +1,10 @@
-package com.uysys.uylab;
+package com.uysys.uylab.ui.notice;
+
+import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.Bundle;
+import com.uysys.uylab.R;
 
 public class MainActivity extends AppCompatActivity {
 
