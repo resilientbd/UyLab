@@ -16,6 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".avail_offer_2.Avail_Offer2_Activity" />
     </application>
 
 </manifest>

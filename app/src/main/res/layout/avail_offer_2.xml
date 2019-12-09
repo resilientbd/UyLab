@@ -41,7 +41,7 @@
 
 
         <Button
-            android:id="@+id/homeBtn_avail_4"
+            android:id="@+id/homeBtn_avail_2"
             android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="12dp"
@@ -77,9 +77,9 @@
             android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="14sp"
-            app:layout_constraintEnd_toEndOf="@+id/homeBtn_avail_4"
-            app:layout_constraintStart_toStartOf="@+id/homeBtn_avail_4"
-            app:layout_constraintTop_toBottomOf="@+id/homeBtn_avail_4" />
+            app:layout_constraintEnd_toEndOf="@+id/homeBtn_avail_2"
+            app:layout_constraintStart_toStartOf="@+id/homeBtn_avail_2"
+            app:layout_constraintTop_toBottomOf="@+id/homeBtn_avail_2" />
 
         <TextView
             android:id="@+id/text4_avail_4"
@@ -151,6 +151,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
@@ -164,13 +165,11 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.417" />
 
-        <Button
-            android:id="@+id/joinBtn"
+        <TextView
+            android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Join Our Free Seminar"
-            android:background="#null"
-            android:textAllCaps="false"
             android:textColor="#000000"
             android:textSize="15sp"
             app:layout_constraintStart_toStartOf="@+id/textView"
@@ -178,23 +177,37 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="55dp"
-            android:layout_height="54dp"
-            android:layout_marginEnd="16dp"
-            app:layout_constraintBottom_toBottomOf="@+id/joinBtn"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/textView2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/textView"
-            app:layout_constraintVertical_bias="1.0"
             app:srcCompat="@drawable/ic_seminar" />
 
-        <ImageButton
-            android:id="@+id/imageButton"
+        <ImageView
+            android:id="@+id/imageView2"
             android:layout_width="38dp"
             android:layout_height="35dp"
+            android:background="#null"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="24dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/ic_notification" />
+
+        <TextView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/black_round_bg"
+            android:text="0"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:textColor="#fff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
