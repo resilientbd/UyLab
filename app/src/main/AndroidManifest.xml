@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".OpenActivity"></activity>
+        <activity android:name=".xs4.Xs_4Activity" />
+        <activity android:name=".xs3.Xs_3Activity" />
+        <activity android:name=".xs2.Xs_2Activity" />
+        <activity android:name=".pro25.ProActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

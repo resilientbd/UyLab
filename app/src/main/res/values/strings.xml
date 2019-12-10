@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">UyLab</string>
+    <string name="your_string"><u>Click Here</u></string>
+    <string name="btn_text_view"><u>Welcome To UYLAB! \n You Can Login Here, as guest or student</u></string>
 </resources>
