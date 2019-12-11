@@ -26,6 +26,12 @@
         <activity android:name="com.uysys.uys.classContentVideoShower.Class_Content_Video_Shower_Activity"></activity>
 
         <activity android:name="com.uysys.uys.ourPartner.OurPartnerActivity">
+
+        </activity>
+        <activity android:name=".open_page.Open_PageActivity">
+
+        </activity>
+        <activity android:name="com.uysys.uylab.ui.profile.profile">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
