@@ -15,20 +15,27 @@
         <activity android:name=".ui.pro3.pro3_Activity" />
         <activity android:name=".ui.backup1_3.backup1_3_Activity"></activity>
         <activity android:name=".ui.Backup1_1_.Backup1_1_Activity" />
-        <activity android:name=".Backup1.Backup1_Activity" />
 
 
         <activity android:name=".ui.pro2.pro2_Activity" />
         <activity android:name=".ui.offer2.offer2_Activity" />
         <activity android:name=".ui.offer1.offer1_Activity" />
 
-        <activity android:name=".ui.offer.OfferActivity">
+
+
+        <activity android:name="com.uysys.uys.classContentVideoShower.Class_Content_Video_Shower_Activity"></activity>
+
+        <activity android:name="com.uysys.uys.ourPartner.OurPartnerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".avail_offer_2.Avail_Offer2_Activity" />
+        <activity android:name="com.uysys.uys.classContentShower.Class_Content_Shower_Activity"></activity>
+        <activity android:name="com.uysys.uys.classContent.Class_Content_Activity"></activity>
+ />
     </application>
 
 </manifest>
