@@ -9,9 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".pro_5.Pro_5Activity"></activity>
-        <activity android:name=".Routine.RoutineActivity" />
-        <activity android:name=".internship.InternshipActivity" />
+        <activity android:name=".ui.pro_5.Pro_5Activity"></activity>
+        <activity android:name=".ui.Routine.RoutineActivity" />
+        <activity android:name=".ui.internship.InternshipActivity" />
         <activity android:name=".ui.pro3.pro3_Activity" />
         <activity android:name=".ui.backup1_3.backup1_3_Activity"></activity>
         <activity android:name=".ui.Backup1_1_.Backup1_1_Activity" />
@@ -23,24 +23,24 @@
 
 
 
-        <activity android:name="com.uysys.uys.classContentVideoShower.Class_Content_Video_Shower_Activity"></activity>
+        <activity android:name=".ui.classContentVideoShower.Class_Content_Video_Shower_Activity"></activity>
 
-        <activity android:name="com.uysys.uys.ourPartner.OurPartnerActivity">
-
-        </activity>
-        <activity android:name=".open_page.Open_PageActivity">
+        <activity android:name=".ui.ourPartner.OurPartnerActivity">
 
         </activity>
-        <activity android:name="com.uysys.uylab.ui.profile.profile">
+        <activity android:name=".ui.open_page.Open_PageActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".avail_offer_2.Avail_Offer2_Activity" />
-        <activity android:name="com.uysys.uys.classContentShower.Class_Content_Shower_Activity"></activity>
-        <activity android:name="com.uysys.uys.classContent.Class_Content_Activity"></activity>
+        <activity android:name="com.uysys.uylab.ui.profile.profile">
+
+        </activity>
+        <activity android:name=".ui.avail_offer_2.Avail_Offer2_Activity" />
+        <activity android:name=".ui.classContentShower.Class_Content_Shower_Activity"></activity>
+        <activity android:name=".ui.classContent.Class_Content_Activity"></activity>
  />
     </application>
 
