@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.uysys.uylab.R;
+import com.uysys.uylab.student_login.Student_LoginActivity;
 import com.uysys.uylab.ui.save.SaveActivity;
 
 public class Open_PageActivity extends AppCompatActivity {
@@ -22,7 +23,7 @@ public class Open_PageActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(Open_PageActivity.this, SaveActivity.class);
+                Intent intent = new Intent(Open_PageActivity.this, Student_LoginActivity.class);
                 startActivity(intent);
                 finish();
 

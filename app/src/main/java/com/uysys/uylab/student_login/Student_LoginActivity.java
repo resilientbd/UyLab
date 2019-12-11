@@ -1,4 +1,4 @@
-package com.uysys.uylab.ui.dashboard;
+package com.uysys.uylab.student_login;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.uysys.uylab.R;
 
-public class DashboardActivity extends AppCompatActivity {
+public class Student_LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_about__us_);
+        setContentView(R.layout.activity_student__login);
     }
 }

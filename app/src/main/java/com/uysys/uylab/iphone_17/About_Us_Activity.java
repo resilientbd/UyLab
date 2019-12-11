@@ -1,4 +1,4 @@
-package com.uysys.uylab.ui.dashboard;
+package com.uysys.uylab.iphone_17;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,7 +6,7 @@ import android.os.Bundle;
 
 import com.uysys.uylab.R;
 
-public class DashboardActivity extends AppCompatActivity {
+public class About_Us_Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
