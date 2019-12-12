@@ -1,23 +1,16 @@
-package com.uysys.uylab;
+package com.uysys.uylab.ui.Pro9;
 
-import android.os.Bundle;
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.os.Bundle;
 
+import com.uysys.uylab.R;
 
-
-public class MainActivity extends AppCompatActivity {
-
-
+public class Pro9Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pro9);
-
-
-
     }
-
 }
