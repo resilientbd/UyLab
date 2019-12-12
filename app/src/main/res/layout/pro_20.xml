@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout1_pro_20"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:background="#F2F2F2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="32dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:background="#1affffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_notification" />
+
+        <TextView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/black_round_bg"
+            android:text="0"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:textColor="#fff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+        <TextView
+            android:id="@+id/textGallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="80dp"
+            android:text="Gallery"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Find Here Some Essential"
+            android:textAlignment="textStart"
+            android:textColor="#000000"
+            app:layout_constraintLeft_toLeftOf="@id/textGallery"
+            app:layout_constraintTop_toBottomOf="@id/textGallery" />
+
+        <ImageButton
+            android:id="@+id/galleryBtn_Pro_20"
+            android:layout_width="40dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginEnd="22dp"
+            android:background="#1affffff"
+            app:layout_constraintBottom_toBottomOf="@+id/textGallery"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textGallery"
+            app:layout_constraintVertical_bias="0.777"
+            app:srcCompat="@drawable/ic_gallery" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout2_pro_20"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout1_pro_20">
+
+        <Button
+            android:id="@+id/btnOurLab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:layout_marginTop="16dp"
+            android:background="1affffff"
+            android:text="Our Lab"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@id/layout2_pro_20" />
+
+        <Button
+            android:id="@+id/btnFarewell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:background="1affffff"
+            android:text="farewell"
+            app:layout_constraintBottom_toBottomOf="@+id/btnOurLab"
+            app:layout_constraintLeft_toRightOf="@id/btnOurLab"
+            app:layout_constraintTop_toTopOf="@id/btnOurLab" />
+
+        <Button
+            android:id="@+id/btnEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:background="1affffff"
+            android:text="Event"
+            app:layout_constraintBottom_toBottomOf="@+id/btnFarewell"
+            app:layout_constraintLeft_toRightOf="@+id/btnFarewell"
+            app:layout_constraintTop_toTopOf="@+id/btnFarewell" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleview_pro_20"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnFarewell"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
