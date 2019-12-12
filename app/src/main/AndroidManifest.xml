@@ -9,14 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Main2Activity"></activity>
-        <activity android:name=".MainActivity">
+        <activity android:name="com.uysys.uys.mentors.MentorsActivity"></activity>
+        <activity android:name="com.uysys.uys.classContentVideoShower.Class_Content_Video_Shower_Activity"></activity>
+        <activity android:name="com.uysys.uys.setting.SettingActivity"></activity>
+        <activity android:name="com.uysys.uys.ourPartner.OurPartnerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.uysys.uys.classContentShower.Class_Content_Shower_Activity"></activity>
+        <activity android:name="com.uysys.uys.classContent.Class_Content_Activity"></activity>
     </application>
 
 </manifest>
