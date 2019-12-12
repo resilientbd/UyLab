@@ -18,7 +18,7 @@ public class offer1_Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_offer1_);
 
-        btn = findViewById(R.id.button3);
+        btn = findViewById(R.id.go_button);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override

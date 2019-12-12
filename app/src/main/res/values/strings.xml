@@ -6,4 +6,11 @@
     <string name="text2">How Many Mode \n Available for Pen Tool?</string>
     <string name="text3">UY LAB\n We make professionals</string>
     <string name="text4">Welcome To UYLAB! \n You Can Login Here, as guest or student</string>
+    <string name="earn_point">1. Integrate with our Youtube Channel so that visitor can watch our youtube videos directly from the app. Every 1mint video watch will add 2 rewards points.
+        \n\n 2. Video like, subscribe reward point systems.
+        \n\n 3. Daily login Reward Point.
+        \n\n 4. Refer a Friend by code - Reward Point
+        \n\n 5. Social Share button - Earn Reward Points bu sharing our contents on social media.
+        \n\n 6. Content Submit system. Anyone can publish a post, we will review it and give reward points for each approved post.
+        \n\n 7. Earn Reward point by App Review on Playstore.</string>
 </resources>

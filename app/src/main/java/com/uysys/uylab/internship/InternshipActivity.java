@@ -1,4 +1,4 @@
-package com.uysys.uylab.test_finished;
+package com.uysys.uylab.internship;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,26 +8,26 @@ import android.view.View;
 import android.widget.Button;
 
 import com.uysys.uylab.R;
-import com.uysys.uylab.pro_5.Pro_5Activity;
+import com.uysys.uylab.Routine.RoutineActivity;
 
-public class Test_Finished_Activity extends AppCompatActivity {
+public class InternshipActivity extends AppCompatActivity {
 
-    private Button finished_btn;
+    private Button btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_test__finished_);
-        finished_btn = findViewById(R.id.button4);
-        finished_btn.setOnClickListener(new View.OnClickListener() {
+        setContentView(R.layout.activity_internship);
+
+        btn = findViewById(R.id.apply_button);
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(Test_Finished_Activity.this, Pro_5Activity.class);
+                Intent intent = new Intent(InternshipActivity.this, RoutineActivity.class);
                 startActivity(intent);
                 finish();
             }
         });
-
     }
 }
