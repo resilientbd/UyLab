@@ -9,8 +9,8 @@
 
     <TextView
         android:id="@+id/textView11"
-        android:layout_width="match_parent"
-        android:layout_height="67.41dp"
+        android:layout_width="334dp"
+        android:layout_height="150dp"
         android:layout_marginStart="91dp"
         android:layout_marginTop="108dp"
         android:layout_marginEnd="91dp"
@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/guest_button"
         android:layout_width="200dp"
         android:layout_height="40dp"
         android:layout_marginTop="300dp"
@@ -33,9 +33,9 @@
         android:textAllCaps="false"
         android:textColor="#ffff"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView11"
-        app:layout_constraintStart_toStartOf="@+id/textView11"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+        app:layout_constraintEnd_toEndOf="@+id/imageView14"
+        app:layout_constraintStart_toStartOf="@+id/imageView14"
+        app:layout_constraintTop_toBottomOf="@+id/imageView14" />
 
     <Button
         android:id="@+id/button6"
@@ -48,9 +48,9 @@
         android:textAllCaps="false"
         android:textColor="#ffff"
         android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@+id/button5"
-        app:layout_constraintStart_toStartOf="@+id/button5"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
+        app:layout_constraintEnd_toEndOf="@+id/guest_button"
+        app:layout_constraintStart_toStartOf="@+id/guest_button"
+        app:layout_constraintTop_toBottomOf="@+id/guest_button" />
 
     <TextView
         android:id="@+id/textView12"
@@ -64,4 +64,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/button6"
         app:layout_constraintStart_toStartOf="@+id/button6" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="91dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ulab" />
 </androidx.constraintlayout.widget.ConstraintLayout>

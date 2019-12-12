@@ -33,7 +33,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/go_button"
         android:layout_width="227dp"
         android:layout_height="43dp"
         android:layout_marginTop="191dp"
