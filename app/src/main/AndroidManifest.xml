@@ -18,6 +18,9 @@
         <activity android:name=".Backup1.Backup1_Activity" />
 
 
+        <activity android:name=".test1.Test1Activity"/>
+
+
         <activity android:name=".ui.pro2.pro2_Activity" />
         <activity android:name=".ui.offer2.offer2_Activity" />
         <activity android:name=".ui.offer1.offer1_Activity" />
@@ -28,6 +31,9 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".test.TestActivity">
+
         </activity>
     </application>
 
