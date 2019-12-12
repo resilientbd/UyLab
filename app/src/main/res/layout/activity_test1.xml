@@ -159,7 +159,7 @@
         android:layout_width="69dp"
         android:layout_height="62dp"
         android:layout_marginTop="88dp"
-        android:background="@drawable/buttonshap3"
+        android:background="@drawable/buttonshap4"
         android:src="@drawable/ic_speaker_notes_black_24dp"
         app:layout_constraintStart_toStartOf="@+id/button2"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
