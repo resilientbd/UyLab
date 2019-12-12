@@ -23,9 +23,8 @@
             android:layout_marginTop="116dp"
             android:text="@string/internship1_text1"
             android:textColor="#000000"
-            android:textSize="20dp"
+            android:textSize="18dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.587"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
