@@ -1,4 +1,4 @@
-package com.uysys.uylab.Backup1;
+package com.uysys.uylab.ui.backup1_2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.uysys.uylab.R;
 
-public class Backup1_Activity extends AppCompatActivity {
+public class Backup1_2Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_backup1_);
+        setContentView(R.layout.activity_backup1_2);
     }
 }

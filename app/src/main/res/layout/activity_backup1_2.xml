@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.backup1_2.Backup1_2Activity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout8"
+        android:layout_width="406dp"
+        android:layout_height="112dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="152dp"
+            android:layout_height="46dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="174dp"
+            android:text="Backup"
+            android:textColor="#000"
+            android:textSize="38dp"
+            app:layout_constraintEnd_toStartOf="@+id/imageView8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="105dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="200dp"
+            android:layout_marginBottom="61dp"
+            android:text="Request"
+            android:textSize="26dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView9"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14"
+            app:layout_constraintVertical_bias="0.066" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="29dp"
+            android:src="@drawable/ic_notification"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="34dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="61dp"
+            android:src="@drawable/setting"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView8"
+            app:layout_constraintVertical_bias="0.641" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="309dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="51dp"
+        android:background="@drawable/buttonshap4"
+        android:text="Submit Request"
+        android:textAllCaps="false"
+        android:textSize="26sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="278dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="4dp"
+        android:text="Write Here Class Topic"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="281dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="71dp"
+        android:text="Write Class Number"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="274dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="68dp"
+        android:outlineSpotShadowColor="#000"
+        android:spinnerMode="dialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="255dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="88dp"
+        android:gravity="center"
+        android:text="Request For Backup"
+        android:textColor="#000"
+        android:textSize="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout8" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout17"
+        android:layout_width="409dp"
+        android:layout_height="401dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button3"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout16"
+            android:layout_width="353dp"
+            android:layout_height="222dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/containts2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView36"
+            app:layout_constraintVertical_bias="1.0">
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="89dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="228dp"
+                android:text="Last Backup"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="164dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="173dp"
+                android:text="GDBACKUP #05"
+                android:textColor="#fff"
+                android:textSize="22dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="83dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="84dp"
+                android:gravity="center"
+                android:text="Date: 12/12/2019 \n Time: 11.00am-1.00pm"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="136dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="159dp"
+                android:gravity="center"
+                android:text="Note: If You Don't Come Within This Time \n You Backup Will be Canceled"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.452"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="77dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/button_open"
+                android:text="Close"
+                android:textColor="#000"
+                app:layout_constraintBottom_toBottomOf="@+id/textView38"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textView38" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="305dp"
+            android:layout_height="44dp"
+
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="44dp"
+            android:text="Backup Status Panel"
+            android:textColor="#000"
+            android:textSize="28dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="345dp"
+            android:layout_height="82dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Total Backup 5 for one Course | Click \n pending Button to see backup time schedule"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
