@@ -9,13 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".ui.pro28.Pro28">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ui.jobapply.Jobapply_Activity"></activity>
+        <activity android:name=".ui.jobopen.Jobopen_Activity"></activity>
+        <activity android:name=".ui.notice.Notice_Activity"></activity>
     </application>
 
 </manifest>
