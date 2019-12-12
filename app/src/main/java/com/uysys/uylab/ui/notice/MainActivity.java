@@ -1,12 +1,12 @@
-package com.uysys.uylab.ui.dashboard;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.uysys.uylab.ui.notice;
 
 import android.os.Bundle;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.uysys.uylab.R;
 
-public class DashboardActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
