@@ -204,7 +204,7 @@
             android:layout_marginBottom="16dp"
             android:textColor="#504D4D"
             android:textSize="14sp"
-            android:background="#null"
+            android:background="#00ffffff"
             android:textAllCaps="false"
             android:text="Are you a student?"
             app:layout_constraintBottom_toBottomOf="parent"
