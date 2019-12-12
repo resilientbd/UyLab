@@ -9,13 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ui.Pro9.Pro9Activity"></activity>
+        <activity android:name=".ui.classmodule.ClassModule" />
+
+        <activity android:name=".pro_5.Pro_5Activity"></activity>
         <activity android:name=".ui.backup1_2.Backup1_2Activity"></activity>
-        <activity android:name=".pro_5.Pro_5Activity" />
+
         <activity android:name=".Routine.RoutineActivity" />
         <activity android:name=".internship.InternshipActivity" />
         <activity android:name=".ui.pro3.pro3_Activity" />
         <activity android:name=".ui.backup1_3.backup1_3_Activity" />
         <activity android:name=".ui.Backup1_1_.Backup1_1_Activity" />
+
+
+
+        <activity android:name=".test1.Test1Activity"/>
+
+
         <activity android:name=".ui.Backup1.Backup1_Activity" />
         <activity android:name=".ui.pro2.pro2_Activity" />
         <activity android:name=".ui.offer2.offer2_Activity" />
@@ -26,6 +36,9 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".test.TestActivity">
+
         </activity>
     </application>
 
