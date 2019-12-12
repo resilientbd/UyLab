@@ -9,6 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ui.Pro9.Pro9Activity"></activity>
+        <activity android:name=".ui.classmodule.ClassModule" />
+
         <activity android:name=".pro_5.Pro_5Activity"></activity>
         <activity android:name=".Routine.RoutineActivity" />
         <activity android:name=".internship.InternshipActivity" />

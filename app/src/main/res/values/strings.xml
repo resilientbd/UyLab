@@ -1,6 +1,13 @@
 <resources>
     <string name="app_name">UyLab</string>
 
+    //new add
+
+    <string name="title_shop">Shop</string>
+    <string name="title_gifts">Gifts</string>
+    <string name="title_cart">Cart</string>
+    <string name="title_profile">Profile</string>
+
     <string name="text">UY LAB \n We Make Professionals</string>
     <string name="text1">Your Data \n Successfully Saved!</string>
     <string name="text2">How Many Mode \n Available for Pen Tool?</string>
