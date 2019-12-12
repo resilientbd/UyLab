@@ -22,6 +22,7 @@
             android:layout_marginTop="44dp"
             android:text="@string/avail3_text1"
             android:textColor="#000000"
+            android:textAlignment="center"
             android:textSize="18dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.525"
