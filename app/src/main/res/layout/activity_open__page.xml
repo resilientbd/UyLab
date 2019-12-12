@@ -7,6 +7,21 @@
     android:background="#1AA8FF"
     tools:context=".open_page.Open_PageActivity">
 
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="334dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="91dp"
+        android:text="@string/text3"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="38dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/guest_button"
         android:layout_width="200dp"
