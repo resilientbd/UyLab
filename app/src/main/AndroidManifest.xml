@@ -27,9 +27,19 @@
 
 
         <activity android:name=".ui.Backup1.Backup1_Activity" />
+        <activity android:name=".profile1.Profile1Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity android:name=".ui.pro2.pro2_Activity" />
         <activity android:name=".ui.offer2.offer2_Activity" />
         <activity android:name=".ui.offer1.offer1_Activity" />
+
+
         <activity android:name=".ui.offer.OfferActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -37,9 +47,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".test.TestActivity">
-
-        </activity>
+        <activity android:name=".test.TestActivity"></activity>
     </application>
 
 </manifest>
