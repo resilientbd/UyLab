@@ -12,6 +12,7 @@ import androidx.fragment.app.FragmentManager;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import com.uysys.uylab.R;
+import com.uysys.uylab.ui.blog.BlogFragment;
 import com.uysys.uylab.ui.dashboard.DashboardFragment;
 import com.uysys.uylab.ui.profile.ProfileFragment;
 import com.uysys.uylab.ui.refferal.RefferalFragment;
@@ -21,6 +22,7 @@ public class StudentMainActivity extends AppCompatActivity implements BottomNavi
     private DashboardFragment dashboardFragment;
     private ProfileFragment profileFragment;
     private RefferalFragment refferalFragment;
+    private BlogFragment blogFragment;
     private BottomNavigationView navigationView;
 
     @Override
@@ -32,6 +34,7 @@ public class StudentMainActivity extends AppCompatActivity implements BottomNavi
         dashboardFragment.setListener(this);
         profileFragment=new ProfileFragment();
         refferalFragment=new RefferalFragment();
+        blogFragment=new BlogFragment();
         manager=getSupportFragmentManager();
         manager.beginTransaction().replace(R.id.changelayout,dashboardFragment).commit();
         navigationView=findViewById(R.id.bottomNavigationView);
@@ -51,6 +54,7 @@ public class StudentMainActivity extends AppCompatActivity implements BottomNavi
                 manager.beginTransaction().replace(R.id.changelayout,profileFragment).commit();
                 break;
             case R.id.menu_blog:
+                manager.beginTransaction().replace(R.id.changelayout,blogFragment).commit();
                 break;
             case R.id.menu_referral:
                 manager.beginTransaction().replace(R.id.changelayout,refferalFragment).commit();
