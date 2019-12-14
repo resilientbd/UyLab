@@ -64,5 +64,13 @@
     <string name="text_internship">INTERNSHIP</string>
     <string name="text_live_class">LIVE CLASS</string>
     <string name="point_text">point</string>
+    <string name="latest">Latest</string>
+    <string name="line1">Next Class will we held on next \n Monday at 6mp to 8pm</string>
+    <string name="line2">Next Class will we held on next Monday at 6mp to 8pm</string>
+    <string name="line3">Next Class will we held on next Monday at 6mp to 8pm</string>
+    <string name="oldest">Oldest</string>
+    <string name="line4">Next Class will we held on next Monday at 6mp to 8pm</string>
+    <string name="line5">Next Class will we held on next Monday at 6mp to 8pm</string>
+    <string name="line6">Next Class will we held on next Monday at 6mp to 8pm</string>
 
 </resources>
