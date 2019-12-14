@@ -14,6 +14,7 @@ import com.daimajia.slider.library.SliderLayout;
 import com.daimajia.slider.library.SliderTypes.BaseSliderView;
 import com.daimajia.slider.library.SliderTypes.TextSliderView;
 import com.daimajia.slider.library.Tricks.ViewPagerEx;
+import com.google.android.material.navigation.NavigationView;
 import com.uysys.uylab.R;
 
 import java.util.HashMap;
@@ -22,11 +23,13 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
     private View view;
     private SliderLayout mDemoSlider;
     private PagerIndicator mPageIndicator;
+    private NavigationView navigationView;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view=inflater.inflate(R.layout.fragment_dashboard,container,false);
         mDemoSlider = view.findViewById(R.id.slider);
+
       //  mPageIndicator=view.findViewById(R.id.custom_indicator);
 
         HashMap<String,Integer> file_maps = new HashMap<String, Integer>();
