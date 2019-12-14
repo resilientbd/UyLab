@@ -19,6 +19,6 @@ public class StudentMainActivity extends AppCompatActivity {
 
         dashboardFragment=new DashboardFragment();
         manager=getSupportFragmentManager();
-        manager.beginTransaction().replace(R.id.changelayout,dashboardFragment);
+        manager.beginTransaction().replace(R.id.changelayout,dashboardFragment).commit();
     }
 }

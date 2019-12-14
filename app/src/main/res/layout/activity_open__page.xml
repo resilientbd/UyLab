@@ -33,6 +33,7 @@
         android:textAllCaps="false"
         android:textColor="#ffff"
         android:textSize="20sp"
+        android:onClick="studentClick"
         app:layout_constraintBottom_toTopOf="@+id/textView12"
         app:layout_constraintEnd_toEndOf="@+id/guest_button"
         app:layout_constraintStart_toStartOf="@+id/guest_button" />

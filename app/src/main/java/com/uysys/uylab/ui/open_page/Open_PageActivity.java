@@ -29,4 +29,10 @@ public class Open_PageActivity extends AppCompatActivity {
             }
         });
     }
+
+    public void studentClick(View view) {
+        Intent intent = new Intent(Open_PageActivity.this, Student_LoginActivity.class);
+        startActivity(intent);
+        finish();
+    }
 }
