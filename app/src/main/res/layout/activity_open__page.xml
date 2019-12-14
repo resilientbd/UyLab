@@ -40,13 +40,13 @@
 
     <TextView
         android:id="@+id/textView12"
-        android:layout_width="214dp"
-        android:layout_height="31dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="54dp"
         android:text="@string/text4"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
-        android:textSize="10dp"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/button6"
         app:layout_constraintStart_toStartOf="@+id/button6" />

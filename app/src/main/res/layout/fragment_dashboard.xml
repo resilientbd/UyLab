@@ -131,7 +131,7 @@
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="match_parent"
-                        android:layout_height="95dp">
+                        android:layout_height="match_parent">
 
                         <TextView
                             android:id="@+id/textView41"
@@ -174,19 +174,6 @@
                             app:layout_constraintStart_toStartOf="@+id/textView41"
                             app:layout_constraintTop_toBottomOf="@+id/textView41" />
 
-                        <TextView
-                            android:layout_width="30dp"
-                            android:layout_height="16dp"
-                            android:layout_marginStart="4dp"
-                            android:layout_marginTop="16dp"
-                            android:background="@drawable/btn_sp"
-                            android:text="@string/due"
-                            android:textAlignment="center"
-                            android:textColor="@android:color/black"
-                            android:textSize="8sp"
-                            app:layout_constraintBottom_toTopOf="@+id/textView34"
-                            app:layout_constraintStart_toEndOf="@+id/textView34"
-                            app:layout_constraintTop_toBottomOf="@+id/textView41" />
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -325,17 +312,17 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
-                        android:id="@+id/backupbtn"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/button_height"
-                        android:layout_marginStart="@dimen/button_start"
                         android:layout_marginEnd="@dimen/button_right_space"
                         android:layout_weight="1"
                         android:clickable="true"
+                        android:layout_marginStart="@dimen/button_start"
                         android:foreground="?selectableItemBackground"
                         app:cardCornerRadius="8dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/backupbtn"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
 
@@ -426,7 +413,6 @@
                         app:cardCornerRadius="8dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
-                            android:id="@+id/internshipBtn"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
 
@@ -434,13 +420,14 @@
                                 android:id="@+id/textView46"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginBottom="@dimen/button_bottom"
                                 android:text="@string/text_internship"
-                                android:textColor="@color/dashboard_card"
                                 android:textSize="@dimen/button_text_size"
+                                android:textColor="@color/dashboard_card"
+                                android:layout_marginBottom="@dimen/button_bottom"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent" />
+                                app:layout_constraintStart_toStartOf="parent"
+                               />
 
                             <ImageView
                                 android:id="@+id/imageView22"
@@ -466,22 +453,22 @@
                         app:cardCornerRadius="8dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
-                            android:id="@+id/jobhubBtn"
-
                             android:layout_width="match_parent"
+
                             android:layout_height="match_parent">
 
                             <TextView
                                 android:id="@+id/textView47"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginBottom="@dimen/button_bottom"
                                 android:text="@string/jobhub"
                                 android:textColor="@color/dashboard_card"
                                 android:textSize="@dimen/button_text_size"
+                                android:layout_marginBottom="@dimen/button_bottom"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent" />
+                                app:layout_constraintStart_toStartOf="parent"
+                               />
 
                             <ImageView
                                 android:id="@+id/imageView23"
@@ -507,7 +494,6 @@
                         app:cardCornerRadius="8dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
-                            android:id="@+id/pointBtn"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
 
@@ -525,13 +511,14 @@
                                 android:id="@+id/textView48"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginBottom="@dimen/button_bottom"
                                 android:text="@string/contest"
                                 android:textColor="@color/dashboard_card"
-                                android:textSize="@dimen/button_text_size"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent" />
+                                android:layout_marginBottom="@dimen/button_bottom"
+                                android:textSize="@dimen/button_text_size"
+                                app:layout_constraintStart_toStartOf="parent"
+                               />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </androidx.cardview.widget.CardView>
@@ -548,7 +535,6 @@
                         app:cardCornerRadius="8dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
-                            android:id="@+id/eventBtn"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
 
@@ -566,13 +552,14 @@
                                 android:id="@+id/textView50"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginBottom="@dimen/button_bottom"
                                 android:text="@string/event"
                                 android:textColor="@color/dashboard_card"
-                                android:textSize="@dimen/button_text_size"
                                 app:layout_constraintBottom_toBottomOf="parent"
+                                android:textSize="@dimen/button_text_size"
                                 app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent" />
+                                android:layout_marginBottom="@dimen/button_bottom"
+                                app:layout_constraintStart_toStartOf="parent"
+                                />
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </androidx.cardview.widget.CardView>
                 </LinearLayout>
@@ -595,7 +582,6 @@
                         app:cardCornerRadius="8dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
-                            android:id="@+id/offerBtn"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
 
@@ -603,13 +589,14 @@
                                 android:id="@+id/textView51"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginBottom="@dimen/button_bottom"
                                 android:text="@string/text_offer"
                                 android:textColor="@color/dashboard_card"
-                                android:textSize="@dimen/button_text_size"
                                 app:layout_constraintBottom_toBottomOf="parent"
+                                android:layout_marginBottom="@dimen/button_bottom"
                                 app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent" />
+                                android:textSize="@dimen/button_text_size"
+                                app:layout_constraintStart_toStartOf="parent"
+                            />
 
                             <ImageView
                                 android:id="@+id/imageView26"
@@ -676,7 +663,6 @@
                         app:cardCornerRadius="8dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
-                            android:id="@+id/tutorialBtn"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
 
@@ -695,13 +681,14 @@
                                 android:id="@+id/textView31"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginBottom="@dimen/button_bottom"
                                 android:text="@string/tutorial"
                                 android:textColor="@color/dashboard_card"
-                                android:textSize="@dimen/button_text_size"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent" />
+                                android:textSize="@dimen/button_text_size"
+                                android:layout_marginBottom="@dimen/button_bottom"
+                                app:layout_constraintStart_toStartOf="parent"
+                             />
 
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </androidx.cardview.widget.CardView>

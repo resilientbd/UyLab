@@ -29,19 +29,17 @@
                     android:id="@+id/textView18"
                     android:layout_width="170dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="28dp"
-                    android:layout_marginTop="88dp"
+                    android:layout_marginStart="16dp"
                     android:text="@string/text_support_small"
                     android:textColor="#000000"
                     android:textSize="25sp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintBottom_toTopOf="@+id/textView19"
+                    app:layout_constraintStart_toStartOf="parent" />
 
                 <TextView
                     android:id="@+id/textView19"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
                     android:layout_marginEnd="8dp"
                     android:layout_marginBottom="17dp"
                     android:ellipsize="end"
@@ -52,8 +50,7 @@
                     android:textSize="18sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/imageView11"
-                    app:layout_constraintStart_toStartOf="@+id/textView18"
-                    app:layout_constraintTop_toBottomOf="@+id/textView18" />
+                    app:layout_constraintStart_toStartOf="@+id/textView18" />
 
                 <ImageView
                     android:id="@+id/imageView9"
@@ -114,14 +111,19 @@
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerView"
-                tools:listitem="@layout/item_support"
-                tools:itemCount="10"
-                android:layout_width="match_parent"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:padding="16dp"
+                app:layout_constraintVertical_weight="1"
+                android:clipToPadding="false"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
                 android:layout_marginTop="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="parent">
+                app:layout_constraintTop_toBottomOf="@+id/imageView27"
+                tools:itemCount="10"
+                tools:listitem="@layout/item_support">
 
             </androidx.recyclerview.widget.RecyclerView>
         </androidx.constraintlayout.widget.ConstraintLayout>

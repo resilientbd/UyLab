@@ -26,7 +26,7 @@ public class SupportAdapter extends RecyclerView.Adapter<SupportAdapter.ViewHold
 
     @Override
     public int getItemCount() {
-        return 10;
+        return 1;
     }
 
     static class ViewHolder extends RecyclerView.ViewHolder{
