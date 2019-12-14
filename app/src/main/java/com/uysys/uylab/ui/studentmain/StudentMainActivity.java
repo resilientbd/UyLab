@@ -8,14 +8,15 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentManager;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import com.uysys.uylab.R;
 import com.uysys.uylab.ui.dashboard.DashboardFragment;
 
-public class StudentMainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class StudentMainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
     FragmentManager manager;
     private DashboardFragment dashboardFragment;
-    private NavigationView navigationView;
+    private BottomNavigationView navigationView;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,8 +26,9 @@ public class StudentMainActivity extends AppCompatActivity implements Navigation
         manager=getSupportFragmentManager();
         manager.beginTransaction().replace(R.id.changelayout,dashboardFragment).commit();
         navigationView=findViewById(R.id.bottomNavigationView);
-        navigationView.setNavigationItemSelectedListener(this);
+        navigationView.setOnNavigationItemSelectedListener(this);
     }
+
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
