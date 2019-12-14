@@ -21,6 +21,7 @@ import com.google.android.material.navigation.NavigationView;
 import com.uysys.uylab.R;
 import com.uysys.uylab.ui.classContent.Class_Content_Activity;
 import com.uysys.uylab.ui.classactivity.ClassActivity;
+import com.uysys.uylab.ui.internship.InternshipFragment;
 import com.uysys.uylab.ui.notice.NoticeFragment;
 import com.uysys.uylab.ui.studentmain.FragmentListener;
 
@@ -34,6 +35,7 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
     private FragmentListener listener;
     private CardView noticeView;
     private CardView classView;
+    private InternshipFragment internshipFragment;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -41,6 +43,8 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
         mDemoSlider = view.findViewById(R.id.slider);
         noticeView=view.findViewById(R.id.notice);
         classView=view.findViewById(R.id.classview);
+        internshipFragment=new InternshipFragment();
+
       //  mPageIndicator=view.findViewById(R.id.custom_indicator);
 
         HashMap<String,Integer> file_maps = new HashMap<String, Integer>();
@@ -71,6 +75,7 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
 
     public void setListener(FragmentListener listener) {
         this.listener = listener;
+        internshipFragment.setFragmentListener(listener);
     }
 
     @Override
@@ -95,14 +100,18 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
 
     @Override
     public void onClick(View v) {
+        Intent intent;
         switch (v.getId())
         {
             case R.id.notice:
                 addFragment(new NoticeFragment());
                 break;
             case R.id.classview:
-                Intent intent=new Intent(getActivity(), ClassActivity.class);
+                 intent=new Intent(getActivity(), ClassActivity.class);
                 startActivity(intent);
+                break;
+            case R.id.internship:
+              addFragment(internshipFragment);
                 break;
             default:break;
         }

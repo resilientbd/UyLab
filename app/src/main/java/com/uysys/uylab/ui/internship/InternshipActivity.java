@@ -9,6 +9,7 @@ import android.widget.Button;
 
 import com.uysys.uylab.R;
 import com.uysys.uylab.ui.Routine.RoutineActivity;
+import com.uysys.uylab.ui.internship_1.Internship1_Activity;
 
 public class InternshipActivity extends AppCompatActivity {
 
@@ -24,7 +25,7 @@ public class InternshipActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(InternshipActivity.this, RoutineActivity.class);
+                Intent intent = new Intent(InternshipActivity.this, Internship1_Activity.class);
                 startActivity(intent);
                 finish();
             }

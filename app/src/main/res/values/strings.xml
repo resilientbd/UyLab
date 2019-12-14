@@ -97,5 +97,13 @@
         <item>10</item>
         <item>11</item>
     </string-array>
+    <string-array name="array_subjects">
+        <item>Select Subject</item>
+        <item>UI Design</item>
+        <item>Android</item>
+        <item>IOS</item>
+        <item>Games And Animation</item>
+
+    </string-array>
 
 </resources>
