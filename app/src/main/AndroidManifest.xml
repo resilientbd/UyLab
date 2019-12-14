@@ -47,6 +47,7 @@
         <activity android:name=".ui.avail_offer_2.Avail_Offer2_Activity" />
         <activity android:name=".ui.classContentShower.Class_Content_Shower_Activity"></activity>
         <activity android:name=".ui.classContent.Class_Content_Activity"></activity>
+        <activity android:name=".ui.studentmain.StudentMainActivity"/>
 
     </application>
 
