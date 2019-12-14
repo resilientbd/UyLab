@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.classContent.Class_Content_Activity">
+    tools:context=".ui.classactivity.ClassActivity">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="0dp"
@@ -242,6 +242,7 @@
                         app:cardCornerRadius="8dp"
                         android:clickable="true"
                         android:id="@+id/notice"
+                        android:onClick="goToRoutineActivity"
                         android:backgroundTint="@color/colorPrimary"
                         android:foreground="?selectableItemBackground"
                         android:layout_marginBottom="12dp">

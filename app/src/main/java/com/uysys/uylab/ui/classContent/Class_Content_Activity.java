@@ -26,4 +26,6 @@ public class Class_Content_Activity extends AppCompatActivity {
     public void backToDashboard(View view) {
         finish();
     }
+
+
 }
