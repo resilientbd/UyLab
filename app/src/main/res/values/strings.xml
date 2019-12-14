@@ -5,7 +5,6 @@
     //new add
 
 
-
     <string name="text">UY LAB \n We Make Professionals</string>
     <string name="text1">Your Data \n Successfully Saved!</string>
     <string name="text2">How Many Mode \n Available for Pen Tool?</string>
@@ -74,5 +73,19 @@
     <string name="line6">Next Class will we held on next Monday at 6mp to 8pm</string>
     <string name="d">Request For 500 BDT \n Withdraw Date: 12/01/2020</string>
     <string name="history1">MD Raihan Ahmed \n GD-1919 | 500 BDT Added</string>
+    <string name="class_subtitle">Find Here Class Solution</string>
+    <string name="class_tab1">Graphic Design |</string>
+    <string name="class_tab2">&#160; New Course +</string>
+    <string name="class_username">Adnan Amhed</string>
+    <string name="class_username_sub">ID46855445555</string>
+    <string name="text_class_rank">Class Rank</string>
+    <string name="text_last_class">Last Class</string>
+    <string name="routine">Routine</string>
+    <string name="project">Project</string>
+    <string name="text_class_content">Class Content</string>
+    <string name="class_test">Class Test</string>
+    <string name="compilation">Complain</string>
+    <string name="text_module">Class Module</string>
+    <string name="back_to_dashboard">Back to Dashboard</string>
 
 </resources>

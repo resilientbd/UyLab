@@ -1,5 +1,6 @@
 package com.uysys.uylab.ui.dashboard;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,6 +19,8 @@ import com.daimajia.slider.library.SliderTypes.TextSliderView;
 import com.daimajia.slider.library.Tricks.ViewPagerEx;
 import com.google.android.material.navigation.NavigationView;
 import com.uysys.uylab.R;
+import com.uysys.uylab.ui.classContent.Class_Content_Activity;
+import com.uysys.uylab.ui.classactivity.ClassActivity;
 import com.uysys.uylab.ui.notice.NoticeFragment;
 import com.uysys.uylab.ui.studentmain.FragmentListener;
 
@@ -62,13 +65,7 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
         mDemoSlider.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
 //        mDemoSlider.setCustomIndicator(mPageIndicator);
         classView.setOnClickListener(this);
-        noticeView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getActivity(),"Clicked",Toast.LENGTH_SHORT).show();
-                addFragment(new NoticeFragment());
-            }
-        });
+        noticeView.setOnClickListener(this);
         return view;
     }
 
@@ -101,9 +98,12 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
         switch (v.getId())
         {
             case R.id.notice:
-
+                addFragment(new NoticeFragment());
                 break;
-            case R.id.classview:break;
+            case R.id.classview:
+                Intent intent=new Intent(getActivity(), ClassActivity.class);
+                startActivity(intent);
+                break;
             default:break;
         }
     }

@@ -22,4 +22,8 @@ public class Class_Content_Activity extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+
+    public void backToDashboard(View view) {
+        finish();
+    }
 }

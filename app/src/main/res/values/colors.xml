@@ -32,5 +32,8 @@
 
     <color name="bottom_nave_active">#1AA8FF</color>
     <color name="bottom_nave_inactive">#6D6D6D</color>
+    <color name="txt_sub_color">#747474</color>
+    <color name="class_color2">#44D091</color>
+    <color name="class_color1">#656565</color>
 
 </resources>
