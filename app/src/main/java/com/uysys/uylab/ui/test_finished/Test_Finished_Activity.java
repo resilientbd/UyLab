@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.uysys.uylab.R;
-import com.uysys.uylab.ui.pro_5.Pro_5Activity;
+import com.uysys.uylab.ui.pointearn.Pro_5Activity;
 
 public class Test_Finished_Activity extends AppCompatActivity {
 

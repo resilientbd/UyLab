@@ -15,7 +15,7 @@
         <activity android:name=".ui.classactivity.ClassActivity"></activity>
         <activity android:name=".ui.refferal.RefferalFragment" />
         <activity android:name=".ui.blog.BlogFragment" />
-        <activity android:name=".ui.pro_5.Pro_5Activity" />
+        <activity android:name=".ui.pointearn.Pro_5Activity" />
         <activity android:name=".ui.Routine.RoutineActivity" />
         <activity android:name=".ui.internship.InternshipActivity" />
         <activity android:name=".ui.pro3.pro3_Activity" />

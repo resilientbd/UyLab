@@ -114,7 +114,6 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
                 startActivity(intent);
                 break;
             case R.id.internshipclick:
-
               addFragment(internshipFragment);
                 break;
             default:break;
