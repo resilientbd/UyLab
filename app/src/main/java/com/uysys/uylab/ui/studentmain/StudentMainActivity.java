@@ -72,6 +72,12 @@ public class StudentMainActivity extends AppCompatActivity implements BottomNavi
 
     @Override
     public void onBackFragment() {
-       // manager.popBackStack();
+        manager.popBackStack();
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        //onBackFragment();
     }
 }
