@@ -214,9 +214,9 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
+                android:layout_marginEnd="@dimen/layer_margin_end"
                 android:layout_marginBottom="60dp"
                 android:orientation="vertical">
 
@@ -229,6 +229,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/button_height"
                         android:layout_marginEnd="@dimen/button_right_space"
+                        android:layout_marginStart="@dimen/button_start"
                         android:layout_weight="1"
                         app:cardCornerRadius="8dp"
                         android:clickable="true"
@@ -270,6 +271,7 @@
                         android:layout_marginEnd="@dimen/button_right_space"
                         android:layout_weight="1"
                         android:clickable="true"
+                        android:layout_marginStart="@dimen/button_start"
                         android:foreground="?selectableItemBackground"
                         app:cardCornerRadius="8dp">
 
@@ -310,6 +312,7 @@
                         android:layout_marginEnd="@dimen/button_right_space"
                         android:layout_weight="1"
                         android:clickable="true"
+                        android:layout_marginStart="@dimen/button_start"
                         android:foreground="?selectableItemBackground"
                         app:cardCornerRadius="8dp">
 
@@ -350,6 +353,7 @@
                         android:layout_marginEnd="@dimen/button_right_space"
                         android:layout_weight="1"
                         android:clickable="true"
+                        android:layout_marginStart="@dimen/button_start"
                         android:foreground="?selectableItemBackground"
                         app:cardCornerRadius="8dp">
 
@@ -394,6 +398,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/button_height"
                         android:layout_marginEnd="@dimen/button_right_space"
+                        android:layout_marginStart="@dimen/button_start"
                         android:layout_marginBottom="16dp"
                         android:layout_weight="1"
                         android:clickable="true"
@@ -436,6 +441,7 @@
                         android:layout_weight="1"
                         android:layout_marginBottom="16dp"
                         android:clickable="true"
+                        android:layout_marginStart="@dimen/button_start"
                         android:foreground="?selectableItemBackground"
                         app:cardCornerRadius="8dp">
 
@@ -476,6 +482,7 @@
                         android:layout_weight="1"
                         android:layout_marginBottom="16dp"
                         android:clickable="true"
+                        android:layout_marginStart="@dimen/button_start"
                         android:foreground="?selectableItemBackground"
                         app:cardCornerRadius="8dp">
 
@@ -516,6 +523,7 @@
                         android:layout_weight="1"
                         android:layout_marginBottom="16dp"
                         android:clickable="true"
+                        android:layout_marginStart="@dimen/button_start"
                         android:foreground="?selectableItemBackground"
                         app:cardCornerRadius="8dp">
 
@@ -563,6 +571,7 @@
                         android:layout_marginBottom="16dp"
                         android:clickable="true"
                         android:foreground="?selectableItemBackground"
+                        android:layout_marginStart="@dimen/button_start"
                         app:cardCornerRadius="8dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
@@ -601,6 +610,7 @@
                         android:layout_weight="1"
                         android:layout_marginBottom="16dp"
                         android:clickable="true"
+                        android:layout_marginStart="@dimen/button_start"
                         android:foreground="?selectableItemBackground"
                         app:cardCornerRadius="8dp">
 
@@ -641,6 +651,7 @@
                         android:layout_weight="1"
                         android:layout_marginBottom="16dp"
                         android:clickable="true"
+                        android:layout_marginStart="@dimen/button_start"
                         android:foreground="?selectableItemBackground"
                         app:cardCornerRadius="8dp">
 
@@ -682,6 +693,7 @@
                         android:layout_weight="1"
                         android:layout_marginBottom="16dp"
                         android:clickable="true"
+                        android:layout_marginStart="@dimen/button_start"
                         android:foreground="?selectableItemBackground"
                         app:cardCornerRadius="8dp">
 
