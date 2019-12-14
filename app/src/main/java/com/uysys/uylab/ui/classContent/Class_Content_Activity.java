@@ -11,8 +11,9 @@ import android.widget.TextView;
 
 import com.uysys.uylab.R;
 import com.uysys.uylab.ui.classContentShower.Class_Content_Shower_Activity;
+import com.uysys.uylab.ui.classContentVideoShower.Class_Content_Video_Shower_Activity;
 
-public class Class_Content_Activity extends AppCompatActivity {
+public class Class_Content_Activity extends AppCompatActivity implements ClassContentAdapter.OnClassAdapterItemClickListener {
 private RecyclerView mRecyclerView;
 private TextView headerText;
 private ClassContentAdapter mAdapter;
@@ -27,6 +28,7 @@ private ClassContentAdapter mAdapter;
         mAdapter=new ClassContentAdapter();
         mRecyclerView.setAdapter(mAdapter);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        mAdapter.setListener(this);
     }
 
     public void SeeNow(View view) {
@@ -51,4 +53,9 @@ private ClassContentAdapter mAdapter;
     }
 
 
+    @Override
+    public void onClassAdapterItemClick(int position) {
+        Intent intent=new Intent(Class_Content_Activity.this, Class_Content_Video_Shower_Activity.class);
+        startActivity(intent);
+    }
 }

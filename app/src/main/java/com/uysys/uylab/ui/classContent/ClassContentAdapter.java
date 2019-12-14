@@ -10,6 +10,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.uysys.uylab.R;
 
 public class ClassContentAdapter  extends RecyclerView.Adapter<ClassContentAdapter.ViewHolder>{
+    private OnClassAdapterItemClickListener listener;
+
+    public void setListener(OnClassAdapterItemClickListener listener) {
+        this.listener = listener;
+    }
+
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -20,8 +26,16 @@ public class ClassContentAdapter  extends RecyclerView.Adapter<ClassContentAdapt
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-
+    public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
+        holder.view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (listener!=null)
+                {
+                    listener.onClassAdapterItemClick(position);
+                }
+            }
+        });
     }
 
     @Override
@@ -30,9 +44,13 @@ public class ClassContentAdapter  extends RecyclerView.Adapter<ClassContentAdapt
     }
 
     static  class ViewHolder extends RecyclerView.ViewHolder{
-
+    private View view;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+            view=itemView.findViewById(R.id.layout);
         }
+    }
+    public interface OnClassAdapterItemClickListener{
+        public void onClassAdapterItemClick(int position);
     }
 }
