@@ -105,5 +105,9 @@
         <item>Games And Animation</item>
 
     </string-array>
+    <string name="texttitle">Why The Freelance \n Life May Get Easier</string>
+    <string name="name">Young Hou</string>
+    <string name="design_text_blog">DESIGN</string>
+    <string name="design_detail_text">Most Awaited - Photoshop \nLaunches Plugin</string>
 
 </resources>
