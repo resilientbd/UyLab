@@ -19,11 +19,6 @@ public class Complain1_Activity extends AppCompatActivity {
         setContentView ( R.layout.complain_1 );
 
         btn1=findViewById ( R.id.backBtn_complain1 );
-        btn1.setOnClickListener ( new View.OnClickListener () {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent ( Complain1_Activity.this,null );
-            }
-        } );
+
     }
 }

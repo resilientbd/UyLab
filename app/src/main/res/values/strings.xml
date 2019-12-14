@@ -87,6 +87,7 @@
     <string name="compilation">Complain</string>
     <string name="text_module">Class Module</string>
     <string name="back_to_dashboard">Back to Dashboard</string>
+    <string name="contents_text_module">1. Spot Healing Brush Tool \n2. Healing Brush Tool \n3. Patch Tool \n4. Red Eye Tool \n5. Clone Tool \n6. Pattern Stamp Tool \n7. Blur, Sharpen and Smudge Tools \n8. Dodge ,Burn and Sponge Tools \n9. History Brush Tool \n10. Art History Brush Tool Class Assignment – Image Retouch.</string>
     <string-array name="array_class_number">
         <item>05</item>
         <item>06</item>

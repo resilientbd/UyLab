@@ -9,6 +9,7 @@ import android.view.View;
 import com.uysys.uylab.R;
 import com.uysys.uylab.ui.Routine.RoutineActivity;
 import com.uysys.uylab.ui.classContent.Class_Content_Activity;
+import com.uysys.uylab.ui.classmodule.ClassModule;
 
 public class ClassActivity extends AppCompatActivity {
 
@@ -29,6 +30,11 @@ public class ClassActivity extends AppCompatActivity {
 
     public void gotToCLassContent(View view) {
         Intent intent=new Intent(ClassActivity.this, Class_Content_Activity.class);
+        startActivity(intent);
+    }
+
+    public void goToClassModule(View view) {
+        Intent intent=new Intent(ClassActivity.this, ClassModule.class);
         startActivity(intent);
     }
 }
