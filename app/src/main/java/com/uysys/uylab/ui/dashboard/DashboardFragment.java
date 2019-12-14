@@ -19,6 +19,7 @@ import com.daimajia.slider.library.SliderTypes.TextSliderView;
 import com.daimajia.slider.library.Tricks.ViewPagerEx;
 import com.google.android.material.navigation.NavigationView;
 import com.uysys.uylab.R;
+import com.uysys.uylab.ui.backup.BackupFragment;
 import com.uysys.uylab.ui.classContent.Class_Content_Activity;
 import com.uysys.uylab.ui.classactivity.ClassActivity;
 import com.uysys.uylab.ui.internship.InternshipFragment;
@@ -36,7 +37,9 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
     private CardView noticeView;
     private CardView classView;
     private CardView internshipView;
+    private View backupBtn;
     private InternshipFragment internshipFragment;
+    private BackupFragment backupFragment;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -45,6 +48,8 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
         noticeView=view.findViewById(R.id.notice);
         classView=view.findViewById(R.id.classview);
         internshipView=view.findViewById(R.id.internshipclick);
+        backupBtn=view.findViewById(R.id.backupbtn);
+
 
       //  mPageIndicator=view.findViewById(R.id.custom_indicator);
 
@@ -72,6 +77,7 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
         classView.setOnClickListener(this);
         noticeView.setOnClickListener(this);
         internshipView.setOnClickListener(this);
+        backupBtn.setOnClickListener(this);
         return view;
     }
 
@@ -79,6 +85,8 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
         this.listener = listener;
         internshipFragment=new InternshipFragment();
         internshipFragment.setFragmentListener(listener);
+        backupFragment= new BackupFragment();
+        backupFragment.setFragmentListener(listener);
     }
 
     @Override
@@ -115,6 +123,9 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
                 break;
             case R.id.internshipclick:
               addFragment(internshipFragment);
+                break;
+            case R.id.backupbtn:
+                addFragment(backupFragment);
                 break;
             default:break;
         }
