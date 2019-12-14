@@ -59,6 +59,7 @@
         app:layout_constraintTop_toBottomOf="@+id/refferalhead"
         app:layout_constraintBottom_toBottomOf="parent">
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/refferalchangelayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -183,6 +184,7 @@
             android:textColor="@color/white"
             android:textAlignment="center"
             android:gravity="center"
+            android:layout_marginBottom="20dp"
             android:background="@drawable/backbtnshape"
             app:layout_constraintTop_toBottomOf="@id/pointbtn"
             app:layout_constraintLeft_toLeftOf="parent"
