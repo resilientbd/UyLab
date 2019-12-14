@@ -13,7 +13,7 @@ import android.widget.Button;
 
 
 import com.uysys.uylab.R;
-import com.uysys.uylab.ui.profile1.EditProfileFragement;
+
 import com.uysys.uylab.ui.studentmain.FragmentListener;
 
 public class ProfileFragment extends Fragment {

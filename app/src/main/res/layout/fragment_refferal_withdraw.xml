@@ -6,25 +6,71 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/refferalhead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mildash"
+        app:layout_constraintTop_toTopOf="parent">
+        <ImageView
+            android:id="@+id/notification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginRight="24dp"
+            android:scaleType="fitXY"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:src="@drawable/notification_profile"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="12dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_grouppeople"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+        <TextView
+            android:id="@+id/refferallabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refferal"
+            android:textSize="32dp"
+            android:layout_marginTop="62dp"
+            android:layout_marginLeft="24dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/programlebal"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+        <TextView
+            android:id="@+id/programlebal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Program"
+            android:textSize="16dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="parent">
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/refferalhead">
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/refferalchangelayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/balancebuttn"
+                android:id="@+id/balancebuttn1"
                 android:layout_width="120dp"
                 android:layout_height="100dp"
                 android:text="Withdraw"
                 android:textColor="@color/white"
-                android:layout_marginTop="18dp"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintLeft_toLeftOf="@id/balancelabel"
-                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/balancelabel"
+                app:layout_constraintRight_toRightOf="@id/balancelabel"
+                app:layout_constraintBottom_toBottomOf="@id/balancelabel"
                 android:textAlignment="textStart"
                 android:textAllCaps="false"
                 android:paddingLeft="24dp"
@@ -33,10 +79,12 @@
                 tools:ignore="RtlCompat" />
             <TextView
                 android:id="@+id/balancelabel"
-                android:layout_width="200dp"
+                android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:text="@string/balance"
-                android:layout_marginTop="18dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginLeft="32dp"
                 android:textColor="@color/skyblue"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -71,10 +119,12 @@
                 android:background="@drawable/profile_button_1"/>
             <TextView
                 android:id="@+id/refferalcodetext"
-                android:layout_width="300dp"
+                android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:text="@string/d"
                 android:layout_marginTop="18dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
                 android:textColor="@color/ash"
                 app:layout_constraintTop_toBottomOf="@+id/refferalcodetag"
                 app:layout_constraintLeft_toLeftOf="parent"
@@ -88,54 +138,76 @@
                 android:id="@+id/label1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/labelreffer1"
-                android:textAlignment="center"
-                android:textSize="14dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginLeft="40dp"
+                android:text="*Refferal Earning History"
+                android:textAllCaps="false"
+                android:textSize="18dp"
                 android:textColor="@color/ash"
                 app:layout_constraintTop_toBottomOf="@+id/refferalcodetext"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintRight_toRightOf="parent"/>\
+                />
 
             <Button
                 android:id="@+id/button2"
-                android:layout_width="100dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="12dp"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
                 android:background="@drawable/refferal_textview1"
-                android:text="Point"
+                android:text="+"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textSize="32dp"
                 android:textColor="@color/white"
                 android:textAllCaps="false"
                 app:layout_constraintStart_toStartOf="@+id/pointbtn"
-                app:layout_constraintTop_toBottomOf="@id/label1" />
+                app:layout_constraintTop_toTopOf="@id/pointbtn" />
 
 
             <TextView
                 android:id="@+id/pointbtn"
-                android:layout_width="200dp"
-                android:layout_height="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
                 android:layout_marginTop="12dp"
-                android:text="@string/ponit_demo"
+                android:layout_marginRight="32dp"
+                android:layout_marginLeft="32dp"
+                android:text="@string/history1"
                 android:textColor="@color/white"
-                android:textAlignment="textEnd"
+                android:textAlignment="center"
                 android:paddingRight="24dp"
                 android:gravity="center"
-                android:background="@drawable/profile_button_1"
+                android:background="@drawable/refferal_text_2"
                 app:layout_constraintTop_toBottomOf="@id/label1"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 tools:ignore="RtlCompat" />
-            <TextView
-                android:id="@+id/earnpointbtn"
-                android:layout_width="200dp"
-                android:layout_height="40dp"
-                android:layout_marginTop="12dp"
-                android:text="@string/point"
-                android:textAllCaps="false"
-                android:textColor="@color/white"
+            <Button
+                android:id="@+id/button21"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/refferal_textview1"
+                android:text="+"
                 android:textAlignment="center"
                 android:gravity="center"
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/backbtnshape"
+                android:textSize="32dp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                app:layout_constraintStart_toStartOf="@+id/pointbtn2"
+                app:layout_constraintTop_toTopOf="@id/pointbtn2" />
+
+
+            <TextView
+                android:id="@+id/pointbtn2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginLeft="32dp"
+                android:text="@string/history1"
+                android:textColor="@color/white"
+                android:textAlignment="center"
+                android:paddingRight="24dp"
+                android:gravity="center"
+                android:background="@drawable/refferal_text_2"
                 app:layout_constraintTop_toBottomOf="@id/pointbtn"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"

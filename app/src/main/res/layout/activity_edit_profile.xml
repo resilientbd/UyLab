@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.profile1.EditProfileFragement">
+    tools:context=".ui.profile.EditProfileFragement">
     <ImageView
         android:id="@+id/profile_img_background_id"
         android:layout_width="match_parent"
