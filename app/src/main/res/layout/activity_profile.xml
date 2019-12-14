@@ -31,7 +31,7 @@
             android:layout_gravity="center"
             app:cardCornerRadius="250dp">
 
-            <ImageView
+            <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="190dp"
                 android:layout_height="190dp"
                 android:scaleType="centerCrop"
