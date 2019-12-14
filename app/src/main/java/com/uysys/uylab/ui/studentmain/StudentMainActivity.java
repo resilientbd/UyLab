@@ -12,10 +12,12 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import com.uysys.uylab.R;
 import com.uysys.uylab.ui.dashboard.DashboardFragment;
+import com.uysys.uylab.ui.profile.ProfileFragment;
 
 public class StudentMainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
     FragmentManager manager;
     private DashboardFragment dashboardFragment;
+    private ProfileFragment profileFragment;
     private BottomNavigationView navigationView;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -23,6 +25,7 @@ public class StudentMainActivity extends AppCompatActivity implements BottomNavi
         setContentView(R.layout.activity_student_main);
 
         dashboardFragment=new DashboardFragment();
+        profileFragment=new ProfileFragment();
         manager=getSupportFragmentManager();
         manager.beginTransaction().replace(R.id.changelayout,dashboardFragment).commit();
         navigationView=findViewById(R.id.bottomNavigationView);
@@ -38,7 +41,7 @@ public class StudentMainActivity extends AppCompatActivity implements BottomNavi
                 manager.beginTransaction().replace(R.id.changelayout,dashboardFragment).commit();
                 break;
             case R.id.menu_profile:
-
+                manager.beginTransaction().replace(R.id.changelayout,profileFragment).commit();
                 break;
             case R.id.menu_blog:
                 break;
