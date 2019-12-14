@@ -5,7 +5,7 @@
 <!--    <color name="colorAccent">#D81B60</color>-->
 
     //new add
-    <color name="colorPrimary">#7b4bff</color>
+    <color name="colorPrimary">#1AA8FF</color>
     <color name="colorPrimaryDark">#6539ba</color>
     <color name="colorAccent">#FF4081</color>
     <color name="bgBottomNavigation">#fe485a</color>
@@ -22,4 +22,13 @@
     //new add
 
     <color name="white">#FFFFFF</color>
+    <color name="offwhite">#F2F2F2</color>
+    <color name="dashboard_card">#557BE2</color>
+    <color name="dashboard_color">#FFE97D</color>
+    <color name="dashboard_color_shape1">#409CE9</color>
+
+
+    <color name="bottom_nave_active">#1AA8FF</color>
+    <color name="bottom_nave_inactive">#6D6D6D</color>
+
 </resources>

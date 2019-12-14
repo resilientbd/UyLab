@@ -1,8 +1,9 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">UyLab</string>
     <string name="avail3_text1">Your Application Successfully Received!</string>
 
     //new add
+
 
 
     <string name="text">UY LAB \n We Make Professionals</string>
@@ -45,4 +46,21 @@
     <string name="login">Login</string>
     <string name="balance">Balance \n 1500</string>
     <string name="labelreffer1"><![CDATA[Get 100 Point & 500BDT \n  For Each Student Enrollment]]></string>
+    <string name="details" tools:ignore="ExtraTranslation">Details</string>
+    <string name="paymentstatus">Payment Status</string>
+    <string name="paymentstatusvalue">৳ 542.00</string>
+    <string name="duedate">Due Last Date: 12/10/2019</string>
+    <string name="text_support">SUPPORT</string>
+    <string name="notice">NOTICE</string>
+    <string name="text_class">CLASS</string>
+    <string name="text_backup">BACKUP</string>
+    <string name="contest">CONTEST</string>
+    <string name="event">EVENT</string>
+    <string name="tutorial">TUTORIAL</string>
+    <string name="point">POINT</string>
+    <string name="jobhub">JOB HUB</string>
+    <string name="text_offer">OFFER</string>
+    <string name="text_internship">INTERNSHIP</string>
+    <string name="text_live_class">LIVE CLASS</string>
+    <string name="point_text">point</string>
 </resources>

@@ -34,4 +34,8 @@ dependencies {
 // circle Image
     implementation 'de.hdodenhof:circleimageview:3.0.1'
     implementation 'de.hdodenhof:circleimageview:3.0.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.nineoldandroids:library:2.4.0'
+    implementation 'com.daimajia.slider:library:1.1.5@aar'
+    implementation 'com.squareup.picasso:picasso:2.3.2'
 }
