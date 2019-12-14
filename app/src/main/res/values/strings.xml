@@ -1,5 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">UyLab</string>
+    <string name="app_name">UY Lab</string>
     <string name="avail3_text1">Your Application Successfully Received!</string>
 
     //new add
@@ -139,5 +139,6 @@
     <string name="support_subtitle">Get Any Support From Our Agent</string>
     <string name="trainer_hotline">Trainer\'s Hotline</string>
     <string name="trainer_number">0192000177</string>
+    <string name="text_t">Welcome To UYLAB! \nYou Can Login Here, as guest or student</string>
 
 </resources>
