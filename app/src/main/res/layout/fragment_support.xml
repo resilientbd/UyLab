@@ -47,7 +47,7 @@
                     android:text="@string/support_subtitle"
                     android:textAlignment="textStart"
                     android:textColor="@android:color/black"
-                    android:textSize="18sp"
+                    android:textSize="11sp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/imageView11"
                     app:layout_constraintStart_toStartOf="@+id/textView18" />
