@@ -13,7 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.refferal.RefferalActivity"></activity>
+        <activity android:name=".ui.refferal.RefferalFragment"></activity>
         <activity android:name=".ui.blog.BlogActivity" />
         <activity android:name=".ui.pro_5.Pro_5Activity" />
         <activity android:name=".ui.Routine.RoutineActivity" />
@@ -40,7 +40,7 @@
         <activity android:name=".ui.profile.profile">
 
         </activity>
-        <activity android:name=".ui.profile1.Profile1Activity" />
+        <activity android:name=".ui.profile1.EditProfileFragement" />
         <activity android:name=".ui.avail_offer_2.Avail_Offer2_Activity" />
         <activity android:name=".ui.classContentShower.Class_Content_Shower_Activity" />
         <activity android:name=".ui.classContent.Class_Content_Activity" />
