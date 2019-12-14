@@ -1,4 +1,4 @@
-package com.uysys.uylab.test1;
+package com.uysys.uylab.ui.test1;
 
 import androidx.appcompat.app.AppCompatActivity;
 
