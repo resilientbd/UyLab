@@ -8,8 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.uysys.uylab.R;
-import com.uysys.uylab.student_login.Student_LoginActivity;
-import com.uysys.uylab.ui.save.SaveActivity;
+import com.uysys.uylab.ui.student_login.Student_LoginActivity;
 
 public class Open_PageActivity extends AppCompatActivity {
     private Button btn;

@@ -1,4 +1,4 @@
-package com.uysys.uylab.iphone_17;
+package com.uysys.uylab.ui.student_login;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.uysys.uylab.R;
 
-public class About_Us_Activity extends AppCompatActivity {
+public class Student_LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.dashboard);
+        setContentView(R.layout.activity_student__login);
     }
 }

@@ -35,8 +35,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".student_login.Student_LoginActivity"></activity>
-        <activity android:name=".iphone_17.About_Us_Activity" />
+        <activity android:name=".ui.student_login.Student_LoginActivity"></activity>
+        <activity android:name=".ui.iphone_17.About_Us_Activity" />
 
         <activity android:name="com.uysys.uylab.ui.profile.profile">
 
