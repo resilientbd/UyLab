@@ -231,7 +231,8 @@
                         android:layout_marginEnd="@dimen/button_right_space"
                         android:layout_weight="1"
                         app:cardCornerRadius="8dp"
-                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:clickable="true"
+                        android:foreground="?selectableItemBackground"
                         android:layout_marginBottom="16dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
@@ -268,7 +269,8 @@
                         android:layout_height="@dimen/button_height"
                         android:layout_marginEnd="@dimen/button_right_space"
                         android:layout_weight="1"
-                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:clickable="true"
+                        android:foreground="?selectableItemBackground"
                         app:cardCornerRadius="8dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
@@ -307,7 +309,8 @@
                         android:layout_height="@dimen/button_height"
                         android:layout_marginEnd="@dimen/button_right_space"
                         android:layout_weight="1"
-                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:clickable="true"
+                        android:foreground="?selectableItemBackground"
                         app:cardCornerRadius="8dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
@@ -346,7 +349,8 @@
                         android:layout_height="@dimen/button_height"
                         android:layout_marginEnd="@dimen/button_right_space"
                         android:layout_weight="1"
-                        style="@style/Widget.AppCompat.Button.Borderless"
+                        android:clickable="true"
+                        android:foreground="?selectableItemBackground"
                         app:cardCornerRadius="8dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
@@ -392,6 +396,8 @@
                         android:layout_marginEnd="@dimen/button_right_space"
                         android:layout_marginBottom="16dp"
                         android:layout_weight="1"
+                        android:clickable="true"
+                        android:foreground="?selectableItemBackground"
                         app:cardCornerRadius="8dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
@@ -429,6 +435,8 @@
                         android:layout_marginEnd="@dimen/button_right_space"
                         android:layout_weight="1"
                         android:layout_marginBottom="16dp"
+                        android:clickable="true"
+                        android:foreground="?selectableItemBackground"
                         app:cardCornerRadius="8dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
@@ -467,6 +475,8 @@
                         android:layout_marginEnd="@dimen/button_right_space"
                         android:layout_weight="1"
                         android:layout_marginBottom="16dp"
+                        android:clickable="true"
+                        android:foreground="?selectableItemBackground"
                         app:cardCornerRadius="8dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
@@ -505,6 +515,8 @@
                         android:layout_marginEnd="@dimen/button_right_space"
                         android:layout_weight="1"
                         android:layout_marginBottom="16dp"
+                        android:clickable="true"
+                        android:foreground="?selectableItemBackground"
                         app:cardCornerRadius="8dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
@@ -549,6 +561,8 @@
                         android:layout_marginEnd="@dimen/button_right_space"
                         android:layout_weight="1"
                         android:layout_marginBottom="16dp"
+                        android:clickable="true"
+                        android:foreground="?selectableItemBackground"
                         app:cardCornerRadius="8dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
@@ -586,6 +600,8 @@
                         android:layout_marginEnd="@dimen/button_right_space"
                         android:layout_weight="1"
                         android:layout_marginBottom="16dp"
+                        android:clickable="true"
+                        android:foreground="?selectableItemBackground"
                         app:cardCornerRadius="8dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
@@ -624,6 +640,8 @@
                         android:layout_marginEnd="@dimen/button_right_space"
                         android:layout_weight="1"
                         android:layout_marginBottom="16dp"
+                        android:clickable="true"
+                        android:foreground="?selectableItemBackground"
                         app:cardCornerRadius="8dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
@@ -663,6 +681,8 @@
                         android:layout_marginEnd="@dimen/button_right_space"
                         android:layout_weight="1"
                         android:layout_marginBottom="16dp"
+                        android:clickable="true"
+                        android:foreground="?selectableItemBackground"
                         app:cardCornerRadius="8dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
