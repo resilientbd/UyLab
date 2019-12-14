@@ -40,4 +40,20 @@
     <string name="title_cart">Cart</string>
     <string name="title_profile">Profile</string>
     <string name="login">Login</string>
+    <string name="details">Details</string>
+    <string name="paymentstatus">Payment Status</string>
+    <string name="paymentstatusvalue">৳ 542.00</string>
+    <string name="duedate">Due Last Date: 12/10/2019</string>
+    <string name="text_support">SUPPORT</string>
+    <string name="notice">NOTICE</string>
+    <string name="text_class">CLASS</string>
+    <string name="text_backup">BACKUP</string>
+    <string name="contest">CONTEST</string>
+    <string name="event">EVENT</string>
+    <string name="tutorial">TUTORIAL</string>
+    <string name="point">POINT</string>
+    <string name="jobhub">JOB HUB</string>
+    <string name="text_offer">OFFER</string>
+    <string name="text_internship">INTERNSHIP</string>
+    <string name="text_live_class">LIVE CLASS</string>
 </resources>
