@@ -120,5 +120,8 @@
     <string name="text_backup4">Total Backup 5 for one Course | Click pending Button to see backup time schedule</string>
     <string name="backup_ready">Ready</string>
     <string name="pending">Pending</string>
+    <string name="close">Close</string>
+    <string name="request_title">Your Request \nSuccessfully Received!</string>
+    <string name="finised">Finished</string>
 
 </resources>
