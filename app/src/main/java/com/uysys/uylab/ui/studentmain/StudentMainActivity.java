@@ -35,7 +35,7 @@ public class StudentMainActivity extends AppCompatActivity implements BottomNavi
         switch (menuItem.getItemId())
         {
             case R.id.menu_home:
-                manager.beginTransaction().replace(R.id.changelayout,dashboardFragment);
+                manager.beginTransaction().replace(R.id.changelayout,dashboardFragment).commit();
                 break;
             case R.id.menu_profile:
 

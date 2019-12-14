@@ -1,4 +1,4 @@
-package com.uysys.uylab.ui.profile1;
+package com.uysys.uylab.ui.refferal;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,11 +6,11 @@ import android.os.Bundle;
 
 import com.uysys.uylab.R;
 
-public class Profile1Activity extends AppCompatActivity {
+public class RefferalActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit_profile);
+        setContentView(R.layout.activity_refferal);
     }
 }

@@ -5,7 +5,6 @@
     //new add
 
 
-
     <string name="text">UY LAB \n We Make Professionals</string>
     <string name="text1">Your Data \n Successfully Saved!</string>
     <string name="text2">How Many Mode \n Available for Pen Tool?</string>
@@ -39,6 +38,10 @@
     <string name="title_gifts">Gifts</string>
     <string name="title_cart">Cart</string>
     <string name="title_profile">Profile</string>
+    <string name="ponit_demo">244532</string>
+    <string name="arn_point_demo">224</string>
+    <string name="earn_point1">Earn Point</string>
+    <string name="edit_profile_btn">Edit Profile</string>
     <string name="login">Login</string>
     <string name="details">Details</string>
     <string name="paymentstatus">Payment Status</string>
@@ -57,4 +60,6 @@
     <string name="text_internship">INTERNSHIP</string>
     <string name="text_live_class">LIVE CLASS</string>
     <string name="point_text">point</string>
+    <string name="balance">Balance \n 1500</string>
+    <string name="labelreffer1"><![CDATA[Get 100 Point & 500BDT \n  For Each Student Enrollment]]></string>
 </resources>
