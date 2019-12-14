@@ -28,4 +28,11 @@
     <string name="menu_referral">Referral</string>
     <string name="menu_more">More</string>
     <string name="textn">UY LAB is a sister concern of UYSystem Ltd which is an ISO 9001-2008 certified software and web solution provider firm providing IT solutions abroad for last 12 years. UY LAB introduced as an IT training center where we aim to make professionalsin all IT sectors. We have arranged world-class training programs with highly skilled trainers.</string>
+
+    //new add
+
+    <string name="title_shop">Shop</string>
+    <string name="title_gifts">Gifts</string>
+    <string name="title_cart">Cart</string>
+    <string name="title_profile">Profile</string>
 </resources>
