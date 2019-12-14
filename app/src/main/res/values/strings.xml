@@ -123,5 +123,9 @@
     <string name="close">Close</string>
     <string name="request_title">Your Request \nSuccessfully Received!</string>
     <string name="finised">Finished</string>
+    <string name="text_support_small">Support</string>
+    <string name="support_subtitle">Get Any Support From Our Agent</string>
+    <string name="trainer_hotline">Trainer\'s Hotline</string>
+    <string name="trainer_number">0192000177</string>
 
 </resources>

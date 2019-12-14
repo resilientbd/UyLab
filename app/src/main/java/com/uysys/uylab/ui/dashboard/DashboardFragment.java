@@ -25,6 +25,7 @@ import com.uysys.uylab.ui.classactivity.ClassActivity;
 import com.uysys.uylab.ui.internship.InternshipFragment;
 import com.uysys.uylab.ui.notice.NoticeFragment;
 import com.uysys.uylab.ui.studentmain.FragmentListener;
+import com.uysys.uylab.ui.support.SupportFragment;
 
 import java.util.HashMap;
 
@@ -38,8 +39,11 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
     private CardView classView;
     private CardView internshipView;
     private View backupBtn;
+    private View supportBtn;
     private InternshipFragment internshipFragment;
     private BackupFragment backupFragment;
+    private SupportFragment supportFragment;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -49,7 +53,8 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
         classView=view.findViewById(R.id.classview);
         internshipView=view.findViewById(R.id.internshipclick);
         backupBtn=view.findViewById(R.id.backupbtn);
-
+        supportBtn=view.findViewById(R.id.supportBtn);
+        supportBtn.setOnClickListener(this);
 
       //  mPageIndicator=view.findViewById(R.id.custom_indicator);
 
@@ -86,6 +91,8 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
         internshipFragment=new InternshipFragment();
         internshipFragment.setFragmentListener(listener);
         backupFragment= new BackupFragment();
+        supportFragment=new SupportFragment();
+        supportFragment.setFragmentListener(listener);
         backupFragment.setFragmentListener(listener);
     }
 
@@ -127,6 +134,8 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
             case R.id.backupbtn:
                 addFragment(backupFragment);
                 break;
+            case R.id.supportBtn:
+                addFragment(supportFragment);
             default:break;
         }
     }
