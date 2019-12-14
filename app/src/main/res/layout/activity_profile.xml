@@ -15,71 +15,130 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.cardview.widget.CardView
-        android:id="@+id/imagecard"
-        android:layout_width="216dp"
-        android:layout_height="216dp"
-        app:cardBackgroundColor="@android:color/white"
-        app:cardCornerRadius="250dp"
-        app:layout_constraintBottom_toBottomOf="@+id/profile_img_background_id"
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="24dp"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/notification_profile"/>
+    <TextView
+        android:id="@+id/studentname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ahmed Sharif"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/ic_profile_img_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/profile_img_background_id">
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/studentid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID: 46855445555"
+        android:textColor="@color/white"
+        android:src="@drawable/ic_profile_img_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/studentname"
+        app:layout_constraintBottom_toTopOf="@id/imagecard"/>
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="190dp"
-            android:layout_height="190dp"
-            android:layout_gravity="center"
-            app:cardCornerRadius="250dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/imagecard"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        app:layout_constraintTop_toBottomOf="@id/studentid"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@drawable/circular_cardview"
+        app:layout_constraintRight_toRightOf="parent">
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:layout_width="190dp"
                 android:layout_height="190dp"
                 android:scaleType="centerCrop"
+               app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
                 android:src="@drawable/profile_person_img" />
 
-        </androidx.cardview.widget.CardView>
-
-    </androidx.cardview.widget.CardView>
-
+    </androidx.constraintlayout.widget.ConstraintLayout>
     <Button
+        android:id="@+id/button2"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/profile_textview_1"
+        android:text="Point"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="@+id/pointbtn"
+        app:layout_constraintTop_toBottomOf="@+id/imagecard" />
+
+
+    <TextView
         android:id="@+id/pointbtn"
         android:layout_width="200dp"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
         android:text="@string/ponit_demo"
         android:textColor="@color/white"
+        android:textAlignment="textEnd"
+        android:paddingRight="24dp"
+        android:gravity="center"
         android:background="@drawable/profile_button_1"
         app:layout_constraintTop_toBottomOf="@id/imagecard"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-       />
-
+        tools:ignore="RtlCompat" />
     <Button
+        android:id="@+id/buttonnglobalrank"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/profile_textview_1"
+        android:text="Global Rank"
+        android:layout_marginTop="8dp"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toStartOf="@+id/globalrankbtn"
+        app:layout_constraintTop_toBottomOf="@+id/pointbtn" />
+
+    <TextView
         android:id="@+id/globalrankbtn"
         android:layout_width="200dp"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:text="@string/arn_point_demo"
         android:layout_marginTop="8dp"
         android:textColor="@color/white"
+        android:textAlignment="textEnd"
+        android:paddingRight="24dp"
+        android:gravity="center"
         android:background="@drawable/profile_button_1"
         app:layout_constraintTop_toBottomOf="@id/pointbtn"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        tools:ignore="RtlCompat"
         />
-    <Button
+    <TextView
         android:id="@+id/earnpointbtn"
         android:layout_width="200dp"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
        android:text="@string/earn_point1"
         android:textColor="@color/white"
+        android:textAlignment="center"
+        android:paddingRight="24dp"
+        android:gravity="center"
         android:layout_marginTop="10dp"
         android:textAllCaps="false"
         android:background="@drawable/profile_button_1"
         app:layout_constraintTop_toBottomOf="@id/globalrankbtn"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        />
+        app:layout_constraintRight_toRightOf="parent" />
+
 
     <Button
         android:id="@+id/editprofilebtn"
@@ -88,7 +147,7 @@
         android:text="@string/edit_profile_btn"
         android:textColor="@color/white"
         android:textAllCaps="false"
-
+        android:onClick="GoToEditProfile"
         android:background="@drawable/profile_button2"
         app:layout_constraintTop_toBottomOf="@id/earnpointbtn"
         app:layout_constraintLeft_toLeftOf="parent"

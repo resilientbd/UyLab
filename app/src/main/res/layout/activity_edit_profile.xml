@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.profile1.Profile1Activity">
+    <ImageView
+        android:id="@+id/profile_img_background_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_profile_img_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginRight="24dp"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/notification_profile"/>
+    <TextView
+        android:id="@+id/studentname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ahmed Sharif"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/ic_profile_img_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:id="@+id/studentid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID: 46855445555"
+        android:textColor="@color/white"
+        android:src="@drawable/ic_profile_img_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/studentname"
+        app:layout_constraintBottom_toTopOf="@id/imagecard"/>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/imagecard"
+        android:layout_width="210dp"
+        android:layout_height="210dp"
+        app:layout_constraintTop_toBottomOf="@id/studentid"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@drawable/circular_cardview"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:src="@drawable/profile_person_img" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="250dp"
+            android:layout_height="180dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagecard">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/content"
+                >
+            <TextView
+                android:id="@+id/namelabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:text="Your Name"
+                android:textColor="@color/ash"/>
+            <EditText
+                android:id="@+id/nameinput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                app:layout_constraintTop_toBottomOf="@+id/namelabel"
+                android:hint="Adnan Ahmed"
+                />
+                <TextView
+                android:id="@+id/emaillabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/nameinput"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:text="Email"
+                android:textColor="@color/ash"/>
+                <EditText
+                    android:id="@+id/emailinput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/emaillabel"
+                    android:hint="adnanahmed@gmail.com"
+                    android:inputType="textEmailAddress"
+                    />
+                <TextView
+                    android:id="@+id/phonelabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/emailinput"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:text="Phone Number"
+                    android:textColor="@color/ash"/>
+                <EditText
+                    android:id="@+id/phoneinput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/phonelabel"
+                    android:hint="+8801854325672"
+                    android:inputType="phone"
+                    />
+                <TextView
+                    android:id="@+id/changepasswordlabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/phoneinput"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:text="Change Your Password"
+                    android:textColor="@color/ash"/>
+                <EditText
+                    android:id="@+id/changepasswordinput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/changepasswordlabel"
+                    android:hint="Type your password"
+                    android:inputType="textPassword"
+                    />
+                <TextView
+                    android:id="@+id/confirmpasswordlabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/changepasswordinput"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    android:text="New Password"
+                    android:textColor="@color/ash"/>
+                <EditText
+                    android:id="@+id/confirmpasswordinput"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/confirmpasswordlabel"
+                    android:hint="........"
+                    android:inputType="textPassword"
+                    />
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+
+    <Button
+        android:id="@+id/savebtn"
+        android:layout_width="220dp"
+        android:layout_height="60dp"
+        android:text="Save"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/profile_button_1"
+        app:layout_constraintTop_toBottomOf="@id/scrollview"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="HardcodedText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

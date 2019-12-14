@@ -5,7 +5,6 @@
     //new add
 
 
-
     <string name="text">UY LAB \n We Make Professionals</string>
     <string name="text1">Your Data \n Successfully Saved!</string>
     <string name="text2">How Many Mode \n Available for Pen Tool?</string>
@@ -44,4 +43,6 @@
     <string name="earn_point1">Earn Point</string>
     <string name="edit_profile_btn">Edit Profile</string>
     <string name="login">Login</string>
+    <string name="balance">Balance \n 1500</string>
+    <string name="labelreffer1"><![CDATA[Get 100 Point & 500BDT \n  For Each Student Enrollment]]></string>
 </resources>
