@@ -6,6 +6,7 @@ import android.view.MenuItem;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -14,17 +15,19 @@ import com.uysys.uylab.R;
 import com.uysys.uylab.ui.dashboard.DashboardFragment;
 import com.uysys.uylab.ui.profile.ProfileFragment;
 
-public class StudentMainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
+public class StudentMainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener,FragmentListener{
     FragmentManager manager;
     private DashboardFragment dashboardFragment;
     private ProfileFragment profileFragment;
     private BottomNavigationView navigationView;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_main);
 
         dashboardFragment=new DashboardFragment();
+        dashboardFragment.setListener(this);
         profileFragment=new ProfileFragment();
         manager=getSupportFragmentManager();
         manager.beginTransaction().replace(R.id.changelayout,dashboardFragment).commit();
@@ -51,5 +54,15 @@ public class StudentMainActivity extends AppCompatActivity implements BottomNavi
                 break;
         }
         return true;
+    }
+
+    @Override
+    public void onAddFragment(Fragment fragment) {
+        manager.beginTransaction().replace(R.id.changelayout,fragment).commit();
+    }
+
+    @Override
+    public void onBackFragment() {
+       // manager.popBackStack();
     }
 }

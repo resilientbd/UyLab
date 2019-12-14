@@ -4,9 +4,11 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import com.daimajia.slider.library.Indicators.PagerIndicator;
@@ -16,20 +18,26 @@ import com.daimajia.slider.library.SliderTypes.TextSliderView;
 import com.daimajia.slider.library.Tricks.ViewPagerEx;
 import com.google.android.material.navigation.NavigationView;
 import com.uysys.uylab.R;
+import com.uysys.uylab.ui.notice.NoticeFragment;
+import com.uysys.uylab.ui.studentmain.FragmentListener;
 
 import java.util.HashMap;
 
-public class DashboardFragment  extends Fragment implements BaseSliderView.OnSliderClickListener, ViewPagerEx.OnPageChangeListener{
+public class DashboardFragment  extends Fragment implements BaseSliderView.OnSliderClickListener, ViewPagerEx.OnPageChangeListener, View.OnClickListener {
     private View view;
     private SliderLayout mDemoSlider;
     private PagerIndicator mPageIndicator;
     private NavigationView navigationView;
+    private FragmentListener listener;
+    private CardView noticeView;
+    private CardView classView;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view=inflater.inflate(R.layout.fragment_dashboard,container,false);
         mDemoSlider = view.findViewById(R.id.slider);
-
+        noticeView=view.findViewById(R.id.notice);
+        classView=view.findViewById(R.id.classview);
       //  mPageIndicator=view.findViewById(R.id.custom_indicator);
 
         HashMap<String,Integer> file_maps = new HashMap<String, Integer>();
@@ -53,8 +61,19 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
         }
         mDemoSlider.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
 //        mDemoSlider.setCustomIndicator(mPageIndicator);
-
+        classView.setOnClickListener(this);
+        noticeView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getActivity(),"Clicked",Toast.LENGTH_SHORT).show();
+                addFragment(new NoticeFragment());
+            }
+        });
         return view;
+    }
+
+    public void setListener(FragmentListener listener) {
+        this.listener = listener;
     }
 
     @Override
@@ -76,4 +95,32 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
     public void onPageScrollStateChanged(int state) {
 
     }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId())
+        {
+            case R.id.notice:
+
+                break;
+            case R.id.classview:break;
+            default:break;
+        }
+    }
+
+    public void addFragment(Fragment fragment)
+    {
+        if(listener!=null)
+        {
+            listener.onAddFragment(fragment);
+        }
+    }
+    public void removeFragment()
+    {
+        if(listener!=null)
+        {
+            listener.onBackFragment();
+        }
+    }
+
 }

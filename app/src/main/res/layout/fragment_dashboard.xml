@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@color/white"
+   >
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -233,6 +234,7 @@
                         android:layout_weight="1"
                         app:cardCornerRadius="8dp"
                         android:clickable="true"
+                        android:id="@+id/notice"
                         android:foreground="?selectableItemBackground"
                         android:layout_marginBottom="16dp">
 
@@ -271,6 +273,7 @@
                         android:layout_marginEnd="@dimen/button_right_space"
                         android:layout_weight="1"
                         android:clickable="true"
+                        android:id="@+id/classview"
                         android:layout_marginStart="@dimen/button_start"
                         android:foreground="?selectableItemBackground"
                         app:cardCornerRadius="8dp">
