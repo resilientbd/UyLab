@@ -35,6 +35,7 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
     private FragmentListener listener;
     private CardView noticeView;
     private CardView classView;
+    private CardView internshipView;
     private InternshipFragment internshipFragment;
     @Nullable
     @Override
@@ -43,7 +44,7 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
         mDemoSlider = view.findViewById(R.id.slider);
         noticeView=view.findViewById(R.id.notice);
         classView=view.findViewById(R.id.classview);
-        internshipFragment=new InternshipFragment();
+        internshipView=view.findViewById(R.id.internshipclick);
 
       //  mPageIndicator=view.findViewById(R.id.custom_indicator);
 
@@ -70,11 +71,13 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
 //        mDemoSlider.setCustomIndicator(mPageIndicator);
         classView.setOnClickListener(this);
         noticeView.setOnClickListener(this);
+        internshipView.setOnClickListener(this);
         return view;
     }
 
     public void setListener(FragmentListener listener) {
         this.listener = listener;
+        internshipFragment=new InternshipFragment();
         internshipFragment.setFragmentListener(listener);
     }
 
@@ -110,8 +113,9 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
                  intent=new Intent(getActivity(), ClassActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.internship:
-              addFragment(internshipFragment);
+            case R.id.internshipclick:
+
+              addFragment(new InternshipFragment());
                 break;
             default:break;
         }

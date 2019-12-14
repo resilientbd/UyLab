@@ -400,6 +400,7 @@
                     android:orientation="horizontal">
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/internshipclick"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/button_height"
                         android:layout_marginEnd="@dimen/button_right_space"
@@ -407,7 +408,7 @@
                         android:layout_marginBottom="16dp"
                         android:layout_weight="1"
                         android:clickable="true"
-                        android:id="@+id/internship"
+                        android:elevation="4dp"
                         android:foreground="?selectableItemBackground"
                         app:cardCornerRadius="8dp">
 
