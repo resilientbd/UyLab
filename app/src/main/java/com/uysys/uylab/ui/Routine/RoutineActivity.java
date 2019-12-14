@@ -24,9 +24,9 @@ public class RoutineActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(RoutineActivity.this, Test_Finished_Activity.class);
-                startActivity(intent);
-                finish();
+//                Intent intent = new Intent(RoutineActivity.this, Test_Finished_Activity.class);
+//                startActivity(intent);
+//                finish();
             }
         });
     }

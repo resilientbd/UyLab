@@ -87,5 +87,14 @@
     <string name="compilation">Complain</string>
     <string name="text_module">Class Module</string>
     <string name="back_to_dashboard">Back to Dashboard</string>
+    <string-array name="array_class_number">
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+    </string-array>
 
 </resources>

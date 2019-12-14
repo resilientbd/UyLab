@@ -326,6 +326,7 @@
                         android:layout_marginEnd="@dimen/button_right_space"
                         android:layout_weight="1"
                         android:clickable="true"
+                        android:onClick="gotToCLassContent"
                         android:backgroundTint="@color/colorPrimary"
                         android:layout_marginStart="@dimen/button_start"
                         android:foreground="?selectableItemBackground"
