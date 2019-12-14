@@ -56,4 +56,5 @@
     <string name="text_offer">OFFER</string>
     <string name="text_internship">INTERNSHIP</string>
     <string name="text_live_class">LIVE CLASS</string>
+    <string name="point_text">point</string>
 </resources>
