@@ -39,4 +39,8 @@
     <string name="title_gifts">Gifts</string>
     <string name="title_cart">Cart</string>
     <string name="title_profile">Profile</string>
+    <string name="ponit_demo">244532</string>
+    <string name="arn_point_demo">224</string>
+    <string name="earn_point1">Earn Point</string>
+    <string name="edit_profile_btn">Edit Profile</string>
 </resources>
