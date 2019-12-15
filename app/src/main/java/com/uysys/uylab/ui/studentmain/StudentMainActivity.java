@@ -34,6 +34,7 @@ public class StudentMainActivity extends AppCompatActivity implements BottomNavi
         dashboardFragment.setListener(this);
         profileFragment=new ProfileFragment();
         refferalFragment=new RefferalFragment();
+        refferalFragment.setFragmentListener(this);
         blogFragment=new BlogFragment();
         manager=getSupportFragmentManager();
         manager.beginTransaction().replace(R.id.changelayout,dashboardFragment).commit();
@@ -72,7 +73,7 @@ public class StudentMainActivity extends AppCompatActivity implements BottomNavi
 
     @Override
     public void onBackFragment() {
-        manager.popBackStack();
+       onAddFragment(dashboardFragment);
     }
 
     @Override

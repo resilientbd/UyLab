@@ -1,4 +1,4 @@
-package com.uysys.uylab.ui.pro_5;
+package com.uysys.uylab.ui.pointearn;
 
 import androidx.appcompat.app.AppCompatActivity;
 
