@@ -38,6 +38,7 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
     private CardView classView;
     private CardView internshipView;
     private View backupBtn;
+
     private InternshipFragment internshipFragment;
     private BackupFragment backupFragment;
     @Nullable
