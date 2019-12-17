@@ -27,7 +27,7 @@ public class EventFragment extends BaseFragment implements EventLableAdapter.Eve
     private RecyclerView.LayoutManager mLayoutManager;
     private List dataset, dataset1;
     EventLableAdapter adapter;
-    EventLableAdapter blogLDownDetailsAdapter;
+    EventDownDetailsAdapter blogLDownDetailsAdapter;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -61,7 +61,7 @@ public class EventFragment extends BaseFragment implements EventLableAdapter.Eve
         dataset1.add(blogDownDetailsModel);
         BlogDownDetailsModel blogDownDetailsModel1 = new BlogDownDetailsModel(R.drawable.detailed1, R.drawable.ic_clock_blog_ash, R.drawable.ic_like, R.string.design_text_blog, R.string.design_detail_text, "1 sec ago", "885");
         dataset1.add(blogDownDetailsModel1);
-        blogLDownDetailsAdapter = new EventLableAdapter(getActivity().getBaseContext(), dataset1);
+        blogLDownDetailsAdapter = new EventDownDetailsAdapter(getActivity().getBaseContext(), dataset1);
         recyclerView.setAdapter(blogLDownDetailsAdapter);
         recyclerView.setLayoutManager(mLayoutManager);
         blogLDownDetailsAdapter.notifyDataSetChanged();

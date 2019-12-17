@@ -147,5 +147,11 @@
     <string name="event_details_sub">Graphic Design FREE SEMINAR MONDAY</string>
     <string name="event_details">Unknown printer took a galley of type andscrambled it to make a type specimen book. Ithassurvivednotably five centuries, but also the leap into electronic Unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived notably five centuries, but also the leap into electronic Unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived notably five centuries, but also the leap into electronic</string>
     <string name="btn_join_seminar">Join Seminar</string>
+    <string name="seminar_join_dialog">Seminar Join</string>
+    <string name="event_hint1">Mobile Number</string>
+    <string name="email_hint">Email Address</string>
+    <string name="submit">Submit</string>
+    <string name="your_number">Your Name</string>
+    <string name="note">Note: \nYou must need to share your contact information to avail the current offer.</string>
 
 </resources>
