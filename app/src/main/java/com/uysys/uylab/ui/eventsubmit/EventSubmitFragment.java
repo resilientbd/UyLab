@@ -15,7 +15,7 @@ public class EventSubmitFragment extends BaseFragment {
     private View view;
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view=inflater.inflate(R.layout.event_3,container,false);
+        view=inflater.inflate(R.layout.fragment_event_submit,container,false);
         return view;
     }
 }
