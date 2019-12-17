@@ -28,6 +28,7 @@ import com.uysys.uylab.ui.internship.InternshipFragment;
 import com.uysys.uylab.ui.job.JobFragment;
 import com.uysys.uylab.ui.liveClass.Live_Class;
 import com.uysys.uylab.ui.notice.NoticeFragment;
+import com.uysys.uylab.ui.point.Point_Fragment;
 import com.uysys.uylab.ui.studentmain.FragmentListener;
 import com.uysys.uylab.ui.support.SupportFragment;
 
@@ -48,6 +49,7 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
     private View eventBtn;
     private View liveClassBtn;
     private View jobhubButton;
+    private View pointbtn;
     private InternshipFragment internshipFragment;
     private BackupFragment backupFragment;
     private SupportFragment supportFragment;
@@ -55,6 +57,7 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
 
     private EventFragment eventFragment;
     private Live_Class live_class;
+    private Point_Fragment point_fragment;
 
 
     @Nullable
@@ -74,6 +77,8 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
         supportBtn.setOnClickListener(this);
         eventBtn.setOnClickListener(this);
         liveClassBtn.setOnClickListener(this);
+        pointbtn=view.findViewById(R.id.pointbtn);
+        pointbtn.setOnClickListener(this);
         jobhubButton.setOnClickListener(this);
 
       //  mPageIndicator=view.findViewById(R.id.custom_indicator);
@@ -121,6 +126,10 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
         live_class.setFragmentListener(listener);
         jobFragment=new JobFragment();
         jobFragment.setFragmentListener(listener);
+        point_fragment = new Point_Fragment();
+        point_fragment.setFragmentListener(listener);
+
+
     }
 
     @Override
@@ -177,6 +186,9 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
                 break;
             case R.id.jobhubbtn:
                 addFragment(jobFragment);
+                break;
+            case R.id.pointbtn:
+                addFragment(point_fragment);
                 break;
             default:break;
         }
