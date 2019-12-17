@@ -140,5 +140,12 @@
     <string name="trainer_hotline">Trainer\'s Hotline</string>
     <string name="trainer_number">0192000177</string>
     <string name="text_t">Welcome To UYLAB! \nYou Can Login Here, as guest or student</string>
+    <string name="upcomming_event">Upcoming Event</string>
+    <string name="event_sub">Find Your Class Tutorial Here</string>
+    <string name="more_event">More Event</string>
+    <string name="text_event_up_title">Graphic Design FREE SEMINAR MONDAY</string>
+    <string name="event_details_sub">Graphic Design FREE SEMINAR MONDAY</string>
+    <string name="event_details">Unknown printer took a galley of type andscrambled it to make a type specimen book. Ithassurvivednotably five centuries, but also the leap into electronic Unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived notably five centuries, but also the leap into electronic Unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived notably five centuries, but also the leap into electronic</string>
+    <string name="btn_join_seminar">Join Seminar</string>
 
 </resources>
