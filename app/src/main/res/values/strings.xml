@@ -155,5 +155,6 @@
     <string name="note">Note: \nYou must need to share your contact information to avail the current offer.</string>
     <string name="application_status">Your Application \nSuccessfully Received!</string>
     <string name="address">Our Address: \nMobile: +88-01777-753-399 \n11 Bir Uttam AK Khandakar Road, \n31 Mohakhali Commercial Area, \nColombia Super Market, 4th Floor, Wireless Gate, 1213</string>
+    <string name="back_to_home">Back To Home</string>
 
 </resources>

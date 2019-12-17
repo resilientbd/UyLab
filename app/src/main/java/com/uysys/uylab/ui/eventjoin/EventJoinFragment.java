@@ -18,7 +18,7 @@ public class EventJoinFragment extends BaseFragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view=inflater.inflate(R.layout.fragment_event_join,container,false);
-        submitButton=view.findViewById(R.id.btnsubmit);
+        submitButton=view.findViewById(R.id.btnhome);
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
