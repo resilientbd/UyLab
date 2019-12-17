@@ -22,7 +22,10 @@ public class EventSubmitFragment extends BaseFragment {
         btnbackHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                if(getFragmentListener()!=null)
+                {
+                    getFragmentListener().onBackFragment();
+                }
             }
         });
         return view;
