@@ -35,15 +35,15 @@ public class EventDownDetailsAdapter extends RecyclerView.Adapter<EventDownDetai
 
     @Override
     public void onBindViewHolder(@NonNull EventDownDetailsAdapter.ViewHolder holder, int position) {
-        BlogDownDetailsModel blogLabelModel=(BlogDownDetailsModel) dataset1.get(position);
-        holder.mainimage.setImageResource(blogLabelModel.getMainimage());
-        holder.imagecircle.setImageResource(blogLabelModel.getClockimage());
-        holder.icon.setImageResource(blogLabelModel.getLikeimage());
-
-        holder.title.setText(blogLabelModel.getDesigntext());
-        holder.shorttitle.setText(blogLabelModel.getTitletext());
-        holder.time.setText(blogLabelModel.getTimetext());
-        holder.like.setText(blogLabelModel.getLiketext());
+//        BlogDownDetailsModel blogLabelModel=(BlogDownDetailsModel) dataset1.get(position);
+//        holder.mainimage.setImageResource(blogLabelModel.getMainimage());
+//        holder.imagecircle.setImageResource(blogLabelModel.getClockimage());
+//        holder.icon.setImageResource(blogLabelModel.getLikeimage());
+//
+//        holder.title.setText(blogLabelModel.getDesigntext());
+//        holder.shorttitle.setText(blogLabelModel.getTitletext());
+//        holder.time.setText(blogLabelModel.getTimetext());
+//        holder.like.setText(blogLabelModel.getLiketext());
 
     }
 

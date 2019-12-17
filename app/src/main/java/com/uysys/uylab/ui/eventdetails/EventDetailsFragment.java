@@ -12,6 +12,7 @@ import androidx.annotation.Nullable;
 import com.uysys.uylab.R;
 import com.uysys.uylab.ui.base.BaseFragment;
 import com.uysys.uylab.ui.eventjoin.EventJoinFragment;
+import com.uysys.uylab.ui.eventsubmit.EventSubmitFragment;
 
 public class EventDetailsFragment extends BaseFragment {
     private View view;
@@ -25,7 +26,7 @@ public class EventDetailsFragment extends BaseFragment {
             public void onClick(View v) {
                 if(getFragmentListener()!=null)
                 {
-                    EventJoinFragment fragment=new EventJoinFragment();
+                    EventSubmitFragment fragment=new EventSubmitFragment();
                     fragment.setFragmentListener(getFragmentListener());
                     getFragmentListener().onAddFragment(fragment);
                 }
