@@ -38,6 +38,7 @@
         <activity android:name=".ui.classContentVideoShower.Class_Content_Video_Shower_Activity" />
         <activity android:name=".ui.ourPartner.OurPartnerActivity" />
         <activity android:name=".ui.mentors.MentorsActivity" />
+     <activity android:name=".ui.mentors.MentorsProfileActivity"/>
         <activity
             android:name=".ui.open_page.Open_PageActivity"
             android:theme="@style/AppTheme.FullScreen"></activity>

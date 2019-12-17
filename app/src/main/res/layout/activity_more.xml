@@ -535,6 +535,7 @@
             app:cardCornerRadius="8dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/partnerViwen"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
@@ -615,6 +616,7 @@
             app:cardCornerRadius="8dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/settingViewn"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
