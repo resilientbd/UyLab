@@ -24,6 +24,7 @@ import com.uysys.uylab.ui.classContent.Class_Content_Activity;
 import com.uysys.uylab.ui.classactivity.ClassActivity;
 import com.uysys.uylab.ui.event.EventFragment;
 import com.uysys.uylab.ui.internship.InternshipFragment;
+import com.uysys.uylab.ui.job.JobFragment;
 import com.uysys.uylab.ui.liveClass.Live_Class;
 import com.uysys.uylab.ui.notice.NoticeFragment;
 import com.uysys.uylab.ui.studentmain.FragmentListener;
@@ -44,11 +45,15 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
     private View supportBtn;
     private View eventBtn;
     private View liveClassBtn;
+    private View jobhubButton;
     private InternshipFragment internshipFragment;
     private BackupFragment backupFragment;
     private SupportFragment supportFragment;
+    private JobFragment jobFragment;
+
     private EventFragment eventFragment;
     private Live_Class live_class;
+
 
     @Nullable
     @Override
@@ -62,9 +67,11 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
         supportBtn=view.findViewById(R.id.supportBtn);
         eventBtn=view.findViewById(R.id.eventcardbutton);
         liveClassBtn = view.findViewById(R.id.liveClassBtn);
+        jobhubButton = view.findViewById(R.id.jobhubbtn);
         supportBtn.setOnClickListener(this);
         eventBtn.setOnClickListener(this);
         liveClassBtn.setOnClickListener(this);
+        jobhubButton.setOnClickListener(this);
 
       //  mPageIndicator=view.findViewById(R.id.custom_indicator);
 
@@ -108,6 +115,8 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
         eventFragment.setFragmentListener(listener);
         live_class=new Live_Class();
         live_class.setFragmentListener(listener);
+        jobFragment=new JobFragment();
+        jobFragment.setFragmentListener(listener);
     }
 
     @Override
@@ -156,6 +165,9 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
                 break;
             case R.id.liveClassBtn:
                 addFragment(live_class);
+                break;
+            case R.id.jobhubbtn:
+                addFragment(jobFragment);
                 break;
             default:break;
         }
