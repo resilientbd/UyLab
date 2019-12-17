@@ -22,6 +22,7 @@ import com.uysys.uylab.R;
 import com.uysys.uylab.ui.backup.BackupFragment;
 import com.uysys.uylab.ui.classContent.Class_Content_Activity;
 import com.uysys.uylab.ui.classactivity.ClassActivity;
+import com.uysys.uylab.ui.complain.ComplainActivity;
 import com.uysys.uylab.ui.event.EventFragment;
 import com.uysys.uylab.ui.internship.InternshipFragment;
 import com.uysys.uylab.ui.job.JobFragment;
@@ -41,6 +42,7 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
     private CardView noticeView;
     private CardView classView;
     private CardView internshipView;
+    private CardView contestView;
     private View backupBtn;
     private View supportBtn;
     private View eventBtn;
@@ -61,6 +63,7 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
         view=inflater.inflate(R.layout.fragment_dashboard,container,false);
         mDemoSlider = view.findViewById(R.id.slider);
         noticeView=view.findViewById(R.id.notice);
+        contestView = view.findViewById(R.id.contestView);
         classView=view.findViewById(R.id.classview);
         internshipView=view.findViewById(R.id.internshipclick);
         backupBtn=view.findViewById(R.id.backupbtn);
@@ -98,6 +101,7 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
 //        mDemoSlider.setCustomIndicator(mPageIndicator);
         classView.setOnClickListener(this);
         noticeView.setOnClickListener(this);
+        contestView.setOnClickListener(this);
         internshipView.setOnClickListener(this);
         backupBtn.setOnClickListener(this);
         return view;
@@ -149,6 +153,11 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
                 break;
             case R.id.classview:
                  intent=new Intent(getActivity(), ClassActivity.class);
+                startActivity(intent);
+                break;
+
+            case R.id.contestView:
+                intent=new Intent(getActivity(), ComplainActivity.class);
                 startActivity(intent);
                 break;
             case R.id.internshipclick:
