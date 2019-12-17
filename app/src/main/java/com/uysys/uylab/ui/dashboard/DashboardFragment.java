@@ -106,6 +106,8 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
         backupFragment.setFragmentListener(listener);
         eventFragment=new EventFragment();
         eventFragment.setFragmentListener(listener);
+        live_class=new Live_Class();
+        live_class.setFragmentListener(listener);
     }
 
     @Override

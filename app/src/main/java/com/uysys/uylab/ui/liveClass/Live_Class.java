@@ -24,6 +24,7 @@ public class Live_Class extends BaseFragment {
 
         view = inflater.inflate(R.layout.activity_live_class,container,false);
         live_class_adapter = new Live_Class_Adapter();
+        recyclerView=view.findViewById(R.id.recylerviewnew);
         recyclerView.setAdapter(live_class_adapter);
 
         recyclerView.setLayoutManager(new LinearLayoutManager((getActivity())));
