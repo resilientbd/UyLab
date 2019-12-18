@@ -19,7 +19,7 @@ public class BackupFragment extends BaseFragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view=inflater.inflate(R.layout.fragment_backup,container,false);
-        applyBtn=view.findViewById(R.id.button10);
+        applyBtn=view.findViewById(R.id.btnsubmit);
         applyBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
