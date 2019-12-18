@@ -1,16 +1,25 @@
 package com.uysys.uylab.ui.jobopen;
 
 import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 
 import com.uysys.uylab.R;
+import com.uysys.uylab.ui.base.BaseFragment;
 
-public class Jobopen_Activity extends AppCompatActivity {
+public class Jobopen_Activity extends BaseFragment {
+private View view;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.job_open);
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+       view=inflater.inflate(R.layout.job_open,container,false);
+
+        return view;
     }
 }
