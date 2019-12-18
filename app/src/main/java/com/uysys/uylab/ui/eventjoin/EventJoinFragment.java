@@ -1,4 +1,4 @@
-package com.uysys.uylab.ui.backupsubmit;
+package com.uysys.uylab.ui.eventjoin;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,22 +10,21 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.uysys.uylab.R;
-import com.uysys.uylab.ui.backup.BackupFragment;
 import com.uysys.uylab.ui.base.BaseFragment;
 
-public class BackupSubmitFragment extends BaseFragment {
+public class EventJoinFragment extends BaseFragment {
     private View view;
-    private Button closeBtn;
+    private Button submitButton;
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view=inflater.inflate(R.layout.fragment_backup_submit,container,false);
-        closeBtn=view.findViewById(R.id.btnsubmit);
-        closeBtn.setOnClickListener(new View.OnClickListener() {
+        view=inflater.inflate(R.layout.fragment_event_join,container,false);
+        submitButton=view.findViewById(R.id.btnsubmit);
+        submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(getFragmentListener()!=null)
                 {
-                    BackupFragment fragment=new BackupFragment();
+                    EventJoinFragment fragment=new EventJoinFragment();
                     fragment.setFragmentListener(getFragmentListener());
                     getFragmentListener().onAddFragment(fragment);
                 }
