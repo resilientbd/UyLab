@@ -524,17 +524,19 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/eventcardbutton"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/button_height"
-                        android:layout_marginEnd="@dimen/button_right_space"
-                        android:layout_weight="1"
-                        android:layout_marginBottom="16dp"
-                        android:clickable="true"
                         android:layout_marginStart="@dimen/button_start"
+                        android:layout_marginEnd="@dimen/button_right_space"
+                        android:layout_marginBottom="16dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
                         android:foreground="?selectableItemBackground"
                         app:cardCornerRadius="8dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
+                            android:id="@+id/eventbutton"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
 
@@ -552,14 +554,13 @@
                                 android:id="@+id/textView50"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/button_bottom"
                                 android:text="@string/event"
                                 android:textColor="@color/dashboard_card"
-                                app:layout_constraintBottom_toBottomOf="parent"
                                 android:textSize="@dimen/button_text_size"
+                                app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
-                                android:layout_marginBottom="@dimen/button_bottom"
-                                app:layout_constraintStart_toStartOf="parent"
-                                />
+                                app:layout_constraintStart_toStartOf="parent" />
                         </androidx.constraintlayout.widget.ConstraintLayout>
                     </androidx.cardview.widget.CardView>
                 </LinearLayout>

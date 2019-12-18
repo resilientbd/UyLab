@@ -22,6 +22,7 @@ import com.uysys.uylab.R;
 import com.uysys.uylab.ui.backup.BackupFragment;
 import com.uysys.uylab.ui.classContent.Class_Content_Activity;
 import com.uysys.uylab.ui.classactivity.ClassActivity;
+import com.uysys.uylab.ui.event.EventFragment;
 import com.uysys.uylab.ui.internship.InternshipFragment;
 import com.uysys.uylab.ui.notice.NoticeFragment;
 import com.uysys.uylab.ui.studentmain.FragmentListener;
@@ -40,9 +41,11 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
     private CardView internshipView;
     private View backupBtn;
     private View supportBtn;
+    private View eventBtn;
     private InternshipFragment internshipFragment;
     private BackupFragment backupFragment;
     private SupportFragment supportFragment;
+    private EventFragment eventFragment;
 
     @Nullable
     @Override
@@ -54,7 +57,9 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
         internshipView=view.findViewById(R.id.internshipclick);
         backupBtn=view.findViewById(R.id.backupbtn);
         supportBtn=view.findViewById(R.id.supportBtn);
+        eventBtn=view.findViewById(R.id.eventcardbutton);
         supportBtn.setOnClickListener(this);
+        eventBtn.setOnClickListener(this);
 
       //  mPageIndicator=view.findViewById(R.id.custom_indicator);
 
@@ -94,6 +99,8 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
         supportFragment=new SupportFragment();
         supportFragment.setFragmentListener(listener);
         backupFragment.setFragmentListener(listener);
+        eventFragment=new EventFragment();
+        eventFragment.setFragmentListener(listener);
     }
 
     @Override
@@ -136,6 +143,10 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
                 break;
             case R.id.supportBtn:
                 addFragment(supportFragment);
+                break;
+            case R.id.eventcardbutton:
+                addFragment(eventFragment);
+                break;
             default:break;
         }
     }
