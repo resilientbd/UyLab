@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import com.uysys.uylab.R;
 import com.uysys.uylab.ui.base.BaseFragment;
 
-public class JobActivity extends BaseFragment {
+public class JobFragment extends BaseFragment {
 
 private View view;
     @Override
