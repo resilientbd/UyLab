@@ -12,13 +12,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.job.JobActivity">
+        <activity android:name=".ui.splash.SplashActivity" android:theme="@style/AppTheme.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-        </activity>
-        <activity
-            android:name=".ui.splash.SplashActivity"
-            android:theme="@style/AppTheme.FullScreen">
-
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".ui.more.MoreActivity" />
         <activity android:name=".ui.classactivity.ClassActivity" />
@@ -38,7 +37,9 @@
         <activity android:name=".ui.mentors.MentorsActivity" />
         <activity
             android:name=".ui.open_page.Open_PageActivity"
-            android:theme="@style/AppTheme.FullScreen" />
+            android:theme="@style/AppTheme.FullScreen">
+
+        </activity>
         <activity android:name=".ui.Pro9.Pro9Activity" />
         <activity android:name=".ui.classmodule.ClassModule" />
         <activity android:name=".ui.student_login.Student_LoginActivity" />
@@ -48,15 +49,6 @@
         <activity android:name=".ui.classContentShower.Class_Content_Shower_Activity" />
         <activity android:name=".ui.classContent.Class_Content_Activity" />
         <activity android:name=".ui.studentmain.StudentMainActivity" />
-        <activity android:name=".ui.jobapply.Jobapply_Activity"/>
-
-            <activity android:name=".ui.jobopen.Jobopen_Activity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
     </application>
 
 </manifest>
