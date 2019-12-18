@@ -18,10 +18,12 @@ public class MoreFragment extends BaseFragment {
     private View view;
     //private Button applyBtn;
     private View mentorsView;
+    private View coursesView;
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view=inflater.inflate(R.layout.activity_more,container,false);
         mentorsView=view.findViewById(R.id.mentorsViewn);
+        coursesView=view.findViewById(R.id.course);
         //applyBtn=view.findViewById(R.id.button10);
 //        applyBtn.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -46,5 +48,8 @@ public class MoreFragment extends BaseFragment {
             }
         });
         return view;
+
+
     }
+
 }
