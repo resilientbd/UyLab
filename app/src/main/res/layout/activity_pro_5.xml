@@ -21,7 +21,7 @@
             android:layout_width="184dp"
             android:layout_height="44dp"
             android:layout_marginStart="30dp"
-            android:layout_marginTop="85dp"
+            android:layout_marginTop="75dp"
             android:text="Point Earn"
             android:textColor="#000000"
             android:textSize="26sp"
@@ -31,7 +31,7 @@
         <TextView
             android:id="@+id/textView25"
             android:layout_width="148dp"
-            android:layout_height="23dp"
+            android:layout_height="28dp"
             android:layout_marginBottom="11dp"
             android:text="Program"
             android:textColor="#6D6D6D"
@@ -89,7 +89,7 @@
         android:layout_width="240dp"
         android:layout_height="36dp"
         android:layout_marginStart="23dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="24dp"
         android:text="How to earn Point?"
         android:textColor="#1AA8FF"
         android:textSize="26sp"
@@ -98,12 +98,15 @@
 
     <TextView
         android:id="@+id/textView27"
-        android:layout_width="323dp"
-        android:layout_height="350dp"
-        android:layout_marginTop="10dp"
+        android:layout_width="370dp"
+        android:layout_height="460dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="8dp"
         android:text="@string/earn_point"
         android:textColor="#000000"
         android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/textView26"
         app:layout_constraintTop_toBottomOf="@+id/textView26" />
 </androidx.constraintlayout.widget.ConstraintLayout>
