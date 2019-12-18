@@ -475,6 +475,7 @@
             android:layout_marginEnd="@dimen/button_right_space"
             android:layout_weight="1"
             android:clickable="true"
+            android:id="@+id/gallerybtn"
             android:foreground="?selectableItemBackground"
             app:cardCornerRadius="8dp">
 
