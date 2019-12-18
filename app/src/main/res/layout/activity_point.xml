@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.point.PointActivity">
+    tools:context=".ui.point.Point_Fragment">
 
     <androidx.core.widget.NestedScrollView
         android:id="@+id/nestedScrollView"

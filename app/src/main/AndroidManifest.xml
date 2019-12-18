@@ -12,19 +12,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.point.Point1Activity">
+        <activity android:name=".ui.point.Point1_Fragment">
+
+        </activity>
+        <activity android:name=".ui.point.Point_Fragment">
+
+        </activity>
+        <activity
+            android:name=".ui.splash.SplashActivity"
+            android:theme="@style/AppTheme.FullScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.point.PointActivity">
-
-        </activity>
-        <activity
-            android:name=".ui.splash.SplashActivity"
-            android:theme="@style/AppTheme.FullScreen"></activity>
         <activity android:name=".ui.more.MoreActivity" />
         <activity android:name=".ui.classactivity.ClassActivity" />
         <activity android:name=".ui.refferal.RefferalFragment" />
