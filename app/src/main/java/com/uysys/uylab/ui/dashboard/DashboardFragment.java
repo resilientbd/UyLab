@@ -24,6 +24,7 @@ import com.uysys.uylab.ui.classContent.Class_Content_Activity;
 import com.uysys.uylab.ui.classactivity.ClassActivity;
 import com.uysys.uylab.ui.event.EventFragment;
 import com.uysys.uylab.ui.internship.InternshipFragment;
+import com.uysys.uylab.ui.liveClass.Live_Class;
 import com.uysys.uylab.ui.notice.NoticeFragment;
 import com.uysys.uylab.ui.studentmain.FragmentListener;
 import com.uysys.uylab.ui.support.SupportFragment;
@@ -42,10 +43,12 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
     private View backupBtn;
     private View supportBtn;
     private View eventBtn;
+    private View liveClassBtn;
     private InternshipFragment internshipFragment;
     private BackupFragment backupFragment;
     private SupportFragment supportFragment;
     private EventFragment eventFragment;
+    private Live_Class live_class;
 
     @Nullable
     @Override
@@ -58,8 +61,10 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
         backupBtn=view.findViewById(R.id.backupbtn);
         supportBtn=view.findViewById(R.id.supportBtn);
         eventBtn=view.findViewById(R.id.eventcardbutton);
+        liveClassBtn = view.findViewById(R.id.liveClassBtn);
         supportBtn.setOnClickListener(this);
         eventBtn.setOnClickListener(this);
+        liveClassBtn.setOnClickListener(this);
 
       //  mPageIndicator=view.findViewById(R.id.custom_indicator);
 
@@ -146,6 +151,9 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
                 break;
             case R.id.eventcardbutton:
                 addFragment(eventFragment);
+                break;
+            case R.id.liveClassBtn:
+                addFragment(live_class);
                 break;
             default:break;
         }
