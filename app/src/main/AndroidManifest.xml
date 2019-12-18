@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".BlogActivity"></activity>
         <activity android:name=".Iphone_Pro_24Activity" />
         <activity android:name=".Iphone_Pro_23Activity">
             <intent-filter>
