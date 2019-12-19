@@ -34,12 +34,16 @@
         <activity android:name=".ui.offer1.offer1_Activity" />
         <activity android:name=".ui.classContentVideoShower.Class_Content_Video_Shower_Activity" />
         <activity android:name=".ui.ourPartner.OurPartnerActivity" />
-        <activity android:name=".ui.mentors.MentorsActivity" />
-     <activity android:name=".ui.mentors.MentorsProfileActivity"/>
+        <activity android:name=".ui.mentors.MentorsProfileActivity"/>
+
         <activity
             android:name=".ui.open_page.Open_PageActivity"
             android:theme="@style/AppTheme.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity android:name=".ui.Pro9.Pro9Activity" />
         <activity android:name=".ui.classmodule.ClassModule" />
@@ -50,6 +54,9 @@
         <activity android:name=".ui.classContentShower.Class_Content_Shower_Activity" />
         <activity android:name=".ui.classContent.Class_Content_Activity" />
         <activity android:name=".ui.studentmain.StudentMainActivity" />
+        <activity android:name=".ui.liveClass.Live_Class">
+
+        </activity>
     </application>
 
 </manifest>
