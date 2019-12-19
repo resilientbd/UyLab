@@ -12,17 +12,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Facilities_Activity">
+        <activity android:name=".Fragment_student_id">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
+        <activity android:name=".Facilities_Activity"></activity>
         <activity
             android:name=".ui.splash.SplashActivity"
             android:theme="@style/AppTheme.FullScreen">
-            <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
 
         </activity>
         <activity android:name=".ui.more.MoreActivity" />
@@ -43,7 +43,7 @@
         <activity android:name=".ui.mentors.MentorsActivity" />
         <activity
             android:name=".ui.open_page.Open_PageActivity"
-            android:theme="@style/AppTheme.FullScreen"></activity>
+            android:theme="@style/AppTheme.FullScreen" />
         <activity android:name=".ui.Pro9.Pro9Activity" />
         <activity android:name=".ui.classmodule.ClassModule" />
         <activity android:name=".ui.student_login.Student_LoginActivity" />
