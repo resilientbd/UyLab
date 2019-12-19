@@ -14,7 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class MentorsAdapter extends RecyclerView.Adapter<OfficialPartnerAdapter.ViewHolder> {
 
-
+    private MentorsAdapterClickListener mentorsAdapterClickListener;
     @NonNull
     @Override
     public OfficialPartnerAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -25,8 +25,18 @@ public class MentorsAdapter extends RecyclerView.Adapter<OfficialPartnerAdapter.
     }
 
     @Override
-    public void onBindViewHolder(@NonNull OfficialPartnerAdapter.ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull OfficialPartnerAdapter.ViewHolder holder, final int position) {
 //        holder.constraintLayout.setConstraintSet(p);
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mentorsAdapterClickListener.onMentorsItemClick(position);
+            }
+        });
+    }
+
+    public void setMentorsAdapterClickListener(MentorsAdapterClickListener mentorsAdapterClickListener) {
+        this.mentorsAdapterClickListener = mentorsAdapterClickListener;
     }
 
     @Override
@@ -36,15 +46,19 @@ public class MentorsAdapter extends RecyclerView.Adapter<OfficialPartnerAdapter.
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
-        private ImageView imageView;
-        private ConstraintLayout constraintLayout;
+        public ImageView imageView;
+        public View cons;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             imageView = itemView.findViewById(R.id.imageView);
-            constraintLayout = itemView.findViewById(R.id.constraintLayout);
+            cons = itemView.findViewById(R.id.mentorsProfileView);
 
         }
+    }
+
+    public interface MentorsAdapterClickListener{
+        public void onMentorsItemClick(int position);
     }
 
 }

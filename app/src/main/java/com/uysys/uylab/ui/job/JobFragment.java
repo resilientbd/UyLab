@@ -14,9 +14,10 @@ import android.view.ViewGroup;
 
 import com.uysys.uylab.R;
 import com.uysys.uylab.ui.base.BaseFragment;
+import com.uysys.uylab.ui.jobopen.JobopenFragment;
 import com.uysys.uylab.ui.studentmain.FragmentListener;
 
-public class JobFragment extends BaseFragment implements View.OnClickListener {
+public class JobFragment extends BaseFragment implements JobAdapter.JobAdapterClickListener  {
 
 private View view;
 private RecyclerView recyclerView;
@@ -31,22 +32,18 @@ private FragmentListener listener;
         jobAdapter=new JobAdapter();
         recyclerView.setAdapter(jobAdapter);
         recyclerView.setLayoutManager(new GridLayoutManager(getActivity(),1));
+        jobAdapter.setJobAdapterClickListener(this);
         return view;
     }
-    public void setListener(FragmentListener listener) {
-        this.listener=listener;
-    }
+
+
     @Override
-    public void onClick(View v) {
-        Intent intent;
-        switch (v.getId()){
-            case R.id.constraintLayout:
-
-
-
-
-
+    public void JobItemClick(int position) {
+        if(getFragmentListener()!=null)
+        {
+            JobopenFragment frag=new JobopenFragment();
+            frag.setFragmentListener(getFragmentListener());
+            getFragmentListener().onAddFragment(frag);
         }
-
     }
 }

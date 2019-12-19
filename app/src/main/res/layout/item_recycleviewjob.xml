@@ -11,12 +11,12 @@
         android:id="@+id/jobView"
         android:layout_width="0dp"
         android:layout_height="62dp"
-        android:layout_marginTop="4dp"
-        android:background="@drawable/bg"
+        android:layout_marginStart="16dp"
 
-        app:layout_constraintEnd_toEndOf="parent"
-      android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
+        android:background="@drawable/bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,11 +25,12 @@
         android:layout_width="71dp"
 
         android:layout_height="62dp"
-        android:layout_marginStart="4dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
         app:layout_constraintBottom_toBottomOf="@+id/text5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/text5"
 
+        app:layout_constraintTop_toTopOf="@+id/text5"
         app:srcCompat="@drawable/aaa" />
 
     <TextView
@@ -43,22 +44,10 @@
         app:layout_constraintTop_toTopOf="@+id/text5" />
 
     <TextView
-        android:id="@+id/text2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Baridhara"
-        android:textColor="#FFFFFF"
-        android:textSize="14dp"
-        app:layout_constraintBottom_toBottomOf="@+id/text5"
-        app:layout_constraintEnd_toEndOf="@+id/text1"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/imageView" />
-
-    <TextView
         android:id="@+id/text3"
         android:layout_width="32dp"
         android:layout_height="14dp"
-        android:layout_marginStart="48dp"
+        android:layout_marginStart="88dp"
         android:layout_marginTop="4dp"
         android:background="@drawable/op"
         android:gravity="center"
@@ -66,20 +55,32 @@
         android:textColor="#5680F6"
         android:textSize="7dp"
         app:layout_constraintStart_toEndOf="@+id/text1"
-        app:layout_constraintTop_toTopOf="@+id/text5" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/text4"
         android:layout_width="35dp"
         android:layout_height="15dp"
         android:layout_marginStart="124dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="16dp"
         android:text="10k-15k"
         android:textColor="#FFFFFF"
         android:textSize="10dp"
         app:layout_constraintEnd_toEndOf="@+id/text3"
-        app:layout_constraintHorizontal_bias="0.984"
+        app:layout_constraintHorizontal_bias="0.976"
         app:layout_constraintStart_toStartOf="@+id/text3"
         app:layout_constraintTop_toBottomOf="@+id/text3" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="132dp"
+        android:text="Baridhara"
+        android:textColor="#FFFFFF"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toStartOf="@+id/text4"
+        app:layout_constraintTop_toTopOf="@+id/text1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

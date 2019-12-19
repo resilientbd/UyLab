@@ -6,187 +6,198 @@
     android:layout_height="match_parent"
     tools:context="com.uysys.uylab.ui.mentors.MentorsProfileActivity">
 
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout"
-        android:layout_width="411dp"
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="#F2F2F2"
-        app:layout_constraintBottom_toTopOf="@+id/profile_image"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="318dp"
-            android:layout_marginTop="27dp"
-            android:layout_marginEnd="36dp"
-            android:layout_marginBottom="100dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.854"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.158"
-            app:srcCompat="@drawable/notification" />
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="306dp"
-            android:layout_marginTop="104dp"
-            android:layout_marginEnd="40dp"
-            android:layout_marginBottom="17dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.972"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/advisor" />
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="left"
-            android:text="Mentor's"
-            android:textColor="@android:color/black"
-            android:textSize="25dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.125"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.571" />
-
-        <TextView
-            android:id="@+id/text2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="29dp"
-            android:layout_marginTop="119dp"
-            android:layout_marginEnd="215dp"
-            android:layout_marginBottom="17dp"
-            android:gravity="left"
-            android:text="Find Here Some Essential"
-            android:textColor="@android:color/black"
-            android:textSize="11dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.3"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
-
-        <TextView
-            android:id="@+id/textView8"
-            android:layout_width="10dp"
-            android:layout_height="12dp"
-            android:background="@drawable/notificationshower"
-            android:gravity="center"
-            android:text="6"
-            android:textColor="#fff"
-            android:textSize="7dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.905"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.192" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <TextView
-        android:id="@+id/textView41"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="31dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:gravity="center"
-        android:text="Amitabh Ray"
-        android:textColor="@android:color/black"
-        android:textSize="21dp"
-        app:layout_constraintEnd_toEndOf="@+id/profile_image"
-        app:layout_constraintStart_toStartOf="@+id/profile_image"
-        app:layout_constraintTop_toBottomOf="@+id/profile_image" />
-
-    <TextView
-        android:id="@+id/textView42"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:fontFamily="@font/poppins_regular"
-
-        android:text="Sr. Faculty"
-        android:textSize="12dp"
-        app:layout_constraintEnd_toEndOf="@+id/textView41"
-        app:layout_constraintStart_toStartOf="@+id/textView41"
-        app:layout_constraintTop_toBottomOf="@+id/textView41" />
-
-    <ImageView
-        android:id="@+id/imageView19"
-        android:layout_width="17dp"
-        android:layout_height="17dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.441"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView42"
-        app:srcCompat="@drawable/ic_fb" />
-
-    <ImageView
-        android:id="@+id/imageView21"
-        android:layout_width="17dp"
-        android:layout_height="17dp"
-        android:layout_marginStart="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView19"
-        app:layout_constraintStart_toEndOf="@+id/imageView19"
-        app:layout_constraintTop_toTopOf="@+id/imageView19"
-        app:srcCompat="@drawable/ic_twiter" />
-
-    <ImageView
-        android:id="@+id/imageView22"
-        android:layout_width="17dp"
-        android:layout_height="17dp"
-        android:layout_marginStart="16dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView21"
-        app:layout_constraintStart_toEndOf="@+id/imageView21"
-        app:layout_constraintTop_toTopOf="@+id/imageView21"
-        app:srcCompat="@drawable/ic_in" />
-
-    <TextView
-        android:id="@+id/textView43"
-        android:layout_width="286dp"
-        android:layout_height="219dp"
-        android:layout_marginTop="8dp"
-        android:gravity="center"
-        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release. of Letraset sheets containing Lorem Ipsum passages, and mor recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-        android:textSize="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView21" />
+        app:layout_constraintTop_toTopOf="parent">
 
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/profile_image"
-        android:layout_width="169dp"
-        android:layout_height="169dp"
-        android:layout_marginStart="120dp"
-        android:layout_marginTop="180dp"
-        android:layout_marginEnd="120dp"
-        android:src="@drawable/amit"
-        app:civ_border_color="#1AA8FF"
-        app:civ_border_width="2dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+          <androidx.constraintlayout.widget.ConstraintLayout
+              android:id="@+id/constraintLayout"
+              android:layout_width="411dp"
+              android:layout_height="wrap_content"
+              android:background="#F2F2F2"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toTopOf="parent">
+
+              <ImageView
+                  android:id="@+id/imageView"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="318dp"
+                  android:layout_marginTop="27dp"
+                  android:layout_marginEnd="36dp"
+                  android:layout_marginBottom="100dp"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintHorizontal_bias="0.854"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toTopOf="parent"
+                  app:layout_constraintVertical_bias="0.158"
+                  app:srcCompat="@drawable/notification" />
+
+              <ImageView
+                  android:id="@+id/imageView2"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="306dp"
+                  android:layout_marginTop="104dp"
+                  android:layout_marginEnd="40dp"
+                  android:layout_marginBottom="17dp"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintHorizontal_bias="0.972"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toTopOf="parent"
+                  app:layout_constraintVertical_bias="0.0"
+                  app:srcCompat="@drawable/advisor" />
+
+              <TextView
+                  android:id="@+id/textView"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:gravity="left"
+                  android:text="Mentor's"
+                  android:textColor="@android:color/black"
+                  android:textSize="25dp"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintHorizontal_bias="0.125"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toTopOf="parent"
+                  app:layout_constraintVertical_bias="0.571" />
+
+              <TextView
+                  android:id="@+id/textView2"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="29dp"
+                  android:layout_marginTop="119dp"
+                  android:layout_marginEnd="215dp"
+                  android:layout_marginBottom="17dp"
+                  android:gravity="left"
+                  android:text="Find Here Some Essential"
+                  android:textColor="@android:color/black"
+                  android:textSize="11dp"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintHorizontal_bias="0.3"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toTopOf="parent"
+                  app:layout_constraintVertical_bias="0.0" />
+
+              <TextView
+                  android:id="@+id/textView8"
+                  android:layout_width="10dp"
+                  android:layout_height="12dp"
+                  android:background="@drawable/notificationshower"
+                  android:gravity="center"
+                  android:text="6"
+                  android:textColor="#fff"
+                  android:textSize="7dp"
+                  app:layout_constraintBottom_toBottomOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintHorizontal_bias="0.905"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toTopOf="parent"
+                  app:layout_constraintVertical_bias="0.192" />
+
+          </androidx.constraintlayout.widget.ConstraintLayout>
+
+          <TextView
+              android:id="@+id/textView41"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="16dp"
+              android:fontFamily="@font/poppins_semibold"
+              android:gravity="center"
+              android:text="Amitabh Ray"
+              android:textColor="@android:color/black"
+              android:textSize="21dp"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+          <TextView
+              android:id="@+id/textView42"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="16dp"
+
+              android:fontFamily="@font/poppins_regular"
+              android:text="Sr. Faculty"
+              android:textSize="12dp"
+              app:layout_constraintEnd_toEndOf="@+id/textView41"
+              app:layout_constraintStart_toStartOf="@+id/textView41"
+              app:layout_constraintTop_toBottomOf="@+id/textView41" />
+
+          <ImageView
+              android:id="@+id/imageView19"
+              android:layout_width="17dp"
+              android:layout_height="17dp"
+              android:layout_marginTop="20dp"
+              android:layout_marginEnd="32dp"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.414"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/textView42"
+              app:srcCompat="@drawable/ic_fb" />
+
+          <ImageView
+              android:id="@+id/imageView21"
+              android:layout_width="17dp"
+              android:layout_height="17dp"
+              android:layout_marginStart="30dp"
+              app:layout_constraintBottom_toBottomOf="@+id/imageView19"
+              app:layout_constraintStart_toEndOf="@+id/imageView19"
+              app:layout_constraintTop_toTopOf="@+id/imageView19"
+              app:srcCompat="@drawable/ic_twiter" />
+
+          <ImageView
+              android:id="@+id/imageView22"
+              android:layout_width="17dp"
+              android:layout_height="17dp"
+              android:layout_marginStart="16dp"
+              app:layout_constraintBottom_toBottomOf="@+id/imageView21"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.039"
+              app:layout_constraintStart_toEndOf="@+id/imageView21"
+              app:layout_constraintTop_toTopOf="@+id/imageView21"
+              app:layout_constraintVertical_bias="0.0"
+              app:srcCompat="@drawable/ic_in" />
+
+          <TextView
+              android:id="@+id/textView43"
+              android:layout_width="286dp"
+              android:layout_height="219dp"
+              android:layout_marginTop="16dp"
+              android:gravity="center"
+              android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release. of Letraset sheets containing Lorem Ipsum passages, and mor recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+              android:textSize="10dp"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/imageView21" />
+
+          <de.hdodenhof.circleimageview.CircleImageView
+              android:id="@+id/profile_image"
+              android:layout_width="169dp"
+              android:layout_height="169dp"
+              android:layout_marginTop="24dp"
+              android:src="@drawable/amit"
+              app:civ_border_color="#1AA8FF"
+              app:civ_border_width="2dp"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+      </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

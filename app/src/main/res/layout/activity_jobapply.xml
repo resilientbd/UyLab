@@ -244,11 +244,10 @@
 
 
                 <TextView
-                    android:id="@+id/textView29"
+                    android:id="@+id/submit"
                     android:layout_width="94dp"
                     android:layout_height="36dp"
-                    android:layout_marginStart="28dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="24dp"
                     android:background="@drawable/sb"
                     android:gravity="center"
                     android:text="Submit"

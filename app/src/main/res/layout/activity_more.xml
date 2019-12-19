@@ -475,6 +475,7 @@
             android:layout_marginEnd="@dimen/button_right_space"
             android:layout_weight="1"
             android:clickable="true"
+            android:id="@+id/gallerybtn"
             android:foreground="?selectableItemBackground"
             app:cardCornerRadius="8dp">
 
@@ -535,6 +536,7 @@
             app:cardCornerRadius="8dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/partnerViwen"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
@@ -615,6 +617,7 @@
             app:cardCornerRadius="8dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/settingViewn"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
@@ -648,7 +651,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnsubmit"
+        android:id="@+id/btnhome"
         android:layout_width="297dp"
         android:layout_height="44dp"
         android:layout_marginTop="100dp"

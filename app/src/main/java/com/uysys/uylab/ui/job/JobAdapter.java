@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.uysys.uylab.R;
 
 public class JobAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>  {
+    private JobAdapterClickListener jobAdapterClickListener;
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -24,13 +25,24 @@ public class JobAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>  {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
-
+    public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, final int position) {
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                jobAdapterClickListener.JobItemClick(position);
+            }
+        });
+    }
+    public void setJobAdapterClickListener(JobAdapterClickListener jobAdapterClickListener) {
+        this.jobAdapterClickListener =jobAdapterClickListener;
     }
 
     @Override
     public int getItemCount() {
         return 5;
+    }
+    public interface JobAdapterClickListener {
+        public void JobItemClick(int position);
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
@@ -41,6 +53,7 @@ public class JobAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>  {
         private TextView textView2;
         private TextView textView3;
         private TextView textView4;
+        private View cons;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             imageView=itemView.findViewById(R.id.imageView);
@@ -50,6 +63,7 @@ public class JobAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>  {
             textView3=itemView.findViewById(R.id.text3);
             textView4=itemView.findViewById(R.id.text4);
             textView5=itemView.findViewById(R.id.text5);
+            cons=itemView.findViewById(R.id.jobView);
 
         }
     }
