@@ -82,8 +82,6 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
         liveClassBtn.setOnClickListener(this);
         pointbtn=view.findViewById(R.id.pointbtn);
         pointbtn.setOnClickListener(this);
-        point1btn = view.findViewById(R.id.point1btn);
-        point1btn.setOnClickListener(this);
         jobhubButton.setOnClickListener(this);
 
       //  mPageIndicator=view.findViewById(R.id.custom_indicator);
