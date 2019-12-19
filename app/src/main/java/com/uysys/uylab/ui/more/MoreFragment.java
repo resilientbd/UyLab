@@ -12,6 +12,8 @@ import com.uysys.uylab.ui.mentors.MentorsFragment;
 import com.uysys.uylab.ui.terms_and_conditions.Terms_and_conditions_fragments;
 import com.uysys.uylab.ui.ourPartner.Partner_Fragment;
 import com.uysys.uylab.ui.setting.Setting_Fragment;
+import com.uysys.uylab.ui.ourPartner.Partner_Fragment;
+import com.uysys.uylab.ui.setting.Setting_Fragment;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -107,17 +109,29 @@ public class MoreFragment extends BaseFragment {
                 }
             }
         });
+
+        settingsView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(getFragmentListener()!=null)
+                {
+                    Setting_Fragment fragment=new Setting_Fragment();
+                    fragment.setFragmentListener(getFragmentListener());
+                    getFragmentListener().onAddFragment(fragment);
+                }
+            }
+        });
+        partnerView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(getFragmentListener()!=null)
+                {
+                    Partner_Fragment fragment=new Partner_Fragment();
+                    fragment.setFragmentListener(getFragmentListener());
+                    getFragmentListener().onAddFragment(fragment);
+                }
+            }
+        });
         return view;
-
-
-
-
-
-
     }
-
-
-
-
-
 }

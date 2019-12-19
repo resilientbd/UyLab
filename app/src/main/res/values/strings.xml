@@ -142,6 +142,8 @@
     <string name="text_t">Welcome To UYLAB! \nYou Can Login Here, as guest or student</string>
 
 
+    <string name="jobR">Inknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic Inknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic</string>
+    <string name="jobF">Inknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic Inknown printer took</string>
     <string name="upcomming_event">Upcoming Event</string>
     <string name="event_sub">Find Your Class Tutorial Here</string>
     <string name="more_event">More Event</string>
@@ -155,11 +157,16 @@
     <string name="submit">Submit</string>
     <string name="your_number">Your Name</string>
     <string name="note">Note: \nYou must need to share your contact information to avail the current offer.</string>
-    <string name="application_status">Your Application Successfully Received!</string>
+    <string name="application_status">Your Application \nSuccessfully Received!</string>
 
     <string name="terms_and_conditions"> It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for lorem ipsum will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). </string>
     <string name="address">Our Address: \nMobile: +88-01777-753-399 \n11 Bir Uttam AK Khandakar Road, \n31 Mohakhali Commercial Area, \nColombia Super Market, 4th Floor, Wireless Gate, 1213</string>
+    <string name="back_to_home">Back To Home</string>
 
+    <string name="about_us">UY LAB is a sister concern of UY System Ltd which is an ISO 9001-2008 certified software and web solution provider firm providing IT solutions abroad for last 12 years. UY LAB introduced as an IT training center where we aim to make professionalsin all IT sectors. We have arranged world-class training programs with highly skilled trainers and world-class professional training environment.
+UY System and UY Lab are proud members of BASIS and UY System is one of the top 5 VAT management software provider firms in Bangladesh that is listed by NBR. We have shown up in the IT industry and make ourselves one of the leading company with our works and recognition.
+In UY Lab we provide top-level professional IT training courses to basic to advanced like big analysis and new online VAT to facilitate emerging need for IT specialists and strategist in Bangladesh. We also arrange industrial attach ment training program for the students of polytechnic students. </string>
+   <string name="Contact">11 Bir Uttam AK Khandakar Road, 31 Mohakhali Commercial Area, Colombia Super Market, 4th Floor, Wireless Gate, 1213</string>
 
 
 </resources>
