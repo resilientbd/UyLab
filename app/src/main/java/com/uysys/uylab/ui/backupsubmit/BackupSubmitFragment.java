@@ -19,7 +19,7 @@ public class BackupSubmitFragment extends BaseFragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         view=inflater.inflate(R.layout.fragment_backup_submit,container,false);
-        closeBtn=view.findViewById(R.id.btnsubmit);
+        closeBtn=view.findViewById(R.id.btnhome);
         closeBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

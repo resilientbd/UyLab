@@ -12,12 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.point.Point1_Fragment">
-
-        </activity>
-        <activity android:name=".ui.point.Point_Fragment">
-
-        </activity>
+        <activity android:name=".ui.complain.ComplainActivity"></activity>
         <activity
             android:name=".ui.splash.SplashActivity"
             android:theme="@style/AppTheme.FullScreen">
@@ -43,9 +38,10 @@
         <activity android:name=".ui.classContentVideoShower.Class_Content_Video_Shower_Activity" />
         <activity android:name=".ui.ourPartner.OurPartnerActivity" />
         <activity android:name=".ui.mentors.MentorsActivity" />
+     <activity android:name=".ui.mentors.MentorsProfileActivity"/>
         <activity
             android:name=".ui.open_page.Open_PageActivity"
-            android:theme="@style/AppTheme.FullScreen" />
+            android:theme="@style/AppTheme.FullScreen"></activity>
         <activity android:name=".ui.Pro9.Pro9Activity" />
         <activity android:name=".ui.classmodule.ClassModule" />
         <activity android:name=".ui.student_login.Student_LoginActivity" />

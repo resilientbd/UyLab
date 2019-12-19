@@ -453,22 +453,22 @@
                         app:cardCornerRadius="8dp">
 
                         <androidx.constraintlayout.widget.ConstraintLayout
-                            android:layout_width="match_parent"
+                            android:id="@+id/jobhubbtn"
 
+                            android:layout_width="match_parent"
                             android:layout_height="match_parent">
 
                             <TextView
                                 android:id="@+id/textView47"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/button_bottom"
                                 android:text="@string/jobhub"
                                 android:textColor="@color/dashboard_card"
                                 android:textSize="@dimen/button_text_size"
-                                android:layout_marginBottom="@dimen/button_bottom"
                                 app:layout_constraintBottom_toBottomOf="parent"
                                 app:layout_constraintEnd_toEndOf="parent"
-                                app:layout_constraintStart_toStartOf="parent"
-                               />
+                                app:layout_constraintStart_toStartOf="parent" />
 
                             <ImageView
                                 android:id="@+id/imageView23"
@@ -483,6 +483,7 @@
                     </androidx.cardview.widget.CardView>
 
                     <androidx.cardview.widget.CardView
+                        android:id="@+id/contestView"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/button_height"
                         android:layout_marginEnd="@dimen/button_right_space"
