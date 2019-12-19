@@ -25,6 +25,8 @@ import com.uysys.uylab.ui.classactivity.ClassActivity;
 import com.uysys.uylab.ui.event.EventFragment;
 import com.uysys.uylab.ui.internship.InternshipFragment;
 import com.uysys.uylab.ui.job.JobFragment;
+import com.uysys.uylab.ui.jobapply.JobapplyFragment;
+import com.uysys.uylab.ui.jobopen.JobopenFragment;
 import com.uysys.uylab.ui.liveClass.Live_Class;
 import com.uysys.uylab.ui.notice.NoticeFragment;
 import com.uysys.uylab.ui.studentmain.FragmentListener;
@@ -50,6 +52,8 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
     private BackupFragment backupFragment;
     private SupportFragment supportFragment;
     private JobFragment jobFragment;
+    private JobopenFragment jobopenFragment;
+    private JobapplyFragment jobapplyFragment;
 
     private EventFragment eventFragment;
     private Live_Class live_class;
@@ -117,6 +121,7 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
         live_class.setFragmentListener(listener);
         jobFragment=new JobFragment();
         jobFragment.setFragmentListener(listener);
+
     }
 
     @Override
@@ -169,6 +174,7 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
             case R.id.jobhubbtn:
                 addFragment(jobFragment);
                 break;
+
             default:break;
         }
     }

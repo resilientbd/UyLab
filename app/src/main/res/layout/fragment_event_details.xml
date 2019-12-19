@@ -38,12 +38,12 @@
                         android:textColor="#000000"
                         android:textSize="37sp"
                         android:includeFontPadding="false"
-                        app:layout_constraintBottom_toTopOf="@+id/textView72"
+                        app:layout_constraintBottom_toTopOf="@+id/text5"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/textView72"
+                        android:id="@+id/text5"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/event_sub"
@@ -57,9 +57,9 @@
                         android:layout_height="0dp"
                         android:layout_marginEnd="25dp"
                         android:src="@drawable/ic_calender"
-                        app:layout_constraintBottom_toBottomOf="@+id/textView72"
+                        app:layout_constraintBottom_toBottomOf="@+id/text5"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="@+id/textView72" />
+                        app:layout_constraintTop_toTopOf="@+id/text5" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -107,7 +107,7 @@
                 app:layout_constraintTop_toBottomOf="@id/title" />
 
             <TextView
-                android:id="@+id/textView73"
+                android:id="@+id/text1"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
@@ -123,15 +123,15 @@
                 app:layout_constraintTop_toBottomOf="@+id/imageView33" />
 
             <TextView
-                android:id="@+id/textView74"
+                android:id="@+id/text2"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="@string/event_details"
                 android:textSize="12sp"
 
-                app:layout_constraintEnd_toEndOf="@+id/textView73"
-                app:layout_constraintStart_toStartOf="@+id/textView73"
-                app:layout_constraintTop_toBottomOf="@+id/textView73" />
+                app:layout_constraintEnd_toEndOf="@+id/text1"
+                app:layout_constraintStart_toStartOf="@+id/text1"
+                app:layout_constraintTop_toBottomOf="@+id/text1" />
 
             <Button
                 android:id="@+id/btnjoinseminar"
@@ -150,7 +150,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView74" />
+                app:layout_constraintTop_toBottomOf="@+id/text2" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

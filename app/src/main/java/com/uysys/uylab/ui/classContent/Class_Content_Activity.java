@@ -10,7 +10,6 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.uysys.uylab.R;
-import com.uysys.uylab.ui.classContentShower.Class_Content_Shower_Activity;
 import com.uysys.uylab.ui.classContentVideoShower.Class_Content_Video_Shower_Activity;
 
 public class Class_Content_Activity extends AppCompatActivity implements ClassContentAdapter.OnClassAdapterItemClickListener {
@@ -22,7 +21,7 @@ private ClassContentAdapter mAdapter;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_class__content_);
         mRecyclerView=findViewById(R.id.recyclerView);
-        headerText=findViewById(R.id.textView5);
+        headerText=findViewById(R.id.text5);
         headerText.setVisibility(View.GONE);
         mRecyclerView.setVisibility(View.GONE);
         mAdapter=new ClassContentAdapter();

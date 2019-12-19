@@ -45,7 +45,7 @@
         app:layout_constraintVertical_bias="0.0">
 
         <ImageView
-            android:id="@+id/imageView5"
+            android:id="@+id/imageView"
             android:layout_width="31.66dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="316dp"
@@ -103,7 +103,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.992"
             app:layout_constraintStart_toEndOf="@+id/textView7"
-            app:layout_constraintTop_toBottomOf="@+id/imageView5"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
             app:srcCompat="@drawable/ic_test" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
