@@ -173,7 +173,7 @@
                 app:layout_constraintTop_toTopOf="@+id/textView83" />
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cardView9"
+                android:id="@+id/point1btn"
                 android:layout_width="108dp"
                 android:layout_height="78dp"
                 app:cardCornerRadius="25dp"
@@ -183,6 +183,7 @@
                 app:layout_constraintTop_toTopOf="@+id/cardView6" >
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/pointbtn12"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="#5680F6">
@@ -215,9 +216,9 @@
                 android:layout_height="78dp"
                 android:layout_marginStart="24dp"
                 app:cardCornerRadius="25dp"
-                app:layout_constraintBottom_toBottomOf="@+id/cardView9"
-                app:layout_constraintStart_toEndOf="@+id/cardView9"
-                app:layout_constraintTop_toTopOf="@+id/cardView9" >
+                app:layout_constraintBottom_toBottomOf="@+id/point1btn"
+                app:layout_constraintStart_toEndOf="@+id/point1btn"
+                app:layout_constraintTop_toTopOf="@+id/point1btn" >
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
