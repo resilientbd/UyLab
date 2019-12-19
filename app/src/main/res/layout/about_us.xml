@@ -22,11 +22,12 @@
 
         <TextView
             android:id="@+id/textView14"
-            android:layout_width="179dp"
-            android:layout_height="47dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="52dp"
-            android:text="About us "
+            android:layout_width="102dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="104dp"
+            android:text="About Us "
+            android:fontFamily="@font/poppins_regular"
             android:textColor="#000000"
             android:textSize="25dp"
             app:layout_constraintStart_toStartOf="parent"
@@ -34,12 +35,12 @@
 
         <TextView
             android:id="@+id/textView15"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="11dp"
+            android:layout_width="139dp"
+            android:layout_height="16dp"
             android:text="Find Here Some Essential"
             android:textColor="#6D6D6D"
-            android:textSize="20dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="11dp"
             app:layout_constraintStart_toStartOf="@+id/textView14"
             app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
@@ -113,6 +114,7 @@
             android:gravity="center_horizontal"
             android:text="@string/about_us"
             android:textAlignment="center"
+            android:fontFamily="@font/poppins_regular"
             android:textSize="13dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
