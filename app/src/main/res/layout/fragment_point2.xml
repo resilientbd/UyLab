@@ -113,7 +113,7 @@
                 android:layout_marginTop="16dp"
                 app:cardCornerRadius="25dp"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView84">
+                app:layout_constraintTop_toTopOf="parent">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="108dp"
@@ -135,8 +135,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:text="Status"
                         android:fontFamily="@font/poppins_medium"
+                        android:text="Status"
                         android:textColor="@android:color/black"
                         android:textSize="9sp"
                         app:layout_constraintEnd_toEndOf="@+id/imageView33"
@@ -144,30 +144,6 @@
                         app:layout_constraintTop_toBottomOf="@+id/imageView33" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
-
-            <TextView
-                android:id="@+id/textView83"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="8dp"
-                android:text="Graphic Design"
-                android:fontFamily="@font/poppins_light"
-                android:textColor="#000000"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/textView84"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:text="Web Design"
-                android:fontFamily="@font/poppins_light"
-                android:textColor="#6D6D6D"
-                app:layout_constraintBottom_toBottomOf="@+id/textView83"
-                app:layout_constraintStart_toEndOf="@+id/textView83"
-                app:layout_constraintTop_toTopOf="@+id/textView83" />
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/point1btn"
@@ -183,7 +159,7 @@
                     android:id="@+id/pointbtn12"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="#5680F6">
+                    android:background="#E9E9E9">
 
                     <ImageView
                         android:id="@+id/imageView39"
@@ -221,7 +197,7 @@
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="#E9E9E9">
+                    android:background="#5680F6">
 
                     <ImageView
                         android:id="@+id/imageView40"
@@ -260,81 +236,29 @@
                 app:layout_constraintVertical_bias="0.0">
 
                 <TextView
-                    android:id="@+id/textView87"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginTop="32dp"
-                    android:text="14.11"
-                    android:fontFamily="@font/poppins_bold"
-                    android:textColor="#2D2D2D"
-                    android:textSize="23sp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/textView88"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="16dp"
-                    android:text="Total Point"
-                    android:fontFamily="@font/poppins_medium"
-                    android:textSize="13sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/textView87"
-                    app:layout_constraintStart_toEndOf="@+id/textView87"
-                    app:layout_constraintTop_toTopOf="@+id/textView87" />
-
-                <TextView
-                    android:id="@+id/textView89"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="4dp"
-                    android:fontFamily="@font/poppins_medium"
-                    android:text="Point earnd in last 5 months"
-                    android:textSize="13sp"
-                    app:layout_constraintStart_toStartOf="@+id/textView87"
-                    app:layout_constraintTop_toBottomOf="@+id/textView87" />
-
-                <TextView
                     android:id="@+id/textView90"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="24dp"
+                    android:layout_marginStart="37dp"
+                    android:layout_marginTop="51dp"
+                    android:fontFamily="@font/poppins_semibold"
                     android:text="point"
                     android:textColor="#2D2D2D"
-                    android:fontFamily="@font/poppins_semibold"
                     android:textSize="11sp"
-                    app:layout_constraintStart_toStartOf="@+id/textView89"
-                    app:layout_constraintTop_toBottomOf="@+id/textView89" />
-
-                <TextView
-                    android:id="@+id/textView91"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="70dp"
-                    android:layout_marginEnd="160dp"
-                    android:fontFamily="@font/poppins_semibold"
-                    android:text="Earned date"
-                    android:textSize="11sp"
-                    android:textColor="#2D2D2D"
-                    app:layout_constraintBottom_toBottomOf="@+id/textView90"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/textView90"
-                    app:layout_constraintTop_toTopOf="@+id/textView90" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/textView92"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="70dp"
+                    android:layout_marginEnd="38dp"
                     android:fontFamily="@font/poppins_semibold"
                     android:text="Expiry date"
-                    android:textSize="11sp"
                     android:textColor="#2D2D2D"
-                    app:layout_constraintBottom_toBottomOf="@+id/textView91"
+                    android:textSize="11sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/textView91"
-                    app:layout_constraintTop_toTopOf="@+id/textView91" />
+                    app:layout_constraintTop_toTopOf="@+id/textView90" />
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/points1_recycler"
@@ -357,13 +281,13 @@
 
                 <View
                     android:id="@+id/view"
-                    android:layout_width="345dp"
+                    android:layout_width="335dp"
                     android:layout_height="1dp"
                     android:layout_marginTop="10dp"
                     android:background="#C1C1C1"
                     app:layout_constraintEnd_toEndOf="@+id/textView92"
                     app:layout_constraintStart_toStartOf="@+id/textView90"
-                    app:layout_constraintTop_toBottomOf="@+id/textView91" />
+                    app:layout_constraintTop_toBottomOf="@+id/textView90" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>

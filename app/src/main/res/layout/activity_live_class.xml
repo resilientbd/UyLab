@@ -243,7 +243,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView79" />
 
         <TextView
-            android:id="@+id/textView81"
+            android:id="@+id/item_recycler_level"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="8.00pm-10.00pm"
@@ -256,7 +256,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/textView82"
+        android:id="@+id/item_recycler_point_marks"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -276,5 +276,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView82" />
+        app:layout_constraintTop_toBottomOf="@+id/item_recycler_point_marks" />
 </androidx.constraintlayout.widget.ConstraintLayout>
