@@ -196,7 +196,7 @@
                     android:background="#E9E9E9">
 
                     <ImageView
-                        android:id="@+id/imageView34"
+                        android:id="@+id/notification_icon_id"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
@@ -212,9 +212,9 @@
                         android:layout_marginTop="4dp"
                         android:text="point"
                         android:textSize="9sp"
-                        app:layout_constraintEnd_toEndOf="@+id/imageView34"
-                        app:layout_constraintStart_toStartOf="@+id/imageView34"
-                        app:layout_constraintTop_toBottomOf="@+id/imageView34" />
+                        app:layout_constraintEnd_toEndOf="@+id/notification_icon_id"
+                        app:layout_constraintStart_toStartOf="@+id/notification_icon_id"
+                        app:layout_constraintTop_toBottomOf="@+id/notification_icon_id" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
             </androidx.cardview.widget.CardView>
 
@@ -277,7 +277,7 @@
                     app:srcCompat="@drawable/ic_setting" />
 
                 <TextView
-                    android:id="@+id/textView77"
+                    android:id="@+id/text_terms_and_conditions_heading"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
@@ -288,15 +288,15 @@
                     app:layout_constraintTop_toBottomOf="@+id/imageView37" />
 
                 <TextView
-                    android:id="@+id/textView78"
+                    android:id="@+id/text_terms_and_condition_title"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:text="Level-1"
                     android:textSize="23sp"
-                    app:layout_constraintEnd_toEndOf="@+id/textView77"
-                    app:layout_constraintStart_toStartOf="@+id/textView77"
-                    app:layout_constraintTop_toBottomOf="@+id/textView77" />
+                    app:layout_constraintEnd_toEndOf="@+id/text_terms_and_conditions_heading"
+                    app:layout_constraintStart_toStartOf="@+id/text_terms_and_conditions_heading"
+                    app:layout_constraintTop_toBottomOf="@+id/text_terms_and_conditions_heading" />
 
                 <TextView
                     android:id="@+id/textView79"
@@ -306,9 +306,9 @@
                     android:text="3500 point"
                     android:textSize="13sp"
 
-                    app:layout_constraintEnd_toEndOf="@+id/textView78"
-                    app:layout_constraintStart_toStartOf="@+id/textView78"
-                    app:layout_constraintTop_toBottomOf="@+id/textView78" />
+                    app:layout_constraintEnd_toEndOf="@+id/text_terms_and_condition_title"
+                    app:layout_constraintStart_toStartOf="@+id/text_terms_and_condition_title"
+                    app:layout_constraintTop_toBottomOf="@+id/text_terms_and_condition_title" />
 
                 <View
                     android:id="@+id/constraintLayout21"

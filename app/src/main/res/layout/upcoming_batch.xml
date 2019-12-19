@@ -15,7 +15,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView77"
+            android:id="@+id/text_terms_and_conditions_heading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="38dp"
@@ -29,17 +29,17 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView78"
+            android:id="@+id/text_terms_and_condition_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Find Here Some Essential "
             android:textColor="@android:color/black"
             android:textSize="11sp"
-            app:layout_constraintStart_toStartOf="@+id/textView77"
-            app:layout_constraintTop_toBottomOf="@+id/textView77" />
+            app:layout_constraintStart_toStartOf="@+id/text_terms_and_conditions_heading"
+            app:layout_constraintTop_toBottomOf="@+id/text_terms_and_conditions_heading" />
 
         <ImageView
-            android:id="@+id/imageView34"
+            android:id="@+id/notification_icon_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -53,9 +53,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="20dp"
-            app:layout_constraintBottom_toBottomOf="@+id/textView77"
+            app:layout_constraintBottom_toBottomOf="@+id/text_terms_and_conditions_heading"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/textView77"
+            app:layout_constraintTop_toTopOf="@+id/text_terms_and_conditions_heading"
             app:srcCompat="@drawable/ic_event" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
