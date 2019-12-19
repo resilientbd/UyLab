@@ -10,7 +10,6 @@
         android:layout_width="375dp"
         android:layout_height="152dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:background="#F2F2F2"
@@ -25,8 +24,8 @@
             android:layout_height="35dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="85dp"
-            android:text="Contact "
             android:fontFamily="@font/poppins_regular"
+            android:text="Contact "
             android:textColor="#000000"
             android:textSize="25dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -98,7 +97,6 @@
         android:layout_width="376dp"
         android:layout_height="72dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout22"
         app:layout_constraintEnd_toEndOf="parent"
@@ -152,9 +150,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout22"
         android:layout_width="375dp"
-        android:layout_height="218dp"
+        android:layout_height="195dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout23"
         app:layout_constraintEnd_toEndOf="parent"
@@ -167,10 +164,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_regular"
             android:text="Address"
             android:textColor="#000000"
             android:textSize="30dp"
-            android:fontFamily="@font/poppins_regular"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -179,10 +176,10 @@
             android:layout_width="325dp"
             android:layout_height="65dp"
             android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_regular"
             android:text="@string/Contact"
             android:textAlignment="center"
             android:textSize="13dp"
-            android:fontFamily="@font/poppins_regular"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/textView73"
@@ -190,37 +187,37 @@
 
         <ImageButton
             android:id="@+id/imageButton5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
+            android:background="@drawable/ic_ellipse_4"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView74"
-            android:background="@drawable/ic_ellipse_4"
             app:srcCompat="@drawable/ic_fb" />
 
         <ImageButton
             android:id="@+id/imageButton6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
             android:layout_marginStart="16dp"
+            android:background="@drawable/ic_ellipse_4"
             app:layout_constraintBottom_toBottomOf="@+id/imageButton5"
             app:layout_constraintStart_toEndOf="@+id/imageButton5"
             app:layout_constraintTop_toTopOf="@+id/imageButton5"
-            android:background="@drawable/ic_ellipse_4"
             app:srcCompat="@drawable/ic_twiter" />
 
 
         <ImageButton
             android:id="@+id/imageButton7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
             android:layout_marginStart="16dp"
+            android:background="@drawable/ic_ellipse_4"
             app:layout_constraintBottom_toBottomOf="@+id/imageButton6"
             app:layout_constraintStart_toEndOf="@+id/imageButton6"
             app:layout_constraintTop_toTopOf="@+id/imageButton6"
-            android:background="@drawable/ic_ellipse_4"
             app:srcCompat="@drawable/ic_in" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -230,14 +227,12 @@
         android:layout_width="375dp"
         android:layout_height="0dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout22"
-        >
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout22">
 
         <EditText
             android:id="@+id/editText7"
@@ -249,9 +244,9 @@
             android:background="@drawable/text_sp"
             android:ems="10"
             android:hint="Your Name"
+            android:inputType="textPersonName"
             android:paddingLeft="10dp"
             android:textSize="16dp"
-            android:inputType="textPersonName"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -264,9 +259,9 @@
             android:background="@drawable/text_sp"
             android:ems="10"
             android:hint="Your Number"
-            android:textSize="16dp"
-            android:paddingLeft="10dp"
             android:inputType="textPersonName"
+            android:paddingLeft="10dp"
+            android:textSize="16dp"
             app:layout_constraintEnd_toEndOf="@+id/editText7"
             app:layout_constraintStart_toStartOf="@+id/editText7"
             app:layout_constraintTop_toBottomOf="@+id/editText7" />
