@@ -43,7 +43,7 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
     private CardView noticeView;
     private CardView classView;
     private CardView internshipView;
-    private CardView contestView;
+    //private CardView contestView;
     private View backupBtn;
     private View supportBtn;
     private View eventBtn;
@@ -66,7 +66,10 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
         view=inflater.inflate(R.layout.fragment_dashboard,container,false);
         mDemoSlider = view.findViewById(R.id.slider);
         noticeView=view.findViewById(R.id.notice);
-        contestView = view.findViewById(R.id.contestView);
+
+        //for contestView
+        //contestView = view.findViewById(R.id.contestView);
+
         classView=view.findViewById(R.id.classview);
         internshipView=view.findViewById(R.id.internshipclick);
         backupBtn=view.findViewById(R.id.backupbtn);
@@ -74,6 +77,7 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
         eventBtn=view.findViewById(R.id.eventcardbutton);
         liveClassBtn = view.findViewById(R.id.liveClassBtn);
         jobhubButton = view.findViewById(R.id.jobhubbtn);
+
         supportBtn.setOnClickListener(this);
         eventBtn.setOnClickListener(this);
         liveClassBtn.setOnClickListener(this);
@@ -106,7 +110,7 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
 //        mDemoSlider.setCustomIndicator(mPageIndicator);
         classView.setOnClickListener(this);
         noticeView.setOnClickListener(this);
-        contestView.setOnClickListener(this);
+        //contestView.setOnClickListener(this);
         internshipView.setOnClickListener(this);
         backupBtn.setOnClickListener(this);
         return view;
@@ -165,10 +169,12 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
                 startActivity(intent);
                 break;
 
-            case R.id.contestView:
-                intent=new Intent(getActivity(), ComplainActivity.class);
-                startActivity(intent);
-                break;
+//
+//            case R.id.contestView:
+//                intent=new Intent(getActivity(), ComplainActivity.class);
+//                startActivity(intent);
+//                break;
+
             case R.id.internshipclick:
               addFragment(internshipFragment);
                 break;
