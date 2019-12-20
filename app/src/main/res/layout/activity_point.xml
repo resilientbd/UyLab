@@ -311,7 +311,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/text_terms_and_condition_title" />
 
                 <View
-                    android:id="@+id/constraintLayout21"
+                    android:id="@+id/page_top_constraintLayout"
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
                     android:layout_marginStart="24dp"
@@ -334,7 +334,7 @@
                     android:textColor="@android:color/black"
                     app:layout_constraintEnd_toEndOf="@+id/textView79"
                     app:layout_constraintStart_toStartOf="@+id/textView79"
-                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout21" />
+                    app:layout_constraintTop_toBottomOf="@+id/page_top_constraintLayout" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
