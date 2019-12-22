@@ -389,6 +389,7 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/aboutUs"
             android:layout_width="match_parent"
+
             android:layout_height="@dimen/button_height"
             android:layout_marginStart="@dimen/button_start"
             android:layout_marginEnd="@dimen/button_right_space"
