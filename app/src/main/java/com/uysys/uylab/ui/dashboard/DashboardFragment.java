@@ -30,6 +30,7 @@ import com.uysys.uylab.ui.jobapply.JobapplyFragment;
 import com.uysys.uylab.ui.jobopen.JobopenFragment;
 import com.uysys.uylab.ui.liveClass.Live_Class;
 import com.uysys.uylab.ui.notice.NoticeFragment;
+import com.uysys.uylab.ui.point.Point1_Fragment;
 import com.uysys.uylab.ui.point.Point_Fragment;
 import com.uysys.uylab.ui.studentmain.FragmentListener;
 import com.uysys.uylab.ui.support.SupportFragment;
@@ -55,6 +56,7 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
     private View pointbtn;
     private View tutorialbtn;
 
+    private View point1btn;
     private InternshipFragment internshipFragment;
     private BackupFragment backupFragment;
     private SupportFragment supportFragment;
@@ -66,6 +68,7 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
     private EventFragment eventFragment;
     private Live_Class live_class;
     private Point_Fragment point_fragment;
+    private Point1_Fragment point1_fragment;
 
 
     @Nullable
@@ -144,6 +147,8 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
         point_fragment.setFragmentListener(listener);
         fragmentTutorial=new Fragment_Tutorial();
         fragmentTutorial.setFragmentListener(listener);
+        point1_fragment = new Point1_Fragment();
+        point1_fragment.setFragmentListener(listener);
 
 
     }
@@ -207,6 +212,9 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
                 break;
             case R.id.pointbtn:
                 addFragment(point_fragment);
+                break;
+            case R.id.point1btn:
+                addFragment(point1_fragment);
                 break;
             case R.id.tutorialbtn:
                 addFragment(fragmentTutorial);

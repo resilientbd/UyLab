@@ -59,24 +59,13 @@
                     app:layout_constraintVertical_bias="0.158"
                     app:srcCompat="@drawable/notification" />
 
-                <ImageView
-                    android:id="@+id/imageView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="35dp"
-                    android:layout_marginTop="104dp"
-                    android:layout_marginEnd="40dp"
-                    android:layout_marginBottom="17dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="@+id/imageView"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0"
-                    app:srcCompat="@drawable/p" />
-
                 <TextView
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="29dp"
+                    android:layout_marginEnd="284dp"
+                    android:fontFamily="@font/poppins_regular"
                     android:gravity="left"
                     android:text="Point"
                     android:textColor="@android:color/black"
@@ -92,17 +81,15 @@
                     android:id="@+id/textView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="29dp"
-                    android:layout_marginEnd="215dp"
                     android:layout_marginBottom="17dp"
+                    android:fontFamily="@font/poppins_regular"
                     android:gravity="left"
                     android:text="Find Here full details of point"
                     android:textColor="@android:color/black"
                     android:textSize="11dp"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.3"
-                    app:layout_constraintStart_toStartOf="parent" />
+                    app:layout_constraintStart_toStartOf="@+id/textView"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
 
                 <TextView
                     android:id="@+id/textView8"
@@ -120,16 +107,26 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.192" />
 
+                <ImageView
+                    android:id="@+id/imageView41"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_setting"
+                    app:layout_constraintBottom_toBottomOf="@+id/textView2"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView"
+                    app:layout_constraintTop_toTopOf="@+id/textView" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
                 android:id="@+id/textView72"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_regular"
                 android:text="Graphic design"
-                app:layout_constraintStart_toStartOf="parent"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="@+id/cardView4"
                 app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
             <TextView
@@ -138,6 +135,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:text="Web design"
+                android:textColor="#6D6D6D"
                 app:layout_constraintStart_toEndOf="@+id/textView72"
                 app:layout_constraintTop_toTopOf="@+id/textView72" />
 
@@ -152,6 +150,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView72">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/statusbtn"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="#5680F6">
@@ -191,6 +190,7 @@
                 app:layout_constraintTop_toTopOf="@+id/cardView4">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/pointbtn"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="#E9E9E9">
@@ -228,6 +228,7 @@
                 app:layout_constraintTop_toTopOf="@+id/cardView5">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/reedembtn"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="#E9E9E9">
@@ -270,7 +271,7 @@
                     android:id="@+id/imageView37"
                     android:layout_width="40dp"
                     android:layout_height="47dp"
-                    android:layout_marginTop="36dp"
+                    android:layout_marginTop="55dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -280,8 +281,10 @@
                     android:id="@+id/textView77"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginTop="41dp"
+                    android:textColor="#2D2D2D"
                     android:text="your status is"
+                    android:fontFamily="@font/poppins_medium"
                     android:textSize="13sp"
                     app:layout_constraintEnd_toEndOf="@+id/imageView37"
                     app:layout_constraintStart_toStartOf="@+id/imageView37"
@@ -291,8 +294,9 @@
                     android:id="@+id/textView78"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
                     android:text="Level-1"
+                    android:textColor="#2D2D2D"
+                    android:fontFamily="@font/poppins_bold"
                     android:textSize="23sp"
                     app:layout_constraintEnd_toEndOf="@+id/textView77"
                     app:layout_constraintStart_toStartOf="@+id/textView77"
@@ -302,8 +306,8 @@
                     android:id="@+id/textView79"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    android:text="3500 point"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="3500 point >"
                     android:textSize="13sp"
 
                     app:layout_constraintEnd_toEndOf="@+id/textView78"
@@ -315,11 +319,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="2dp"
                     android:layout_marginStart="24dp"
-                    android:layout_marginTop="8dp"
+                    android:layout_marginTop="21dp"
                     android:layout_marginEnd="24dp"
+                    android:layout_marginBottom="8dp"
                     android:background="#C1C1C1"
-                    app:layout_constraintEnd_toEndOf="parent"
 
+                    app:layout_constraintBottom_toTopOf="@+id/textView80"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView79">
 
@@ -330,32 +336,33 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
+                    android:layout_marginBottom="200dp"
                     android:text="Point Details"
                     android:textColor="@android:color/black"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="@+id/textView79"
                     app:layout_constraintStart_toStartOf="@+id/textView79"
                     app:layout_constraintTop_toBottomOf="@+id/constraintLayout21" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/points_recycler"
+                    android:layout_width="414dp"
+                    android:layout_height="129dp"
+
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView80"
+                    tools:itemCount="10"
+                    tools:listitem="@layout/item_recycler_points" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.core.widget.NestedScrollView>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationView2"
-        android:layout_width="409dp"
-        android:layout_height="55dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nestedScrollView" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
