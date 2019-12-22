@@ -47,14 +47,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/p" />
+            app:srcCompat="@drawable/ic_diploma" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="left"
-            android:text="More"
+            android:text="Our Courses"
             android:textColor="@android:color/black"
             android:textSize="25dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -134,8 +134,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/button_bottom"
-                    android:text="@string/upcoming_batch"
-                    android:textColor="@color/dashboard_card"
+                    android:text="Graphic Design"
+                    android:textColor="@android:color/black"
                     android:textSize="@dimen/button_text_size"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -150,7 +150,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_event" />
+                    app:srcCompat="@drawable/ic_vector" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 
@@ -175,8 +175,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/button_bottom"
-                    android:text="@string/our_course"
-                    android:textColor="@color/dashboard_card"
+                    android:text="Wed Design Development"
+                    android:textColor="@android:color/black"
                     android:textSize="@dimen/button_text_size"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -191,7 +191,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_diploma" />
+                    app:srcCompat="@drawable/ic_web_design" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 
@@ -218,15 +218,15 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_seminar" />
+                    app:srcCompat="@drawable/ic_bullhorn" />
 
                 <TextView
                     android:id="@+id/textView43"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/button_bottom"
-                    android:text="@string/seminar"
-                    android:textColor="@color/dashboard_card"
+                    android:text="Digital Marketing and SEO"
+                    android:textColor="@android:color/black"
                     android:textSize="@dimen/button_text_size"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -271,8 +271,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/button_bottom"
-                    android:text="@string/mentors"
-                    android:textColor="@color/dashboard_card"
+                    android:text="Video Editing"
+                    android:textColor="@android:color/black"
                     android:textSize="@dimen/button_text_size"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -287,7 +287,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_advisor" />
+                    app:srcCompat="@drawable/ic_vdo_edit" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 
@@ -312,8 +312,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/button_bottom"
-                    android:text="@string/facilites"
-                    android:textColor="@color/dashboard_card"
+                    android:text="Video Editing"
+                    android:textColor="@android:color/black"
                     android:textSize="@dimen/button_text_size"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -328,7 +328,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_diploma" />
+                    app:srcCompat="@drawable/ic_vdo_edit" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 
@@ -355,15 +355,15 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_goal" />
+                    app:srcCompat="@drawable/ic_vdo_edit" />
 
                 <TextView
                     android:id="@+id/successTV"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/button_bottom"
-                    android:text="@string/success"
-                    android:textColor="@color/dashboard_card"
+                    android:text="Video Editing"
+                    android:textColor="@android:color/black"
                     android:textSize="@dimen/button_text_size"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -407,8 +407,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/button_bottom"
-                    android:text="@string/aboutUs"
-                    android:textColor="@color/dashboard_card"
+                    android:text="Graphic Design"
+                    android:textColor="@android:color/black"
                     android:textSize="@dimen/button_text_size"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -423,7 +423,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_info" />
+                    app:srcCompat="@drawable/ic_vector" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 
@@ -448,8 +448,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/button_bottom"
-                    android:text="@string/contact"
-                    android:textColor="@color/dashboard_card"
+                    android:text="Wed Design Development"
+                    android:textColor="@android:color/black"
                     android:textSize="@dimen/button_text_size"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -464,7 +464,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_mail" />
+                    app:srcCompat="@drawable/ic_web_design" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 
@@ -475,7 +475,6 @@
             android:layout_marginEnd="@dimen/button_right_space"
             android:layout_weight="1"
             android:clickable="true"
-            android:id="@+id/gallerybtn"
             android:foreground="?selectableItemBackground"
             app:cardCornerRadius="8dp">
 
@@ -492,15 +491,15 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_gallery" />
+                    app:srcCompat="@drawable/ic_bullhorn" />
 
                 <TextView
                     android:id="@+id/galleryTV"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/button_bottom"
-                    android:text="@string/gallery"
-                    android:textColor="@color/dashboard_card"
+                    android:text="Digital Marketing and SEO"
+                    android:textColor="@android:color/black"
                     android:textSize="@dimen/button_text_size"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -511,157 +510,5 @@
 
 
     </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/layout4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/layout3">
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/ourPartner"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/button_height"
-            android:layout_marginStart="@dimen/button_start"
-            android:layout_marginEnd="@dimen/button_right_space"
-            android:layout_marginBottom="16dp"
-            android:layout_weight="1"
-            android:clickable="true"
-            android:foreground="?selectableItemBackground"
-            app:cardCornerRadius="8dp">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/partnerViwen"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/ourPartnerTV"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/button_bottom"
-                    android:text="@string/ourPartner"
-                    android:textColor="@color/dashboard_card"
-                    android:textSize="@dimen/button_text_size"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-                <ImageView
-                    android:id="@+id/ourPartnerimageView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    app:layout_constraintBottom_toTopOf="@+id/ourPartnerTV"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_partner" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/team"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/button_height"
-            android:layout_marginStart="@dimen/button_start"
-            android:layout_marginEnd="@dimen/button_right_space"
-            android:layout_weight="1"
-            android:clickable="true"
-            android:foreground="?selectableItemBackground"
-            app:cardCornerRadius="8dp">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-
-                android:layout_height="match_parent">
-
-                <TextView
-                    android:id="@+id/teamTV"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/button_bottom"
-                    android:text="@string/team"
-                    android:textColor="@color/dashboard_card"
-                    android:textSize="@dimen/button_text_size"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-                <ImageView
-                    android:id="@+id/teamView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    app:layout_constraintBottom_toTopOf="@+id/teamTV"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_accept" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/button_height"
-            android:layout_marginStart="@dimen/button_start"
-            android:layout_marginEnd="@dimen/button_right_space"
-            android:layout_weight="1"
-            android:clickable="true"
-            android:foreground="?selectableItemBackground"
-            app:cardCornerRadius="8dp">
-
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:id="@+id/settingViewn"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageView
-                    android:id="@+id/settingsIV"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="8dp"
-                    app:layout_constraintBottom_toTopOf="@+id/settingsTV"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/ic_settings" />
-
-                <TextView
-                    android:id="@+id/settingsTV"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/button_bottom"
-                    android:text="@string/settings"
-                    android:textColor="@color/dashboard_card"
-                    android:textSize="@dimen/button_text_size"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent" />
-
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.cardview.widget.CardView>
-
-
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/btnhome"
-        android:layout_width="297dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="100dp"
-        android:background="@drawable/button_shape"
-        android:text="Share This App"
-        android:textAllCaps="false"
-        android:layout_marginBottom="100dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/layout4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
