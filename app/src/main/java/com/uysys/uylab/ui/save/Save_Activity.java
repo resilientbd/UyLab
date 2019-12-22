@@ -26,4 +26,10 @@ public class Save_Activity extends AppCompatActivity {
             }
         } );
     }
+
+    @Override
+    public void onBackPressed() {
+       // super.onBackPressed ();
+
+    }
 }

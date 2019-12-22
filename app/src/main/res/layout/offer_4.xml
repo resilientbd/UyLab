@@ -17,7 +17,7 @@
 
         <TextView
             android:id="@+id/text1_avail_4"
-            android:layout_width="185dp"
+            android:layout_width="210dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="44dp"
             android:text="@string/avail3_text1"
@@ -28,17 +28,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+
         <ImageView
             android:id="@+id/image_avail_4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
+            android:layout_marginTop="12dp"
             app:layout_constraintEnd_toEndOf="@+id/text1_avail_4"
-            app:layout_constraintHorizontal_bias="0.41"
+            app:layout_constraintHorizontal_bias="0.444"
             app:layout_constraintStart_toStartOf="@+id/text1_avail_4"
             app:layout_constraintTop_toBottomOf="@+id/text1_avail_4"
             app:srcCompat="@drawable/ic_success" />
-
 
         <Button
             android:id="@+id/homeBtn_Offer4"
@@ -85,7 +85,7 @@
             android:id="@+id/text4_avail_4"
             android:layout_width="190dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="96dp"
+            android:layout_marginTop="32dp"
             android:text="@string/avail3_text3"
             android:textAlignment="center"
             android:textColor="#000000"

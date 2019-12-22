@@ -24,9 +24,8 @@
             android:gravity="center"
             android:text="@string/internship1_text1"
             android:textColor="#000000"
-            android:textSize="18sp"
+            android:textSize="18dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.587"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
