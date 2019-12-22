@@ -7,59 +7,9 @@
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/layout2_avail4"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/layout1_avail4">
-
-        <TextView
-            android:id="@+id/text1_avail_4"
-            android:layout_width="210dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="44dp"
-            android:text="@string/complain1_text1"
-            android:textColor="#000000"
-            android:textSize="18dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.525"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-
-        <ImageView
-            android:id="@+id/image_avail_4"
-            android:layout_width="160dp"
-            android:layout_height="151dp"
-            android:layout_marginTop="72dp"
-            app:layout_constraintEnd_toEndOf="@+id/text1_avail_4"
-            app:layout_constraintHorizontal_bias="0.444"
-            app:layout_constraintStart_toStartOf="@+id/text1_avail_4"
-            app:layout_constraintTop_toBottomOf="@+id/text1_avail_4"
-            app:srcCompat="@drawable/ic_success" />
-
-        <Button
-            android:id="@+id/backBtn_complain1"
-            android:layout_width="280dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="84dp"
-            android:background="@drawable/homebtn_avail_3"
-            android:text="Back"
-            android:textAllCaps="false"
-            android:textColor="#ffffff"
-            android:textSize="16dp"
-            app:layout_constraintEnd_toEndOf="@+id/image_avail_4"
-            app:layout_constraintStart_toStartOf="@+id/image_avail_4"
-            app:layout_constraintTop_toBottomOf="@+id/image_avail_4" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout1_avail4"
         android:layout_width="0dp"
-        android:layout_height="140dp"
+        android:layout_height="130dp"
         android:background="#F0EFEF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -75,12 +25,14 @@
             android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.505" />
 
         <TextView
             android:id="@+id/backBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
             android:text="File Any Complain For Class"
             android:textColor="#000000"
             android:textSize="12sp"
@@ -114,13 +66,77 @@
             android:layout_width="16dp"
             android:layout_height="16dp"
             android:background="@drawable/black_round_bg"
-            android:text="0"
             android:gravity="center"
+            android:text="0"
             android:textAlignment="center"
-            android:textSize="12sp"
             android:textColor="#fff"
+            android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/imageView2"
             app:layout_constraintTop_toTopOf="@+id/imageView2" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="360dp"
+        android:layout_height="400dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout1_avail4">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout2_avail4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="124dp">
+
+            <TextView
+                android:id="@+id/text1_avail_4"
+                android:layout_width="221dp"
+                android:layout_height="68dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:gravity="center"
+                android:text="@string/complain1_text1"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/image_avail_4"
+                android:layout_width="133dp"
+                android:layout_height="57dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                app:layout_constraintEnd_toEndOf="@+id/text1_avail_4"
+                app:layout_constraintHorizontal_bias="0.365"
+                app:layout_constraintStart_toStartOf="@+id/text1_avail_4"
+                app:layout_constraintTop_toBottomOf="@+id/text1_avail_4"
+                app:srcCompat="@drawable/ic_success" />
+
+            <Button
+                android:id="@+id/backBtn_complain1"
+                android:layout_width="247dp"
+                android:layout_height="22dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="32dp"
+                android:background="@drawable/homebtn_avail_3"
+                android:text="Back"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="16dp"
+                app:layout_constraintEnd_toEndOf="@+id/image_avail_4"
+                app:layout_constraintStart_toStartOf="@+id/image_avail_4"
+                app:layout_constraintTop_toBottomOf="@+id/image_avail_4" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
