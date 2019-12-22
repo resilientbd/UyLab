@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.uysys.uylab.R;
 import com.uysys.uylab.ui.base.BaseFragment;
 
-public class Jobapply_Activity extends BaseFragment {
+public class JobapplyFragment extends BaseFragment {
 
 private View view;
     @Override

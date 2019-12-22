@@ -26,6 +26,8 @@ import com.uysys.uylab.ui.complain.ComplainActivity;
 import com.uysys.uylab.ui.event.EventFragment;
 import com.uysys.uylab.ui.internship.InternshipFragment;
 import com.uysys.uylab.ui.job.JobFragment;
+import com.uysys.uylab.ui.jobapply.JobapplyFragment;
+import com.uysys.uylab.ui.jobopen.JobopenFragment;
 import com.uysys.uylab.ui.liveClass.Live_Class;
 import com.uysys.uylab.ui.notice.NoticeFragment;
 import com.uysys.uylab.ui.point.Point_Fragment;
@@ -58,6 +60,8 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
     private SupportFragment supportFragment;
     private JobFragment jobFragment;
     private Fragment_Tutorial fragmentTutorial;
+    private JobopenFragment jobopenFragment;
+    private JobapplyFragment jobapplyFragment;
 
     private EventFragment eventFragment;
     private Live_Class live_class;
@@ -207,6 +211,7 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
             case R.id.tutorialbtn:
                 addFragment(fragmentTutorial);
                 break;
+
             default:break;
         }
     }

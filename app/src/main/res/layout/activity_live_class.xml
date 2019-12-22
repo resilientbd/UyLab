@@ -72,7 +72,7 @@
             app:layout_constraintVertical_bias="0.571" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/text2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="29dp"
@@ -109,7 +109,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/textView72"
+        android:id="@+id/text5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -124,7 +124,7 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
     <TextView
-        android:id="@+id/textView73"
+        android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="See Here Next Live Class Time and Date"
@@ -133,7 +133,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.147"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView72" />
+        app:layout_constraintTop_toBottomOf="@+id/text5" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout22"
@@ -144,7 +144,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.367"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView73">
+        app:layout_constraintTop_toBottomOf="@+id/text1">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout21"
@@ -166,7 +166,7 @@
                 app:srcCompat="@drawable/ic_paper_plane" />
 
             <TextView
-                android:id="@+id/textView74"
+                android:id="@+id/text2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -180,7 +180,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
-            android:id="@+id/textView75"
+            android:id="@+id/text3"
             android:layout_width="wrap_content"
             android:layout_height="15dp"
             android:layout_marginTop="16dp"
@@ -193,7 +193,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView76"
+            android:id="@+id/text4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Custom Blend Tool"
@@ -202,7 +202,7 @@
             app:layout_constraintEnd_toStartOf="@+id/constraintLayout21"
             app:layout_constraintHorizontal_bias="0.433"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView75" />
+            app:layout_constraintTop_toBottomOf="@+id/text3" />
 
         <TextView
             android:id="@+id/textView77"
@@ -214,7 +214,7 @@
             app:layout_constraintEnd_toStartOf="@+id/constraintLayout21"
             app:layout_constraintHorizontal_bias="0.185"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView76" />
+            app:layout_constraintTop_toBottomOf="@+id/text4" />
 
         <TextView
             android:id="@+id/textView78"

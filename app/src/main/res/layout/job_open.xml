@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.jobopen.Jobopen_Activity">
+    tools:context=".ui.jobopen.JobopenFragment">
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -62,32 +62,34 @@
                     app:srcCompat="@drawable/microphone" />
 
                 <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="99dp"
-                    android:layout_height="24dp"
+                    android:id="@+id/text2"
+                    android:layout_width="96dp"
+                    android:layout_height="15dp"
                     android:layout_marginStart="44dp"
-                    android:layout_marginLeft="44dp"
                     android:layout_marginTop="4dp"
-                    android:text="Popular Recent"
-                    android:textStyle="bold"
+                    android:text="Popular "
+                    android:textColor="#171C1E"
+                    android:textSize="10dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView" />
 
                 <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="92dp"
-                    android:layout_height="0dp"
-                    android:text="Popular Recent"
-                    android:textSize="12dp"
-                    app:layout_constraintBottom_toBottomOf="@+id/textView2"
+                    android:id="@+id/text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:gravity="center"
+                    android:text="Recent"
+                    android:textColor="#A4A7A8"
+                    android:textSize="10dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/text2"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toEndOf="@+id/textView2"
-                    app:layout_constraintTop_toTopOf="@+id/textView2"
+                    app:layout_constraintStart_toEndOf="@+id/text2"
+                    app:layout_constraintTop_toTopOf="@+id/text2"
                     app:layout_constraintVertical_bias="1.0" />
 
                 <TextView
-                    android:id="@+id/textView4"
+                    android:id="@+id/text4"
                     android:layout_width="131dp"
                     android:layout_height="19dp"
                     android:layout_marginTop="36dp"
@@ -97,7 +99,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.057"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+                    app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
                 <TextView
                     android:id="@+id/textView7"
@@ -107,10 +109,10 @@
                     android:layout_marginLeft="15dp"
                     android:layout_marginTop="8dp"
                     android:text="Inknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic Inknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic"
-                    app:layout_constraintEnd_toEndOf="@+id/textView4"
+                    app:layout_constraintEnd_toEndOf="@+id/text4"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView4" />
+                    app:layout_constraintTop_toBottomOf="@+id/text4" />
 
                 <TextView
                     android:id="@+id/textView8"
@@ -134,10 +136,10 @@
                     app:layout_constraintEnd_toEndOf="@+id/textView"
                     app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="@+id/imageView2"
-                    app:layout_constraintTop_toBottomOf="@+id/textView3" />
+                    app:layout_constraintTop_toBottomOf="@+id/text3" />
 
                 <ImageView
-                    android:id="@+id/imageView5"
+                    android:id="@+id/imageView"
                     android:layout_width="93dp"
                     android:layout_height="68dp"
                     app:layout_constraintBottom_toBottomOf="@+id/textView9"
@@ -181,7 +183,7 @@
                     app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
                 <TextView
-                    android:id="@+id/textView13"
+                    android:id="@+id/applyNow"
                     android:layout_width="178dp"
                     android:layout_height="45dp"
                     android:layout_marginStart="96dp"
@@ -253,7 +255,7 @@
 
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/text5"
                     android:layout_width="wrap_content"
                     android:layout_height="39dp"
                     android:layout_marginStart="32dp"
@@ -272,8 +274,8 @@
                     android:layout_height="wrap_content"
                     android:text="Details"
                     android:textSize="15dp"
-                    app:layout_constraintStart_toStartOf="@+id/textView5"
-                    app:layout_constraintTop_toBottomOf="@+id/textView5" />
+                    app:layout_constraintStart_toStartOf="@+id/text5"
+                    app:layout_constraintTop_toBottomOf="@+id/text5" />
 
                 <ImageView
                     android:id="@+id/imageView4"
