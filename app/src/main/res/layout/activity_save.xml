@@ -21,8 +21,8 @@
 
     <TextView
         android:id="@+id/textView8"
-        android:layout_width="138dp"
-        android:layout_height="41dp"
+        android:layout_width="155dp"
+        android:layout_height="50dp"
         android:layout_marginTop="52dp"
         android:text="@string/text1"
         android:textAlignment="center"
