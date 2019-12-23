@@ -6,12 +6,13 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.uysys.uylab.R;
-import com.uysys.uylab.ui.ourPartner.OfficialPartnerAdapter;
+
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 public class Tutorial_Popular_Adapter extends RecyclerView.Adapter<Tutorial_Popular_Adapter.ViewHolder> {
+private Tutorial_Popular_AdapterClickLisiner tutorial_popular_adapterClickLisiner;
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -22,13 +23,24 @@ public class Tutorial_Popular_Adapter extends RecyclerView.Adapter<Tutorial_Popu
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-
+    public void onBindViewHolder(@NonNull ViewHolder holder, final int position) {
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                tutorial_popular_adapterClickLisiner.onLive_classItemClick(position);
+            }
+        });
     }
-
+    public void setTutroial_Popular_adapterClickListener(Tutorial_Popular_AdapterClickLisiner tutroial_popular_adapterClickListener) {
+        this.tutorial_popular_adapterClickLisiner = tutroial_popular_adapterClickListener;
+    }
     @Override
     public int getItemCount() {
         return 3;
+    }
+
+    public interface Tutorial_Popular_AdapterClickLisiner {
+        public void onLive_classItemClick(int position);
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
@@ -39,7 +51,7 @@ public class Tutorial_Popular_Adapter extends RecyclerView.Adapter<Tutorial_Popu
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             imageView = itemView.findViewById(R.id.imageView);
-            cons = itemView.findViewById(R.id.mentorsProfileView);
+            cons = itemView.findViewById(R.id.videoView);
 
         }
     }
