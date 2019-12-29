@@ -1,21 +1,22 @@
-package com.uysys.uylab.ui.facilities;
+package com.uysys.uylab.ui.courses;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-
 import com.uysys.uylab.R;
 import com.uysys.uylab.ui.base.BaseFragment;
 
-public class Facilities_Fragment extends BaseFragment {
-    public View view;
-    @Override
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+
+public class Our_Courses_Fragment extends BaseFragment {
+
+    private View view;
+     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view =inflater.inflate(R.layout.facilities_fragment,container,false);
-        return view;
+        view = inflater.inflate(R.layout.our_courses_fragment,container,false);
+         return view;
     }
 }

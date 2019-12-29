@@ -1,4 +1,4 @@
-package com.uysys.uylab.ui.facilities;
+package com.uysys.uylab.ui.contact;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -11,11 +11,11 @@ import androidx.annotation.Nullable;
 import com.uysys.uylab.R;
 import com.uysys.uylab.ui.base.BaseFragment;
 
-public class Facilities_Fragment extends BaseFragment {
-    public View view;
+public class ContactFragment extends BaseFragment {
+    private View view;
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view =inflater.inflate(R.layout.facilities_fragment,container,false);
+        view=inflater.inflate(R.layout.contact_fragment,container,false);
         return view;
     }
 }
