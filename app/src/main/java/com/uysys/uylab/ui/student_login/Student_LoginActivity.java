@@ -41,11 +41,12 @@ private EditText passwordText;
         Call call=mService.login(email,password);
         mUtil.networkCall(call);
 
+
     }
 
     @Override
     public void onSucces(Object object) {
-           Log.d("chk","model:"+object.toString());
+           Log.i("chk","model:"+object.toString());
         Login loginModel= (Login) object;
         if(loginModel.getCode()==422)
         {
