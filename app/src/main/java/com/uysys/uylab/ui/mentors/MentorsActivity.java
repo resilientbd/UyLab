@@ -1,13 +1,13 @@
 package com.uysys.uylab.ui.mentors;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.GridLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
+        import androidx.appcompat.app.AppCompatActivity;
+        import androidx.recyclerview.widget.GridLayoutManager;
+        import androidx.recyclerview.widget.RecyclerView;
 
-import android.os.Bundle;
+        import android.os.Bundle;
 
-import com.uysys.uylab.R;
-import com.uysys.uylab.ui.ourPartner.OurPartnerActivity;
+        import com.uysys.uylab.R;
+        import com.uysys.uylab.ui.ourPartner.OurPartnerActivity;
 
 public class MentorsActivity extends AppCompatActivity {
 
