@@ -42,7 +42,7 @@
             android:drawableRight="@drawable/ic_visibility_off"
             android:ems="10"
             android:hint="Password"
-            android:inputType="numberPassword"
+            android:inputType="textPersonName"
             android:paddingRight="16dp"
             android:textAlignment="center"
             android:textSize="17dp" />

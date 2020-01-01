@@ -38,21 +38,24 @@ private EditText passwordText;
     public void loginStudent(View view) {
         String email=emailText.getText().toString().trim();
         String password=passwordText.getText().toString().trim();
-        Call call=mService.login(email,password);
-        mUtil.networkCall(call);
+        Call call=mService.login(email,password,"123456");
+        mUtil.networkcall(call);
 
 
     }
 
+
+
+
     @Override
-    public void onSucces(Object object) {
-           Log.i("chk","model:"+object.toString());
+    public void onSuccess(Object object) {
+        Log.i("chk","model:"+object.toString());
         Login loginModel= (Login) object;
-        if(loginModel.getCode()==422)
+        if(loginModel.getCode()==200)
         {
             Intent intent=new Intent(Student_LoginActivity.this, StudentMainActivity.class);
-        startActivity(intent);
-        finish();
+            startActivity(intent);
+            finish();
         }
         else {
             Toast.makeText(getBaseContext(),""+loginModel.getMessages().get(0),Toast.LENGTH_SHORT).show();
