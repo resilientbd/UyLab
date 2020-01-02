@@ -44,9 +44,6 @@ private EditText passwordText;
 
     }
 
-
-
-
     @Override
     public void onSuccess(Object object) {
         Log.d("chk","model:"+object.toString());
