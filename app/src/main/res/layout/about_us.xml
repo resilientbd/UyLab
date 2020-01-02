@@ -4,19 +4,28 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout9"
-        android:layout_width="375dp"
-        android:layout_height="155dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="172dp"
         android:background="#F2F2F2"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout24"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -24,10 +33,10 @@
             android:id="@+id/textView14"
             android:layout_width="102dp"
             android:layout_height="35dp"
-            android:layout_marginStart="4dp"
+            android:layout_marginStart="32dp"
             android:layout_marginTop="104dp"
-            android:text="About Us "
             android:fontFamily="@font/poppins_regular"
+            android:text="About Us "
             android:textColor="#000000"
             android:textSize="25dp"
             app:layout_constraintStart_toStartOf="parent"
@@ -37,9 +46,9 @@
             android:id="@+id/textView15"
             android:layout_width="139dp"
             android:layout_height="16dp"
+            android:fontFamily="@font/poppins_regular"
             android:text="Find Here Some Essential"
             android:textColor="#6D6D6D"
-            android:fontFamily="@font/poppins_regular"
             android:textSize="11dp"
             app:layout_constraintStart_toStartOf="@+id/textView14"
             app:layout_constraintTop_toBottomOf="@+id/textView14" />
@@ -92,12 +101,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout24"
-        android:layout_width="375dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="398dp"
+        android:layout_height="548dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -111,16 +116,18 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
+            android:fontFamily="@font/poppins_regular"
             android:gravity="center_horizontal"
             android:text="@string/about_us"
-            android:textAlignment="center"
-            android:fontFamily="@font/poppins_regular"
+           android:textAlignment="center"
             android:textSize="13dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

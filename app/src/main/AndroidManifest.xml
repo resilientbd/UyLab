@@ -25,9 +25,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Facilities_Activity"></activity>
 
-        <activity android:name=".ui.more.MoreActivity" />
         <activity android:name=".ui.classactivity.ClassActivity" />
         <activity android:name=".ui.refferal.RefferalFragment" />
         <activity android:name=".ui.blog.BlogFragment" />
