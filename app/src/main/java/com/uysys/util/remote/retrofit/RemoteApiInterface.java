@@ -4,7 +4,7 @@ package com.uysys.util.remote.retrofit;
 import com.uysys.util.remote.model.Seminar_Enrollment.SeminarEnrollment;
 import com.uysys.util.remote.model.batch_enrollment.BatchEnrollment;
 import com.uysys.util.remote.model.branches_list.BranchesList;
-import com.uysys.util.remote.model.classRoutine.ClassRoutine;
+
 import com.uysys.util.remote.model.contact_us.ContactUs;
 import com.uysys.util.remote.model.course_details.CourseDetails;
 import com.uysys.util.remote.model.course_enrollment.CourseEnrollment;
@@ -12,7 +12,7 @@ import com.uysys.util.remote.model.eventDetails.EventDetails;
 import com.uysys.util.remote.model.event_enrollment.EventEnrollment;
 import com.uysys.util.remote.model.facility.FacilityList;
 import com.uysys.util.remote.model.gallery.Gallery;
-import com.uysys.util.remote.model.joinRequest.JoinRequest;
+
 import com.uysys.util.remote.model.list_offer.ListOffer;
 import com.uysys.util.remote.model.login.Login;
 import com.uysys.util.remote.model.mentor_profile.MentorProfile;
@@ -42,9 +42,9 @@ public interface RemoteApiInterface {
     @POST("login")
     Call<Login> login(@Field("email") String email, @Field("password") String password,@Field("push_token") String push_token);
 
-    @FormUrlEncoded
-    @POST("join-request")
-    Call<JoinRequest> joinReq(@Field("name") String name, @Field("mobile_number") String mobile_number, @Field("interested_subject") String interested_subject);
+//    @FormUrlEncoded
+//    @POST("join-request")
+//    Call<JoinRequest> joinReq(@Field("name") String name, @Field("mobile_number") String mobile_number, @Field("interested_subject") String interested_subject);
 
     @GET("profile")
     Call<ProfileInformation> proInfo();
@@ -58,8 +58,8 @@ public interface RemoteApiInterface {
     @GET("notifications/mark-as-read")
     Call<Notifications_Read> noti_read();
 
-    @GET("class-routine")
-    Call<ClassRoutine> cls_routine();
+//    @GET("class-routine")
+//    Call<ClassRoutine> cls_routine();
 
     @GET("notice")
     Call<Notice> notice();
