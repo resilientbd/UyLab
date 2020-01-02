@@ -6,7 +6,7 @@ import retrofit2.Response;
 
 public class RetrofitUtil {
 
-    private RetrofitUtilListener retrofitUtilListener;
+   private  RetrofitUtilListener retrofitUtilListener;
 
     public void setRetrofitUtilListener(RetrofitUtilListener retrofitUtilListener) {
         this.retrofitUtilListener = retrofitUtilListener;
