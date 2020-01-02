@@ -11,20 +11,30 @@ import com.uysys.util.remote.model.course_enrollment.CourseEnrollment;
 import com.uysys.util.remote.model.eventDetails.EventDetails;
 import com.uysys.util.remote.model.event_enrollment.EventEnrollment;
 import com.uysys.util.remote.model.facility.FacilityList;
+import com.uysys.util.remote.model.facility.FacilityModel;
+import com.uysys.util.remote.model.galary.GallaryModel;
 import com.uysys.util.remote.model.gallery.Gallery;
 
 import com.uysys.util.remote.model.list_offer.ListOffer;
 import com.uysys.util.remote.model.login.Login;
+import com.uysys.util.remote.model.marknotification.MarkModel;
 import com.uysys.util.remote.model.mentor_profile.MentorProfile;
 import com.uysys.util.remote.model.notice.Notice;
+import com.uysys.util.remote.model.notice.NoticeModel;
+import com.uysys.util.remote.model.notification.NotificationModel;
 import com.uysys.util.remote.model.notification_read.Notifications_Read;
 import com.uysys.util.remote.model.notifications.Notifications;
 import com.uysys.util.remote.model.offer_enrollment.OfferEnrollment;
 import com.uysys.util.remote.model.partners_concern.PartnersConcern;
+import com.uysys.util.remote.model.payment.PaymentModel;
 import com.uysys.util.remote.model.paymentSummary.PaymentSummary;
+import com.uysys.util.remote.model.profile.ProfileModel;
 import com.uysys.util.remote.model.profile_information.ProfileInformation;
 import com.uysys.util.remote.model.seminar.SeminarList;
+import com.uysys.util.remote.model.seminar.SeminarModel;
+import com.uysys.util.remote.model.seminarjoin.SeminarJoin;
 import com.uysys.util.remote.model.tutorial.Tutorial;
+import com.uysys.util.remote.model.tutorial.TutorialModel;
 import com.uysys.util.remote.model.upcoming_batches.UpcomingBatches;
 
 import retrofit2.Call;
@@ -42,9 +52,6 @@ public interface RemoteApiInterface {
     @POST("login")
     Call<Login> login(@Field("email") String email, @Field("password") String password,@Field("push_token") String push_token);
 
-//    @FormUrlEncoded
-//    @POST("join-request")
-//    Call<JoinRequest> joinReq(@Field("name") String name, @Field("mobile_number") String mobile_number, @Field("interested_subject") String interested_subject);
 
     @GET("profile")
     Call<ProfileInformation> proInfo();
@@ -52,14 +59,11 @@ public interface RemoteApiInterface {
     @GET("payment-information")
     Call<PaymentSummary> paymentSum();
 
-    @GET("notifications")
-    Call<Notifications> notific();
-
     @GET("notifications/mark-as-read")
     Call<Notifications_Read> noti_read();
 
-//    @GET("class-routine")
-//    Call<ClassRoutine> cls_routine();
+    @GET("class-routine")
+    Call<com.uysys.util.remote.model.classRoutine.ClassRoutine> cls_routine();
 
     @GET("notice")
     Call<Notice> notice();
@@ -121,7 +125,37 @@ public interface RemoteApiInterface {
     @POST("contact-us")
     Call<ContactUs> contactUs(@Field("name") String name, @Field("mobile_number") String mobile_number, @Field("message") String message);
 
+
     @FormUrlEncoded
-    @POST("login")
-    Call<Login> loginui(@Field("email") String email, @Field("password") String password);
+    @POST("join-request")
+    Call<com.uysys.util.remote.model.joinRequest.JoinRequest> joinrequest(@Field("name") String name, @Field("mobile_number") String mobile_number, @Field("interested_subject") String interested_subject);
+
+
+    @GET("profile")
+    Call<ProfileModel> profile();
+
+    @GET("payment-information")
+    Call<PaymentModel> payment();
+
+    @GET("notifications")
+    Call<NotificationModel> notification();
+
+    @GET("notifications/mark-as-read")
+    Call<MarkModel> marknotification();
+    @GET("class-routine")
+    Call<com.uysys.util.remote.model.classRoutine.ClassRoutine>classroutine();
+
+
+    @GET("gallery")
+    Call<GallaryModel>galary();
+    @GET("tutorials")
+    Call<TutorialModel>tutorail();
+
+    @GET("seminars")
+    Call<SeminarModel>seminer();
+
+    @FormUrlEncoded
+    @POST("seminar/enrolment")
+    Call<SeminarJoin> seminarjoin(@Field("participator_name") String participator_name, @Field("seminar_id") String seminar_id, @Field("mobile_number") String mobile_number, @Field("email_address") String email_address) ;
+
 }
