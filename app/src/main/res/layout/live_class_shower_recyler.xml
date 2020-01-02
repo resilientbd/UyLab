@@ -8,13 +8,13 @@
     android:orientation="vertical">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/layout"
+        android:id="@+id/videoView"
+        style="@style/Widget.AppCompat.Button.Borderless"
         android:layout_width="305dp"
         android:layout_height="65dp"
         android:layout_marginTop="16dp"
-        android:clickable="true"
-        style="@style/Widget.AppCompat.Button.Borderless"
         android:background="@drawable/layout_shaper"
+        android:clickable="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,11 +26,11 @@
             android:layout_height="wrap_content"
             android:background="@drawable/image_shaper_circle"
 
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/pen_tools_details"
 
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:src="@drawable/pen_tools_details" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView10"
@@ -67,17 +67,35 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <TextView
-            android:id="@+id/textView13"
+            android:id="@+id/applyNow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="70dp"
-            android:text="10.05 Min"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="6dp"
             android:background="@drawable/timer_video"
-            android:textColor="@android:color/white"
+            android:gravity="right"
+            android:text="10.05 Min"
 
+            android:textColor="@android:color/white"
+            android:textSize="9dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/textView12"
             app:layout_constraintTop_toTopOf="@+id/textView12" />
+
+        <ImageView
+            android:id="@+id/imageView44"
+            android:layout_width="15dp"
+            android:layout_height="26dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/textView13"
+            app:layout_constraintHorizontal_bias="0.16"
+            app:layout_constraintStart_toStartOf="@+id/textView13"
+            app:layout_constraintTop_toTopOf="@+id/textView13"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/ic_clock" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

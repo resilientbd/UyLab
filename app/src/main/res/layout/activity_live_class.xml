@@ -5,6 +5,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout"
@@ -35,14 +48,11 @@
             android:id="@+id/imageView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="306dp"
-            android:layout_marginTop="104dp"
-            android:layout_marginEnd="30dp"
-            android:layout_marginBottom="17dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+
+            android:layout_marginTop="32dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
             app:srcCompat="@drawable/ic_video" />
 
         <TextView
@@ -62,11 +72,10 @@
             app:layout_constraintVertical_bias="0.571" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/text2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="29dp"
-            android:layout_marginTop="119dp"
             android:layout_marginEnd="207dp"
             android:layout_marginBottom="17dp"
             android:fontFamily="@font/poppins_regular"
@@ -78,8 +87,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.578"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.0" />
 
         <TextView
             android:id="@+id/textView8"
@@ -100,13 +109,14 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/textView72"
+        android:id="@+id/text5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="Next Live Class Schedule"
         android:textSize="21dp"
         android:gravity="left"
+        android:fontFamily="@font/poppins_semibold"
         android:textColor="@android:color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.209"
@@ -114,7 +124,7 @@
         app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
     <TextView
-        android:id="@+id/textView73"
+        android:id="@+id/text1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="See Here Next Live Class Time and Date"
@@ -123,7 +133,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.147"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView72" />
+        app:layout_constraintTop_toBottomOf="@+id/text5" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout22"
@@ -134,11 +144,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.367"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView73">
+        app:layout_constraintTop_toBottomOf="@+id/text1">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout21"
-            android:layout_width="134dp"
+            android:layout_width="142dp"
             android:layout_height="178dp"
             android:background="@drawable/live_class2"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -156,7 +166,7 @@
                 app:srcCompat="@drawable/ic_paper_plane" />
 
             <TextView
-                android:id="@+id/textView74"
+                android:id="@+id/text2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
@@ -170,7 +180,7 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
-            android:id="@+id/textView75"
+            android:id="@+id/text3"
             android:layout_width="wrap_content"
             android:layout_height="15dp"
             android:layout_marginTop="16dp"
@@ -183,16 +193,16 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/textView76"
+            android:id="@+id/text4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Custom Blend Tool"
             android:textColor="@android:color/black"
             android:textSize="14dp"
             app:layout_constraintEnd_toStartOf="@+id/constraintLayout21"
-            app:layout_constraintHorizontal_bias="0.406"
+            app:layout_constraintHorizontal_bias="0.433"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView75" />
+            app:layout_constraintTop_toBottomOf="@+id/text3" />
 
         <TextView
             android:id="@+id/textView77"
@@ -204,7 +214,7 @@
             app:layout_constraintEnd_toStartOf="@+id/constraintLayout21"
             app:layout_constraintHorizontal_bias="0.185"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView76" />
+            app:layout_constraintTop_toBottomOf="@+id/text4" />
 
         <TextView
             android:id="@+id/textView78"
@@ -214,7 +224,7 @@
             android:textColor="@android:color/black"
             android:textSize="14dp"
             app:layout_constraintEnd_toStartOf="@+id/constraintLayout21"
-            app:layout_constraintHorizontal_bias="0.356"
+            app:layout_constraintHorizontal_bias="0.373"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView77" />
 
@@ -243,7 +253,7 @@
             app:layout_constraintTop_toBottomOf="@+id/textView79" />
 
         <TextView
-            android:id="@+id/item_recycler_level"
+            android:id="@+id/textView81"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="8.00pm-10.00pm"
@@ -256,7 +266,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/item_recycler_point_marks"
+        android:id="@+id/textView82"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -276,5 +286,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/item_recycler_point_marks" />
+        app:layout_constraintTop_toBottomOf="@+id/textView82" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

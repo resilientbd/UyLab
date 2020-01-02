@@ -50,9 +50,9 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/item_recycler_level"
-        android:layout_width="320dp"
-        android:layout_height="421dp"
+        android:id="@+id/textView81"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="35dp"
         android:layout_marginTop="26dp"
         android:layout_marginEnd="35dp"

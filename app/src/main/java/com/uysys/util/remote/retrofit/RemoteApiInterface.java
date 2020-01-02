@@ -40,7 +40,7 @@ public interface RemoteApiInterface {
 
     @FormUrlEncoded
     @POST("login")
-    Call<Login> login(@Field("email") String email, @Field("password") String password,@Field("push_token") String push_token);
+    Call<Login> login(@Field("email") String email, @Field("password") String password);
 
     @FormUrlEncoded
     @POST("join-request")

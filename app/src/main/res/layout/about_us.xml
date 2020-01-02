@@ -7,38 +7,42 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout9"
-        android:layout_width="0dp"
+        android:layout_width="375dp"
         android:layout_height="155dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         android:background="#F2F2F2"
+        app:layout_constraintBottom_toTopOf="@+id/constraintLayout24"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginStart="16dp"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/textView14"
-            android:layout_width="184dp"
-            android:layout_height="wrap_content"
-            android:text="About us "
+            android:layout_width="102dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="104dp"
+            android:text="About Us "
+            android:fontFamily="@font/poppins_regular"
             android:textColor="#000000"
-            android:textSize="30dp"
-            app:layout_constraintBottom_toTopOf="@+id/textView15"
+            android:textSize="25dp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/textView15"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
+            android:layout_width="139dp"
+            android:layout_height="16dp"
             android:text="Find Here Some Essential"
             android:textColor="#6D6D6D"
-            android:textSize="20dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/textView14"
-            app:layout_constraintHorizontal_bias="0.575"
-            app:layout_constraintStart_toStartOf="@+id/textView14" />
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="11dp"
+            app:layout_constraintStart_toStartOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
         <ImageView
             android:id="@+id/imageView7"
@@ -87,8 +91,13 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="0dp"
+        android:id="@+id/constraintLayout24"
+        android:layout_width="375dp"
         android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -96,14 +105,17 @@
 
         <TextView
             android:id="@+id/textView72"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:text="@string/about_us"
-            android:textSize="16dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginEnd="16dp"
-            android:textAlignment="center"
+            android:layout_width="297dp"
+            android:layout_height="509dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
             android:gravity="center_horizontal"
+            android:text="@string/about_us"
+            android:textAlignment="center"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="13dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

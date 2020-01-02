@@ -37,6 +37,8 @@
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="88dp"
                     android:text="Search"
+                    android:textColor="#161F39"
+                    android:textSize="14dp"
                     app:layout_constraintBottom_toBottomOf="@+id/imageView2"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
@@ -68,38 +70,45 @@
 
 
                 <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="105dp"
-                    android:layout_height="28dp"
+                    android:id="@+id/text2"
+                    android:layout_width="70dp"
+                    android:layout_height="15dp"
                     android:layout_marginStart="24dp"
                     android:gravity="center"
                     android:text="Popular "
-                    android:textStyle="bold"
+                    android:textColor="#171C1E"
+                    android:textSize="10dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView" />
 
                 <TextView
                     android:id="@+id/textView27"
-                    android:layout_width="150dp"
-                    android:layout_height="28dp"
+                    android:layout_width="70dp"
+                    android:layout_height="15dp"
                     android:gravity="center"
                     android:text="Recent"
+                    android:textColor="#A4A7A8"
+                    android:textSize="10dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toEndOf="@+id/textView2"
+                    app:layout_constraintStart_toEndOf="@+id/text2"
                     app:layout_constraintTop_toBottomOf="@+id/textView" />
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/job_recycle"
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-                    android:layout_marginStart="2dp"
-                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="32dp"
+                    android:layout_marginTop="71dp"
                     android:layout_marginEnd="2dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView27" />
+                    app:layout_constraintTop_toBottomOf="@+id/textView27"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:itemCount="5"
+                    tools:listitem="@layout/item_recycleviewjob" />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -118,15 +127,15 @@
 
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/text5"
                     android:layout_width="wrap_content"
-                    android:layout_height="39dp"
-                    android:layout_marginStart="32dp"
-                    android:layout_marginLeft="32dp"
-                    android:layout_marginTop="72dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="44dp"
                     android:text="Job"
-                    android:textSize="30dp"
-                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:textSize="37dp"
+
 
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -136,9 +145,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Find your job"
-                    android:textSize="20dp"
-                    app:layout_constraintStart_toStartOf="@+id/textView5"
-                    app:layout_constraintTop_toBottomOf="@+id/textView5" />
+                    android:textSize="18dp"
+                    android:textColor="#6D6D6D"
+                    app:layout_constraintStart_toStartOf="@+id/text5"
+                    app:layout_constraintTop_toBottomOf="@+id/text5" />
 
                 <ImageView
                     android:id="@+id/imageView4"
