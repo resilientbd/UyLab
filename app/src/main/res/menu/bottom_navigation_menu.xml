@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_home" android:title="@string/menu_home" android:icon="@drawable/ic_bottombar_icon_home"/>
+    <item android:id="@+id/menu_profile" android:title="@string/menu_profile" android:icon="@drawable/ic_bottombar_icon_profile"/>
+    <item android:id="@+id/menu_blog" android:title="@string/menu_blog" android:icon="@drawable/ic_bottombar_icon_blogging"/>
+    <item android:id="@+id/menu_referral" android:title="@string/menu_referral" android:icon="@drawable/ic_bottombar_icon_referral"/>
+    <item android:id="@+id/menu_more" android:title="@string/menu_more" android:icon="@drawable/ic_bottombar_icon_more"/>
+</menu>

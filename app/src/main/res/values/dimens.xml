@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="button_height">65dp</dimen>
+    <dimen name="button_right_space">16dp</dimen>
+    <dimen name="button_text_size">8sp</dimen>
+    <dimen name="button_bottom">8dp</dimen>
+    <dimen name="button_start">4dp</dimen>
+    <dimen name="first_button_end">12dp</dimen>
+    <dimen name="layer_margin_end">12dp</dimen>
+    <dimen name="notice_text_height">70dp</dimen>
+    <dimen name="margin_notice_top">16dp</dimen>
+</resources>

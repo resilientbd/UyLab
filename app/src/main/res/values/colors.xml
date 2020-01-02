@@ -1,6 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
+<!--    <color name="colorPrimary">#008577</color>-->
+<!--    <color name="colorPrimaryDark">#00574B</color>-->
+<!--    <color name="colorAccent">#D81B60</color>-->
+
+    //new add
+    <color name="colorPrimary">#1AA8FF</color>
+    <color name="colorPrimaryDark">#F2F2F2</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="bgBottomNavigation">#fe485a</color>
+    <color name="skyblue">#1aa8ff</color>
+    <color name="ash">#636464</color>
+    <color name="mildash">#EFEFEF</color>
+    <color name="paste">#44D091</color>
+    <color name="black">#000000</color>
+    <color name="transparentblack">#69000000</color>
+    <color name="mildred">#FF5454</color>
+    <color name="backup_outline">#5680F6</color>
+
+
+
+
+<!--    <color name="colorPrimary">#008577</color>-->
+<!--    <color name="colorPrimaryDark">#00574B</color>-->
+<!--    <color name="colorAccent">#D81B60</color>-->
+
+    //new add
+
+    <color name="white">#FFFFFF</color>
+    <color name="offwhite">#F2F2F2</color>
+    <color name="dashboard_card">#557BE2</color>
+    <color name="dashboard_color">#FFE97D</color>
+    <color name="dashboard_color_shape1">#409CE9</color>
+
+
+    <color name="bottom_nave_active">#1AA8FF</color>
+    <color name="bottom_nave_inactive">#6D6D6D</color>
+    <color name="txt_sub_color">#747474</color>
+    <color name="class_color2">#44D091</color>
+    <color name="class_color1">#656565</color>
+
 </resources>

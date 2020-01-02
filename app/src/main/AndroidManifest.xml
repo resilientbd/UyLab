@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.uysys.uylab">
-    <!-- if you want to load images from the internet -->
-    <uses-permission android:name="android.permission.INTERNET" /> <!-- if you want to load images from a file OR from the internet -->
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
-        android:usesCleartextTraffic="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.complain__1.ComplainOneActivity"></activity>
         <activity android:name=".ui.complain.ComplainActivity" />
-
         <activity
             android:name=".ui.splash.SplashActivity"
             android:theme="@style/AppTheme.FullScreen">
@@ -25,8 +19,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Facilities_Activity"></activity>
-
         <activity android:name=".ui.more.MoreActivity" />
         <activity android:name=".ui.classactivity.ClassActivity" />
         <activity android:name=".ui.refferal.RefferalFragment" />
@@ -42,6 +34,7 @@
         <activity android:name=".ui.offer1.offer1_Activity" />
         <activity android:name=".ui.classContentVideoShower.Class_Content_Video_Shower_Activity" />
         <activity android:name=".ui.ourPartner.OurPartnerActivity" />
+        <activity android:name=".ui.mentors.MentorsActivity" />
         <activity android:name=".ui.mentors.MentorsProfileActivity" />
         <activity
             android:name=".ui.open_page.Open_PageActivity"
@@ -49,7 +42,7 @@
         <activity android:name=".ui.Pro9.Pro9Activity" />
         <activity android:name=".ui.classmodule.ClassModule" />
         <activity android:name=".ui.student_login.Student_LoginActivity" />
-
+        <activity android:name=".ui.iphone_17.About_Us_Activity" />
         <activity android:name=".ui.profile.EditProfileFragement" />
         <activity android:name=".ui.avail_offer_2.Avail_Offer2_Activity" />
         <activity android:name=".ui.classContentShower.Class_Content_Shower_Activity" />
