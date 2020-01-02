@@ -52,7 +52,7 @@ public class GalleryFragment extends BaseFragment implements Retrofitutil1.Retro
         mBinding.recycleviewPro20.setAdapter(mAdapter);
 
         mBinding.recyclerView4.setLayoutManager(new LinearLayoutManager(getActivity(),LinearLayoutManager.HORIZONTAL,false));
-       mBinding.recyclerView4.setAdapter(mHeaderAdapter);
+        mBinding.recyclerView4.setAdapter(mHeaderAdapter);
         init();
         return view;
     }

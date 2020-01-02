@@ -62,4 +62,14 @@ public class Seminar {
         this.duration = duration;
     }
 
+    @Override
+    public String toString() {
+        return "Seminar{" +
+                "id=" + id +
+                ", seminarCategoryId=" + seminarCategoryId +
+                ", title='" + title + '\'' +
+                ", startDate='" + startDate + '\'' +
+                ", duration='" + duration + '\'' +
+                '}';
+    }
 }

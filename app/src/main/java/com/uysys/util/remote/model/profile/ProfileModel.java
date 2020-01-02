@@ -1,12 +1,12 @@
 
-package com.uysys.util.remote.model.classRoutine;
+package com.uysys.util.remote.model.profile;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
 
-public class ClassRoutine {
+public class ProfileModel {
 
     @SerializedName("code")
     @Expose
@@ -16,7 +16,7 @@ public class ClassRoutine {
     private List<Object> messages = null;
     @SerializedName("data")
     @Expose
-    private List<Datum> data = null;
+    private Data data;
 
     public Integer getCode() {
         return code;
@@ -34,17 +34,17 @@ public class ClassRoutine {
         this.messages = messages;
     }
 
-    public List<Datum> getData() {
+    public Data getData() {
         return data;
     }
 
-    public void setData(List<Datum> data) {
+    public void setData(Data data) {
         this.data = data;
     }
 
     @Override
     public String toString() {
-        return "ClassRoutine{" +
+        return "ProfileModel{" +
                 "code=" + code +
                 ", messages=" + messages +
                 ", data=" + data +

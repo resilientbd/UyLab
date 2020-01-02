@@ -44,12 +44,9 @@ private EditText passwordText;
 
     }
 
-
-
-
     @Override
     public void onSuccess(Object object) {
-        Log.i("chk","model:"+object.toString());
+        Log.d("chk","model:"+object.toString());
         Login loginModel= (Login) object;
         if(loginModel.getCode()==200)
         {
