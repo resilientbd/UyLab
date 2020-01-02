@@ -3,6 +3,7 @@ package com.uysys.util.remote.model.classRoutine;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
+import com.uysys.util.remote.model.classroutine.Datum;
 
 import java.util.List;
 

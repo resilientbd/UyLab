@@ -1,5 +1,5 @@
 
-package com.uysys.util.remote.model.classRoutine;
+package com.uysys.util.remote.model.classroutine;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
