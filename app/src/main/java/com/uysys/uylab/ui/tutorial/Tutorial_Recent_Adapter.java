@@ -5,12 +5,22 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.uysys.util.remote.model.tutorial.Recent;
 import com.uysys.uylab.R;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.util.List;
+
 public class Tutorial_Recent_Adapter extends RecyclerView.Adapter<Tutorial_Recent_Adapter.ViewHolder> {
+   private List<Recent> recentList;
+
+
+    public Tutorial_Recent_Adapter(List<Recent> recentList) {
+        this.recentList = recentList;
+    }
+
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -27,7 +37,7 @@ public class Tutorial_Recent_Adapter extends RecyclerView.Adapter<Tutorial_Recen
 
     @Override
     public int getItemCount() {
-        return 3;
+        return recentList.size();
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {

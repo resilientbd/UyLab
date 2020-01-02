@@ -33,7 +33,7 @@ import com.uysys.util.remote.model.profile_information.ProfileInformation;
 import com.uysys.util.remote.model.seminar.SeminarList;
 import com.uysys.util.remote.model.seminar.SeminarModel;
 import com.uysys.util.remote.model.seminarjoin.SeminarJoin;
-import com.uysys.util.remote.model.tutorial.Tutorial;
+
 import com.uysys.util.remote.model.tutorial.TutorialModel;
 import com.uysys.util.remote.model.upcoming_batches.UpcomingBatches;
 
@@ -72,7 +72,7 @@ public interface RemoteApiInterface {
     Call<Gallery> gallery();
 
     @GET("tutorials")
-    Call<Tutorial> tutorial();
+    Call<TutorialModel> tutorial();
 
     @GET("facilities")
     Call<FacilityList> facility();
