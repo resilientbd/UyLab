@@ -32,18 +32,13 @@
             app:srcCompat="@drawable/notification" />
 
         <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="wrap_content"
-            android:layout_height="35dp"
-            android:layout_marginTop="104dp"
-            android:layout_marginEnd="40dp"
-            android:layout_marginBottom="17dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/imageView"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/p" />
+            android:id="@+id/imageView41"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_setting"
+            app:layout_constraintBottom_toBottomOf="@+id/textView2"
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toTopOf="@+id/textView" />
 
         <TextView
             android:id="@+id/textView"
@@ -53,6 +48,7 @@
             android:text="Point"
             android:textColor="@android:color/black"
             android:textSize="25dp"
+            android:fontFamily="@font/poppins_regular"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.125"
@@ -65,17 +61,13 @@
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="29dp"
-            android:layout_marginEnd="215dp"
-            android:layout_marginBottom="17dp"
             android:gravity="left"
             android:text="Find Here full details of point"
+            android:fontFamily="@font/poppins_regular"
             android:textColor="@android:color/black"
             android:textSize="11dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.3"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
         <TextView
             android:id="@+id/textView8"
@@ -144,6 +136,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
                         android:text="Status"
+                        android:fontFamily="@font/poppins_medium"
                         android:textColor="@android:color/black"
                         android:textSize="9sp"
                         app:layout_constraintEnd_toEndOf="@+id/imageView33"
@@ -159,6 +152,8 @@
                 android:layout_marginStart="24dp"
                 android:layout_marginTop="8dp"
                 android:text="Graphic Design"
+                android:fontFamily="@font/poppins_light"
+                android:textColor="#000000"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -168,12 +163,14 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
                 android:text="Web Design"
+                android:fontFamily="@font/poppins_light"
+                android:textColor="#6D6D6D"
                 app:layout_constraintBottom_toBottomOf="@+id/textView83"
                 app:layout_constraintStart_toEndOf="@+id/textView83"
                 app:layout_constraintTop_toTopOf="@+id/textView83" />
 
             <androidx.cardview.widget.CardView
-                android:id="@+id/cardView9"
+                android:id="@+id/point1btn"
                 android:layout_width="108dp"
                 android:layout_height="78dp"
                 app:cardCornerRadius="25dp"
@@ -183,6 +180,7 @@
                 app:layout_constraintTop_toTopOf="@+id/cardView6" >
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/pointbtn12"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:background="#5680F6">
@@ -204,6 +202,7 @@
                         android:layout_marginTop="4dp"
                         android:text="Points"
                         android:textSize="9sp"
+                        android:fontFamily="@font/poppins_medium"
                         app:layout_constraintEnd_toEndOf="@+id/imageView39"
                         app:layout_constraintStart_toStartOf="@+id/imageView39"
                         app:layout_constraintTop_toBottomOf="@+id/imageView39" />
@@ -215,9 +214,9 @@
                 android:layout_height="78dp"
                 android:layout_marginStart="24dp"
                 app:cardCornerRadius="25dp"
-                app:layout_constraintBottom_toBottomOf="@+id/cardView9"
-                app:layout_constraintStart_toEndOf="@+id/cardView9"
-                app:layout_constraintTop_toTopOf="@+id/cardView9" >
+                app:layout_constraintBottom_toBottomOf="@+id/point1btn"
+                app:layout_constraintStart_toEndOf="@+id/point1btn"
+                app:layout_constraintTop_toTopOf="@+id/point1btn" >
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -240,6 +239,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
                         android:text="Redeem"
+                        android:fontFamily="@font/poppins_medium"
                         android:textSize="9sp"
                         app:layout_constraintEnd_toEndOf="@+id/imageView40"
                         app:layout_constraintStart_toStartOf="@+id/imageView40"
@@ -266,7 +266,8 @@
                     android:layout_marginStart="32dp"
                     android:layout_marginTop="32dp"
                     android:text="14.11"
-                    android:textColor="@android:color/black"
+                    android:fontFamily="@font/poppins_bold"
+                    android:textColor="#2D2D2D"
                     android:textSize="23sp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -277,6 +278,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:text="Total Point"
+                    android:fontFamily="@font/poppins_medium"
                     android:textSize="13sp"
                     app:layout_constraintBottom_toBottomOf="@+id/textView87"
                     app:layout_constraintStart_toEndOf="@+id/textView87"
@@ -287,6 +289,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
+                    android:fontFamily="@font/poppins_medium"
                     android:text="Point earnd in last 5 months"
                     android:textSize="13sp"
                     app:layout_constraintStart_toStartOf="@+id/textView87"
@@ -298,7 +301,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="24dp"
                     android:text="point"
-                    android:textSize="9sp"
+                    android:textColor="#2D2D2D"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:textSize="11sp"
                     app:layout_constraintStart_toStartOf="@+id/textView89"
                     app:layout_constraintTop_toBottomOf="@+id/textView89" />
 
@@ -307,9 +312,13 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="70dp"
+                    android:layout_marginEnd="160dp"
+                    android:fontFamily="@font/poppins_semibold"
                     android:text="Earned date"
-                    android:textSize="9sp"
+                    android:textSize="11sp"
+                    android:textColor="#2D2D2D"
                     app:layout_constraintBottom_toBottomOf="@+id/textView90"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/textView90"
                     app:layout_constraintTop_toTopOf="@+id/textView90" />
 
@@ -318,22 +327,25 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="70dp"
+                    android:fontFamily="@font/poppins_semibold"
                     android:text="Expiry date"
-                    android:textSize="9sp"
+                    android:textSize="11sp"
+                    android:textColor="#2D2D2D"
                     app:layout_constraintBottom_toBottomOf="@+id/textView91"
+                    app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@+id/textView91"
                     app:layout_constraintTop_toTopOf="@+id/textView91" />
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:layout_width="409dp"
-                    android:layout_height="0dp"
-                    android:layout_marginTop="8dp"
-                    app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView3"
-                    app:layout_constraintEnd_toEndOf="parent"
+                    android:id="@+id/points1_recycler"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintEnd_toEndOf="@+id/view"
                     app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView91"
-                    app:layout_constraintVertical_bias="0.0" />
+                    app:layout_constraintStart_toStartOf="@+id/view"
+                    app:layout_constraintTop_toBottomOf="@+id/view"
+                    tools:listitem="@layout/item_recycler_points1" />
 
                 <com.google.android.material.bottomnavigation.BottomNavigationView
                     android:id="@+id/bottomNavigationView3"
@@ -342,6 +354,16 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="345dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#C1C1C1"
+                    app:layout_constraintEnd_toEndOf="@+id/textView92"
+                    app:layout_constraintStart_toStartOf="@+id/textView90"
+                    app:layout_constraintTop_toBottomOf="@+id/textView91" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>

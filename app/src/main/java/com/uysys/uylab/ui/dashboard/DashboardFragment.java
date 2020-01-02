@@ -30,9 +30,11 @@ import com.uysys.uylab.ui.jobapply.JobapplyFragment;
 import com.uysys.uylab.ui.jobopen.JobopenFragment;
 import com.uysys.uylab.ui.liveClass.Live_Class;
 import com.uysys.uylab.ui.notice.NoticeFragment;
+import com.uysys.uylab.ui.point.Point1_Fragment;
 import com.uysys.uylab.ui.point.Point_Fragment;
 import com.uysys.uylab.ui.studentmain.FragmentListener;
 import com.uysys.uylab.ui.support.SupportFragment;
+import com.uysys.uylab.ui.tutorial.Fragment_Tutorial;
 
 import java.util.HashMap;
 
@@ -45,23 +47,28 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
     private CardView noticeView;
     private CardView classView;
     private CardView internshipView;
-    private CardView contestView;
+    //private CardView contestView;
     private View backupBtn;
     private View supportBtn;
     private View eventBtn;
     private View liveClassBtn;
     private View jobhubButton;
     private View pointbtn;
+    private View tutorialbtn;
+
+    private View point1btn;
     private InternshipFragment internshipFragment;
     private BackupFragment backupFragment;
     private SupportFragment supportFragment;
     private JobFragment jobFragment;
+    private Fragment_Tutorial fragmentTutorial;
     private JobopenFragment jobopenFragment;
     private JobapplyFragment jobapplyFragment;
 
     private EventFragment eventFragment;
     private Live_Class live_class;
     private Point_Fragment point_fragment;
+    private Point1_Fragment point1_fragment;
 
 
     @Nullable
@@ -70,7 +77,10 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
         view=inflater.inflate(R.layout.fragment_dashboard,container,false);
         mDemoSlider = view.findViewById(R.id.slider);
         noticeView=view.findViewById(R.id.notice);
-        contestView = view.findViewById(R.id.contestView);
+
+        //for contestView
+        //contestView = view.findViewById(R.id.contestView);
+
         classView=view.findViewById(R.id.classview);
         internshipView=view.findViewById(R.id.internshipclick);
         backupBtn=view.findViewById(R.id.backupbtn);
@@ -78,12 +88,15 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
         eventBtn=view.findViewById(R.id.eventcardbutton);
         liveClassBtn = view.findViewById(R.id.liveClassBtn);
         jobhubButton = view.findViewById(R.id.jobhubbtn);
+
         supportBtn.setOnClickListener(this);
         eventBtn.setOnClickListener(this);
         liveClassBtn.setOnClickListener(this);
         pointbtn=view.findViewById(R.id.pointbtn);
         pointbtn.setOnClickListener(this);
         jobhubButton.setOnClickListener(this);
+        tutorialbtn=view.findViewById(R.id.tutorialbtn);
+        tutorialbtn.setOnClickListener(this);
 
       //  mPageIndicator=view.findViewById(R.id.custom_indicator);
 
@@ -110,7 +123,7 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
 //        mDemoSlider.setCustomIndicator(mPageIndicator);
         classView.setOnClickListener(this);
         noticeView.setOnClickListener(this);
-        contestView.setOnClickListener(this);
+        //contestView.setOnClickListener(this);
         internshipView.setOnClickListener(this);
         backupBtn.setOnClickListener(this);
         return view;
@@ -132,6 +145,10 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
         jobFragment.setFragmentListener(listener);
         point_fragment = new Point_Fragment();
         point_fragment.setFragmentListener(listener);
+        fragmentTutorial=new Fragment_Tutorial();
+        fragmentTutorial.setFragmentListener(listener);
+        point1_fragment = new Point1_Fragment();
+        point1_fragment.setFragmentListener(listener);
 
 
     }
@@ -169,10 +186,12 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
                 startActivity(intent);
                 break;
 
-            case R.id.contestView:
-                intent=new Intent(getActivity(), ComplainActivity.class);
-                startActivity(intent);
-                break;
+//
+//            case R.id.contestView:
+//                intent=new Intent(getActivity(), ComplainActivity.class);
+//                startActivity(intent);
+//                break;
+
             case R.id.internshipclick:
               addFragment(internshipFragment);
                 break;
@@ -193,6 +212,12 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
                 break;
             case R.id.pointbtn:
                 addFragment(point_fragment);
+                break;
+            case R.id.point1btn:
+                addFragment(point1_fragment);
+                break;
+            case R.id.tutorialbtn:
+                addFragment(fragmentTutorial);
                 break;
 
             default:break;

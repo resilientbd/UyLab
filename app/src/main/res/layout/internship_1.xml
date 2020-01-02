@@ -18,22 +18,22 @@
 
         <TextView
             android:id="@+id/text1_avail_4"
-            android:layout_width="210dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="100dp"
+            android:gravity="center"
             android:text="@string/internship1_text1"
             android:textColor="#000000"
-            android:textSize="20dp"
+            android:textSize="18dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.587"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/image_avail_4"
-            android:layout_width="160dp"
-            android:layout_height="151dp"
-            android:layout_marginTop="30dp"
+            android:layout_width="102dp"
+            android:layout_height="102dp"
+            android:layout_marginTop="22dp"
             app:layout_constraintEnd_toEndOf="@+id/text1_avail_4"
             app:layout_constraintHorizontal_bias="0.46"
             app:layout_constraintStart_toStartOf="@+id/text1_avail_4"
@@ -42,15 +42,14 @@
 
         <Button
             android:id="@+id/closeBtn_internship1"
-            android:layout_width="280dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_width="272dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="28dp"
             android:background="@drawable/homebtn_avail_3"
             android:text="Close"
             android:textAllCaps="false"
             android:textColor="#ffffff"
-            android:textSize="16dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="14sp"
             app:layout_constraintEnd_toEndOf="@+id/image_avail_4"
             app:layout_constraintStart_toStartOf="@+id/image_avail_4"
             app:layout_constraintTop_toBottomOf="@+id/image_avail_4" />
@@ -59,8 +58,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/layout1_avail4"
-        android:layout_width="0dp"
-        android:layout_height="140dp"
+        android:layout_width="match_parent"
+        android:layout_height="155dp"
         android:background="#F0EFEF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -68,9 +67,10 @@
 
         <TextView
             android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="184dp"
+            android:layout_height="52dp"
             android:layout_marginStart="24dp"
+            android:layout_marginTop="43dp"
             android:text="Internship"
             android:textColor="#000000"
             android:textSize="30sp"
@@ -81,11 +81,10 @@
 
         <TextView
             android:id="@+id/backBtn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
+            android:layout_width="148dp"
+            android:layout_height="21dp"
             android:text="Apply For Internship"
-            android:textColor="#000000"
+            android:textColor="#6D6D6D"
             android:textSize="15sp"
             app:layout_constraintStart_toStartOf="@+id/textView"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -117,11 +116,11 @@
             android:layout_width="16dp"
             android:layout_height="16dp"
             android:background="@drawable/black_round_bg"
-            android:text="0"
             android:gravity="center"
+            android:text="0"
             android:textAlignment="center"
-            android:textSize="12sp"
             android:textColor="#fff"
+            android:textSize="12sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/imageView2"
             app:layout_constraintTop_toTopOf="@+id/imageView2" />

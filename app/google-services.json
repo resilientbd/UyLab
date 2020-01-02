@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "761088004805",
+    "firebase_url": "https://car-buy-and-sell-f4b90.firebaseio.com",
+    "project_id": "car-buy-and-sell-f4b90",
+    "storage_bucket": "car-buy-and-sell-f4b90.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:761088004805:android:a67ea0df2de328c4b196ac",
+        "android_client_info": {
+          "package_name": "com.uysys.uylab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "761088004805-s6ope7a4u61re6c9vnuli00af295flep.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.uysys.uylab",
+            "certificate_hash": "f0a94fbf5d8014c012e54bdf92453fa2b22afce0"
+          }
+        },
+        {
+          "client_id": "761088004805-pum09rs3mvn20d3h8a5ue360lk1l6h2o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8b5Jf--CuFS8bRyWZpcVAivmVHMK0o6Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "761088004805-pum09rs3mvn20d3h8a5ue360lk1l6h2o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:761088004805:android:e0a8f526d414c395b196ac",
+        "android_client_info": {
+          "package_name": "freelancevally.aldilala"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "761088004805-726lfp0j9mdak8ojgupecip9lljte632.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "freelancevally.aldilala",
+            "certificate_hash": "75f5ce2dcfcf077c8c3198a1eab4987cb2b78e56"
+          }
+        },
+        {
+          "client_id": "761088004805-pum09rs3mvn20d3h8a5ue360lk1l6h2o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8b5Jf--CuFS8bRyWZpcVAivmVHMK0o6Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "761088004805-pum09rs3mvn20d3h8a5ue360lk1l6h2o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

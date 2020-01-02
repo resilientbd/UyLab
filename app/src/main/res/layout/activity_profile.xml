@@ -75,8 +75,8 @@
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:layout_width="190dp"
                     android:layout_height="190dp"
-                    android:id="@+id/userImag"
                     android:scaleType="centerCrop"
+                    android:id="@+id/userImg"
                     android:src="@drawable/profile_person_img"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintLeft_toLeftOf="parent"
@@ -104,9 +104,9 @@
                     app:cardCornerRadius="250dp">
 
                     <TextView
+                        android:id="@+id/personalpoint"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:id="@+id/rank"
                         android:background="#1AA8FF"
                         android:gravity="center"
                         android:text="101"

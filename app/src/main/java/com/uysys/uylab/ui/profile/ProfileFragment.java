@@ -61,13 +61,13 @@ public class ProfileFragment extends Fragment implements RetrofitUtil.RetrofitUt
         userId = view.findViewById(R.id.studentid);
         pointText = view.findViewById(R.id.pointbtn);
         bankText = view.findViewById(R.id.globalrankbtn);
-        rankText = view.findViewById(R.id.rank);
-        imageView = view.findViewById(R.id.userImag);
+        rankText = view.findViewById(R.id.personalpoint);
+        imageView = view.findViewById(R.id.userImg);
         minService = RemoteApiProvider.getInstance().getRemoteApi();
         mUtil = new RetrofitUtil();
         mUtil.setRetrofitUtilListener(this);
         Call call=minService.profile();
-        mUtil.networkCall(call);
+        mUtil.networkcall(call);
         return view;
 
     }
