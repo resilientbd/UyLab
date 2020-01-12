@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+
     <androidx.core.widget.NestedScrollView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
-
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -125,20 +121,20 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
-    <EditText
-        android:id="@+id/editText10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="     Your Name"
+            <EditText
+                android:id="@+id/editText10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/seminar_textfild_shape"
+                android:ems="10"
+                android:hint="     Your Name"
 
-        android:textColor="#000000"
-        android:background="@drawable/seminar_textfild_shape"
-        app:layout_constraintEnd_toEndOf="@+id/textView108"
-        app:layout_constraintStart_toStartOf="@+id/textView108"
-        app:layout_constraintTop_toBottomOf="@+id/textView108" />
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="@+id/textView108"
+                app:layout_constraintStart_toStartOf="@+id/textView108"
+                app:layout_constraintTop_toBottomOf="@+id/textView108" />
 
             <Spinner
                 android:id="@+id/spinner5"
@@ -151,19 +147,19 @@
                 app:layout_constraintStart_toStartOf="@+id/editText10"
                 app:layout_constraintTop_toBottomOf="@+id/editText10" />
 
-    <EditText
-        android:id="@+id/editText11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="     Mobile Number"
-        android:textColor="#000000"
-        android:background="@drawable/seminar_textfild_shape"
-        app:layout_constraintEnd_toEndOf="@+id/spinner5"
-        app:layout_constraintStart_toStartOf="@+id/spinner5"
-        app:layout_constraintTop_toBottomOf="@+id/spinner5" />
+            <EditText
+                android:id="@+id/editText11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/seminar_textfild_shape"
+                android:ems="10"
+                android:hint="     Mobile Number"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="@+id/spinner5"
+                app:layout_constraintStart_toStartOf="@+id/spinner5"
+                app:layout_constraintTop_toBottomOf="@+id/spinner5" />
 
             <EditText
                 android:id="@+id/editText12"
@@ -206,15 +202,15 @@
                 app:layout_constraintStart_toStartOf="@+id/submitBtn"
                 app:layout_constraintTop_toBottomOf="@+id/submitBtn" />
 
-    <TextView
-        android:id="@+id/textView110"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="ALl Of Program Free and It will be"
-        android:textSize="10sp"
-        android:textColor="#747474"
-        app:layout_constraintStart_toStartOf="@+id/textView109"
-        app:layout_constraintTop_toBottomOf="@+id/textView109" />
+            <TextView
+                android:id="@+id/textView110"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ALl Of Program Free and It will be"
+                android:textColor="#747474"
+                android:textSize="10sp"
+                app:layout_constraintStart_toStartOf="@+id/textView109"
+                app:layout_constraintTop_toBottomOf="@+id/textView109" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerView"
