@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.uysys.uylab">
-
+    <uses-permission android:name="android.permission.INTERNET"/>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -12,16 +12,34 @@
         android:theme="@style/AppTheme">
         <activity android:name=".ui.complain__1.ComplainOneActivity"></activity>
         <activity android:name=".ui.complain.ComplainActivity" />
+        <activity android:name=".ui.Pro9.Pro9Activity"></activity>
+        <activity android:name=".ui.classmodule.ClassModule" />
+
+
+        <activity android:name=".ui.backup1_2.Backup1_2Activity"></activity>
+
+
+        <activity android:name=".ui.pro3.pro3_Activity" />
+        <activity android:name=".ui.backup1_3.backup1_3_Activity" />
+        <activity android:name=".ui.Backup1_1_.Backup1_1_Activity" />
+
+
 
         <activity
             android:name=".ui.splash.SplashActivity"
             android:theme="@style/AppTheme.FullScreen">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
         </activity>
+
+
+        <activity android:name=".ui.Backup1.Backup1_Activity" />
+
+
+
 
         <activity android:name=".ui.classactivity.ClassActivity" />
         <activity android:name=".ui.refferal.RefferalFragment" />
@@ -29,12 +47,12 @@
         <activity android:name=".ui.pointearn.Pro_5Activity" />
         <activity android:name=".ui.Routine.RoutineActivity" />
         <activity android:name=".ui.internship.InternshipActivity" />
-        <activity android:name=".ui.pro3.pro3_Activity" />
-        <activity android:name=".ui.backup1_3.backup1_3_Activity" />
-        <activity android:name=".ui.Backup1_1_.Backup1_1_Activity" />
+
+
         <activity android:name=".ui.pro2.pro2_Activity" />
         <activity android:name=".ui.offer2.offer2_Activity" />
         <activity android:name=".ui.offer1.offer1_Activity" />
+
         <activity android:name=".ui.classContentVideoShower.Class_Content_Video_Shower_Activity" />
         <activity android:name=".ui.ourPartner.OurPartnerActivity" />
         <activity android:name=".ui.mentors.MentorsActivity" />
@@ -42,9 +60,12 @@
         <activity
             android:name=".ui.open_page.Open_PageActivity"
             android:theme="@style/AppTheme.FullScreen" />
-        <activity android:name=".ui.Pro9.Pro9Activity" />
-        <activity android:name=".ui.classmodule.ClassModule" />
+
         <activity android:name=".ui.student_login.Student_LoginActivity" />
+
+        <activity android:name=".ui.offer.OfferActivity">
+
+        </activity>
 
         <activity android:name=".ui.profile.EditProfileFragement" />
         <activity android:name=".ui.avail_offer_2.Avail_Offer2_Activity" />

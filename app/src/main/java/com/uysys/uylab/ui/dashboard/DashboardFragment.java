@@ -12,11 +12,12 @@ import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
-import com.daimajia.slider.library.Indicators.PagerIndicator;
-import com.daimajia.slider.library.SliderLayout;
-import com.daimajia.slider.library.SliderTypes.BaseSliderView;
-import com.daimajia.slider.library.SliderTypes.TextSliderView;
-import com.daimajia.slider.library.Tricks.ViewPagerEx;
+
+import com.glide.slider.library.SliderLayout;
+import com.glide.slider.library.indicators.PagerIndicator;
+import com.glide.slider.library.slidertypes.BaseSliderView;
+import com.glide.slider.library.slidertypes.TextSliderView;
+import com.glide.slider.library.tricks.ViewPagerEx;
 import com.google.android.material.navigation.NavigationView;
 import com.uysys.uylab.R;
 import com.uysys.uylab.ui.backup.BackupFragment;
@@ -109,7 +110,7 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
             textSliderView
 
                     .image(file_maps.get(name))
-                    .setScaleType(BaseSliderView.ScaleType.Fit)
+
                     .setOnSliderClickListener(this);
 
             //add your extra information
@@ -120,6 +121,7 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
             mDemoSlider.addSlider(textSliderView);
         }
         mDemoSlider.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
+
 //        mDemoSlider.setCustomIndicator(mPageIndicator);
         classView.setOnClickListener(this);
         noticeView.setOnClickListener(this);

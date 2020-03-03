@@ -39,5 +39,7 @@
     <color name="txt_sub_color">#747474</color>
     <color name="class_color2">#44D091</color>
     <color name="class_color1">#656565</color>
+    <color name="selected_color">#1AA8FF</color>
+    <color name="disselect_color">#4C4D4E</color>
 
 </resources>

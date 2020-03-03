@@ -18,6 +18,7 @@ public class Datum {
     @Expose
     private List<Photo> photos = null;
 
+    private boolean isSelect;
     public Integer getId() {
         return id;
     }
@@ -40,6 +41,14 @@ public class Datum {
 
     public void setPhotos(List<Photo> photos) {
         this.photos = photos;
+    }
+
+    public boolean isSelect() {
+        return isSelect;
+    }
+
+    public void setSelect(boolean select) {
+        isSelect = select;
     }
 
     @Override

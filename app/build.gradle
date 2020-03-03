@@ -1,6 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        debug {
+            storeFile file('E:\\Working Directory\\appkey\\uylab.jks')
+            storePassword '123456'
+            keyAlias = 'key0'
+            keyPassword '123456'
+        }
+    }
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
     dataBinding(){
@@ -19,6 +27,10 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
     }
 }
 
@@ -44,8 +56,8 @@ dependencies {
     implementation 'de.hdodenhof:circleimageview:3.0.1'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'com.nineoldandroids:library:2.4.0'
-    implementation 'com.daimajia.slider:library:1.1.5@aar'
-    implementation 'com.squareup.picasso:picasso:2.3.2'
+    implementation "com.github.firdausmaulan:GlideSlider:1.5.1"
+
 
     //Retrofit
     implementation 'com.squareup.retrofit2:retrofit:'
@@ -57,5 +69,17 @@ dependencies {
     implementation ("com.github.bumptech.glide:glide:4.9.0") {
         exclude group: "com.android.support"
     }
+    //firebase
+    implementation 'com.google.firebase:firebase-analytics:17.2.0'
+
+    implementation 'com.google.guava:guava:27.0.1-android'
+    implementation 'androidx.work:work-runtime:2.3.0'
+    implementation 'com.google.firebase:firebase-messaging:20.1.0'
+    implementation 'com.google.firebase:firebase-firestore:21.3.1'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+
+    //picasso
+    implementation 'com.squareup.picasso:picasso:2.5.2'
 }
+apply plugin: 'com.google.gms.google-services'
 
