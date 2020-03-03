@@ -11,11 +11,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.uysys.util.remote.model.gallery.Datum;
 import com.uysys.uylab.R;
 import com.uysys.uylab.databinding.ItemGalleryHeaderBinding;
+import com.uysys.uylab.databinding.ItemGalleryHeaderBindingImpl;
 
 import java.util.List;
 
 public class GalleryHeaderAdapter extends  RecyclerView.Adapter<GalleryHeaderAdapter.ViewHolder>{
-    ItemGalleryHeaderBinding mItemBinding;
+    ItemGalleryHeaderBindingImpl mItemBinding;
 
     public GalleryHeaderAdapter(List<Datum> dataList) {
         this.dataList = dataList;
