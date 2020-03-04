@@ -42,4 +42,13 @@
     <color name="selected_color">#1AA8FF</color>
     <color name="disselect_color">#4C4D4E</color>
 
+
+    <color name="color_0">#28C0DB</color>
+    <color name="color_1">#FB4A81</color>
+    <color name="color_2">#28C0DB</color>
+    <color name="color_3">#49AE9F</color>
+    <color name="color_4">#1AA8FF</color>
+    <color name="color_5">#FCD361</color>
+    <color name="color_6">#6F92F4</color>
+
 </resources>
