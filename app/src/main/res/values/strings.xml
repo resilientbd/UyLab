@@ -172,5 +172,6 @@ In UY Lab we provide top-level professional IT training courses to basic to adva
     <string name="default_notification_channel_id">111</string>
     <string name="fcm_message">Notification</string>
     <string name="msg_token_fmt">firebase_token</string>
+    <string name="deadline">Deadline: 12/02/2019</string>
 
 </resources>

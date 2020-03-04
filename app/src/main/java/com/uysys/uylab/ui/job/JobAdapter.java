@@ -59,8 +59,8 @@ public class JobAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>  {
             imageView=itemView.findViewById(R.id.imageView);
             constraintLayout=itemView.findViewById(R.id.constraintLayout);
             textView1=itemView.findViewById(R.id.text1);
-            textView2=itemView.findViewById(R.id.text2);
-            textView3=itemView.findViewById(R.id.text3);
+            textView2=itemView.findViewById(R.id.idtext);
+            textView3=itemView.findViewById(R.id.paidamount);
             textView4=itemView.findViewById(R.id.text4);
             textView5=itemView.findViewById(R.id.text5);
             cons=itemView.findViewById(R.id.jobView);

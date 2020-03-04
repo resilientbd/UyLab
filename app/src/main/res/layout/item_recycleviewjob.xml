@@ -44,7 +44,7 @@
         app:layout_constraintTop_toTopOf="@+id/text5" />
 
     <TextView
-        android:id="@+id/text3"
+        android:id="@+id/paidamount"
         android:layout_width="32dp"
         android:layout_height="14dp"
         android:layout_marginStart="88dp"
@@ -66,10 +66,10 @@
         android:text="10k-15k"
         android:textColor="#FFFFFF"
         android:textSize="10dp"
-        app:layout_constraintEnd_toEndOf="@+id/text3"
+        app:layout_constraintEnd_toEndOf="@+id/paidamount"
         app:layout_constraintHorizontal_bias="0.976"
-        app:layout_constraintStart_toStartOf="@+id/text3"
-        app:layout_constraintTop_toBottomOf="@+id/text3" />
+        app:layout_constraintStart_toStartOf="@+id/paidamount"
+        app:layout_constraintTop_toBottomOf="@+id/paidamount" />
 
     <TextView
         android:id="@+id/textView3"

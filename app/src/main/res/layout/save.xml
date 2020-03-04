@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/ic_success" />
 
     <TextView
-        android:id="@+id/text2"
+        android:id="@+id/idtext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
@@ -33,17 +33,17 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <TextView
-            android:id="@+id/text3"
+            android:id="@+id/paidamount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Successfully Saved!"
             android:textColor="#ffffff"
             android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="@+id/text2"
+            app:layout_constraintEnd_toEndOf="@+id/idtext"
             app:layout_constraintHorizontal_bias="0.493"
-            app:layout_constraintStart_toStartOf="@+id/text2"
-            app:layout_constraintTop_toBottomOf="@+id/text2" />
+            app:layout_constraintStart_toStartOf="@+id/idtext"
+            app:layout_constraintTop_toBottomOf="@+id/idtext" />
 
     <Button
         android:id="@+id/goBtn_Save"
@@ -54,9 +54,9 @@
         android:text="Go Dashboard"
         android:textAllCaps="false"
         android:textColor="#ffffff"
-        app:layout_constraintEnd_toEndOf="@+id/text3"
+        app:layout_constraintEnd_toEndOf="@+id/paidamount"
         app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toStartOf="@+id/text3"
-        app:layout_constraintTop_toBottomOf="@+id/text3" />
+        app:layout_constraintStart_toStartOf="@+id/paidamount"
+        app:layout_constraintTop_toBottomOf="@+id/paidamount" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -79,7 +79,7 @@
             app:layout_constraintVertical_bias="0.0" />
 
         <TextView
-            android:id="@+id/text2"
+            android:id="@+id/idtext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Find Here Some Essential"
@@ -173,7 +173,7 @@
             app:srcCompat="@drawable/twitter" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/btnExplandClose"
             android:layout_width="36dp"
             android:layout_height="36dp"
             android:layout_marginStart="24dp"

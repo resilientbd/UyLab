@@ -31,6 +31,7 @@ import com.uysys.uylab.ui.jobapply.JobapplyFragment;
 import com.uysys.uylab.ui.jobopen.JobopenFragment;
 import com.uysys.uylab.ui.liveClass.Live_Class;
 import com.uysys.uylab.ui.notice.NoticeFragment;
+import com.uysys.uylab.ui.payment_summery.PaymentSummeryFragment;
 import com.uysys.uylab.ui.point.Point1_Fragment;
 import com.uysys.uylab.ui.point.Point_Fragment;
 import com.uysys.uylab.ui.studentmain.FragmentListener;
@@ -56,6 +57,7 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
     private View jobhubButton;
     private View pointbtn;
     private View tutorialbtn;
+    private View detailsBtn;
 
     private View point1btn;
     private InternshipFragment internshipFragment;
@@ -70,6 +72,7 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
     private Live_Class live_class;
     private Point_Fragment point_fragment;
     private Point1_Fragment point1_fragment;
+    private PaymentSummeryFragment paymentSummeryFragment;
 
 
     @Nullable
@@ -89,6 +92,7 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
         eventBtn=view.findViewById(R.id.eventcardbutton);
         liveClassBtn = view.findViewById(R.id.liveClassBtn);
         jobhubButton = view.findViewById(R.id.jobhubbtn);
+        detailsBtn = view.findViewById(R.id.detailsview);
 
         supportBtn.setOnClickListener(this);
         eventBtn.setOnClickListener(this);
@@ -98,6 +102,7 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
         jobhubButton.setOnClickListener(this);
         tutorialbtn=view.findViewById(R.id.tutorialbtn);
         tutorialbtn.setOnClickListener(this);
+        detailsBtn.setOnClickListener(this);
 
       //  mPageIndicator=view.findViewById(R.id.custom_indicator);
 
@@ -151,6 +156,8 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
         fragmentTutorial.setFragmentListener(listener);
         point1_fragment = new Point1_Fragment();
         point1_fragment.setFragmentListener(listener);
+        paymentSummeryFragment=new PaymentSummeryFragment();
+        paymentSummeryFragment.setFragmentListener(listener);
 
 
     }
@@ -221,6 +228,8 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
             case R.id.tutorialbtn:
                 addFragment(fragmentTutorial);
                 break;
+            case R.id.detailsview:
+                addFragment(paymentSummeryFragment);
 
             default:break;
         }

@@ -63,7 +63,7 @@
             app:layout_constraintVertical_bias="0.571" />
 
         <TextView
-            android:id="@+id/text2"
+            android:id="@+id/idtext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="29dp"
@@ -100,7 +100,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <TextView
-        android:id="@+id/text3"
+        android:id="@+id/paidamount"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Class Number"
@@ -126,7 +126,7 @@
         android:paddingStart="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text3" />
+        app:layout_constraintTop_toBottomOf="@+id/paidamount" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -138,7 +138,7 @@
         app:layout_constraintTop_toTopOf="@+id/spinner" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnExplandClose"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="26dp"

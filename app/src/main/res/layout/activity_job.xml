@@ -70,7 +70,7 @@
 
 
                 <TextView
-                    android:id="@+id/text2"
+                    android:id="@+id/idtext"
                     android:layout_width="70dp"
                     android:layout_height="15dp"
                     android:layout_marginStart="24dp"
@@ -91,7 +91,7 @@
                     android:textSize="10dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toEndOf="@+id/text2"
+                    app:layout_constraintStart_toEndOf="@+id/idtext"
                     app:layout_constraintTop_toBottomOf="@+id/textView" />
 
                 <androidx.recyclerview.widget.RecyclerView

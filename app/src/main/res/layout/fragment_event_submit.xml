@@ -100,7 +100,7 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
             <TextView
-                android:id="@+id/text3"
+                android:id="@+id/paidamount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
