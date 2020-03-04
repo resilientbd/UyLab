@@ -40,7 +40,7 @@ public class MentorsAdapter extends BaseAdapter<Datum> {
         @Override
         public void bind(Datum item) {
             Picasso.with(mItemBinding.getRoot().getContext()).load(item.getPhoto()).error(R.drawable.default_img).into(mItemBinding.profileImage);
-            mItemBinding.textView19.setText(item.getDesignation());
+            mItemBinding.textView19.setText(item.getDesignation()+" | see details");
             mItemBinding.textView14.setText(item.getName());
         }
     }

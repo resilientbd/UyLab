@@ -218,18 +218,18 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:id="@+id/imageView19"
+                    android:id="@+id/fbbtn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
-                    app:layout_constraintBottom_toTopOf="@+id/textView43"
+                    app:layout_constraintBottom_toTopOf="@+id/biotext"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/ic_seminar" />
 
                 <TextView
-                    android:id="@+id/textView43"
+                    android:id="@+id/biotext"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="@dimen/button_bottom"

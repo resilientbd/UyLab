@@ -134,7 +134,7 @@
                         android:layout_height="match_parent">
 
                         <TextView
-                            android:id="@+id/textView41"
+                            android:id="@+id/namtext"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="23dp"
@@ -171,8 +171,8 @@
                             android:textColor="@color/white"
                             android:textSize="27sp"
                             android:includeFontPadding="false"
-                            app:layout_constraintStart_toStartOf="@+id/textView41"
-                            app:layout_constraintTop_toBottomOf="@+id/textView41" />
+                            app:layout_constraintStart_toStartOf="@+id/namtext"
+                            app:layout_constraintTop_toBottomOf="@+id/namtext" />
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -329,18 +329,18 @@
                             android:layout_height="match_parent">
 
                             <ImageView
-                                android:id="@+id/imageView19"
+                                android:id="@+id/fbbtn"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginTop="8dp"
-                                app:layout_constraintBottom_toTopOf="@+id/textView43"
+                                app:layout_constraintBottom_toTopOf="@+id/biotext"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
                                 app:srcCompat="@drawable/ic_settings_button" />
 
                             <TextView
-                                android:id="@+id/textView43"
+                                android:id="@+id/biotext"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="@dimen/button_bottom"
@@ -373,14 +373,14 @@
                                 android:id="@+id/imageView18"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                app:layout_constraintBottom_toTopOf="@+id/textView42"
+                                app:layout_constraintBottom_toTopOf="@+id/designationtext"
                                 app:layout_constraintEnd_toEndOf="parent"
                                 app:layout_constraintStart_toStartOf="parent"
                                 app:layout_constraintTop_toTopOf="parent"
                                 app:srcCompat="@drawable/ic_conversation" />
 
                             <TextView
-                                android:id="@+id/textView42"
+                                android:id="@+id/designationtext"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_marginBottom="@dimen/button_bottom"
@@ -432,7 +432,7 @@
                                />
 
                             <ImageView
-                                android:id="@+id/imageView22"
+                                android:id="@+id/linkedinbtn"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 app:layout_constraintBottom_toTopOf="@+id/textView46"

@@ -114,7 +114,7 @@
           </androidx.constraintlayout.widget.ConstraintLayout>
 
           <TextView
-              android:id="@+id/textView41"
+              android:id="@+id/namtext"
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:layout_marginTop="16dp"
@@ -128,7 +128,7 @@
               app:layout_constraintTop_toBottomOf="@+id/profile_image" />
 
           <TextView
-              android:id="@+id/textView42"
+              android:id="@+id/designationtext"
               android:layout_width="wrap_content"
               android:layout_height="wrap_content"
               android:layout_marginTop="16dp"
@@ -136,12 +136,12 @@
               android:fontFamily="@font/poppins_regular"
               android:text="Sr. Faculty"
               android:textSize="12dp"
-              app:layout_constraintEnd_toEndOf="@+id/textView41"
-              app:layout_constraintStart_toStartOf="@+id/textView41"
-              app:layout_constraintTop_toBottomOf="@+id/textView41" />
+              app:layout_constraintEnd_toEndOf="@+id/namtext"
+              app:layout_constraintStart_toStartOf="@+id/namtext"
+              app:layout_constraintTop_toBottomOf="@+id/namtext" />
 
           <ImageView
-              android:id="@+id/imageView19"
+              android:id="@+id/fbbtn"
               android:layout_width="17dp"
               android:layout_height="17dp"
               android:layout_marginTop="20dp"
@@ -149,34 +149,34 @@
               app:layout_constraintEnd_toEndOf="parent"
               app:layout_constraintHorizontal_bias="0.414"
               app:layout_constraintStart_toStartOf="parent"
-              app:layout_constraintTop_toBottomOf="@+id/textView42"
-              app:srcCompat="@drawable/ic_fb" />
+              app:layout_constraintTop_toBottomOf="@+id/designationtext"
+              android:src="@drawable/ic_fb" />
 
           <ImageView
-              android:id="@+id/imageView21"
+              android:id="@+id/twitterbtn"
               android:layout_width="17dp"
               android:layout_height="17dp"
               android:layout_marginStart="30dp"
-              app:layout_constraintBottom_toBottomOf="@+id/imageView19"
-              app:layout_constraintStart_toEndOf="@+id/imageView19"
-              app:layout_constraintTop_toTopOf="@+id/imageView19"
-              app:srcCompat="@drawable/ic_twiter" />
+              app:layout_constraintBottom_toBottomOf="@+id/fbbtn"
+              app:layout_constraintStart_toEndOf="@+id/fbbtn"
+              app:layout_constraintTop_toTopOf="@+id/fbbtn"
+              android:src="@drawable/ic_twiter" />
 
           <ImageView
-              android:id="@+id/imageView22"
+              android:id="@+id/linkedinbtn"
               android:layout_width="17dp"
               android:layout_height="17dp"
               android:layout_marginStart="16dp"
-              app:layout_constraintBottom_toBottomOf="@+id/imageView21"
+              app:layout_constraintBottom_toBottomOf="@+id/twitterbtn"
               app:layout_constraintEnd_toEndOf="parent"
               app:layout_constraintHorizontal_bias="0.039"
-              app:layout_constraintStart_toEndOf="@+id/imageView21"
-              app:layout_constraintTop_toTopOf="@+id/imageView21"
+              app:layout_constraintStart_toEndOf="@+id/twitterbtn"
+              app:layout_constraintTop_toTopOf="@+id/twitterbtn"
               app:layout_constraintVertical_bias="0.0"
-              app:srcCompat="@drawable/ic_in" />
+            android:src="@drawable/ic_in" />
 
           <TextView
-              android:id="@+id/textView43"
+              android:id="@+id/biotext"
               android:layout_width="286dp"
               android:layout_height="219dp"
               android:layout_marginTop="16dp"
@@ -185,7 +185,7 @@
               android:textSize="10dp"
               app:layout_constraintEnd_toEndOf="parent"
               app:layout_constraintStart_toStartOf="parent"
-              app:layout_constraintTop_toBottomOf="@+id/imageView21" />
+              app:layout_constraintTop_toBottomOf="@+id/twitterbtn" />
 
           <de.hdodenhof.circleimageview.CircleImageView
               android:id="@+id/profile_image"
