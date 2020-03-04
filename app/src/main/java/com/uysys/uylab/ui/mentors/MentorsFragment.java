@@ -54,8 +54,7 @@ public class MentorsFragment extends MyBaseFragment implements Retrofitutil1.Ret
 
         mService = RemoteApiProvider.getInstance(getActivity()).getRemoteApi();
         mUtil = new Retrofitutil1();
-        Call call = mService.mentor_profile();
-        mUtil.networkCall(call);
+
         mUtil.setRetrofitutillistener(this);
 
         mentorsAdapter.setItemClickListener((view1, item, index) -> {
@@ -65,7 +64,15 @@ public class MentorsFragment extends MyBaseFragment implements Retrofitutil1.Ret
             intent.putExtra(AppConstraints.IntentConstrants.Data, objectString);
             startActivity(intent);
         });
+        mBinding.swaptToRefresh.setOnRefreshListener(() -> {
+            callAPi();
+        });
+        callAPi();
 
+    }
+    private void callAPi(){
+        Call call = mService.mentor_profile();
+        mUtil.networkCall(call);
     }
 
 //
@@ -77,12 +84,14 @@ public class MentorsFragment extends MyBaseFragment implements Retrofitutil1.Ret
 
             MentorProfile mentorProfile = (MentorProfile) object;
             List<Datum> data = mentorProfile.getData();
+            mentorsAdapter.clear();
             mentorsAdapter.addItems(data);
         }
+        mBinding.swaptToRefresh.setRefreshing(false);
     }
 
     @Override
     public void onError(String messege) {
-
+        mBinding.swaptToRefresh.setRefreshing(false);
     }
 }
