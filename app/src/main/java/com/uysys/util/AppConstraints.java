@@ -36,6 +36,7 @@ public class AppConstraints {
        //BOOKING DETAILS
        String CART_OBJ = "cart_obj";
        String SLOT = "slot";
+       String Data = "data";
    }
 
    public interface UserInfo{
@@ -58,5 +59,9 @@ public class AppConstraints {
    public interface TimeFormats{
        public static String FORMAT_INPUT="YYYY-MM-DD HH:mm:ss";
        public static String FORMAT_OUTPUT_1="hh aa, dd MMM";
+   }
+   public interface AppCredential{
+       public static String API_TOKEN="api_token";
+       public static String FIREBASE_TOKEN="firebase_token";
    }
 }

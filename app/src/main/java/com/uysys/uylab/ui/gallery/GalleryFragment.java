@@ -70,7 +70,7 @@ public class GalleryFragment extends BaseFragment implements Retrofitutil1.Retro
     }
 
     private void init() {
-        mService = RemoteApiProvider.getInstance().getRemoteApi();
+        mService = RemoteApiProvider.getInstance(getActivity()).getRemoteApi();
         mUtil = new Retrofitutil1();
         mUtil.setRetrofitutillistener(this);
         Call call = mService.gallery();

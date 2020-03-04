@@ -1,5 +1,13 @@
 package com.uysys.util.remote.retrofit;
 
+import android.content.Context;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.uysys.util.AppConstraints;
+import com.uysys.util.ContextUtil;
+import com.uysys.util.SharedPrefUtil;
+
 import java.io.IOException;
 
 import okhttp3.Interceptor;
@@ -12,10 +20,11 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class RemoteApiProvider {
 
 
-   private static final String BASE_URL = "http://128.199.130.94/api/v1/";
- //  private static final String BASE_URL = "http://uysshopapi.herokuapp.com/api/";
-   private static final String TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjU2ZWMyZWEyM2ExZmVjYmI0YTU2OGNiMWQzZmNmYWI1MzEyZjMwNTk1NjM1NWEyN2Y2Y2M2NmQwNGNkZDI5NWRmZDc5N2Q3MWM0YzQ4MTY3In0.eyJhdWQiOiIxIiwianRpIjoiNTZlYzJlYTIzYTFmZWNiYjRhNTY4Y2IxZDNmY2ZhYjUzMTJmMzA1OTU2MzU1YTI3ZjZjYzY2ZDA0Y2RkMjk1ZGZkNzk3ZDcxYzRjNDgxNjciLCJpYXQiOjE1NzcxMTE0NjgsIm5iZiI6MTU3NzExMTQ2OCwiZXhwIjoxNjA4NzMzODY4LCJzdWIiOiI1NzkzIiwic2NvcGVzIjpbXX0.ZZdWENMf0KO7R_XvBaJYHVojDUUO_pKpAmpaNUEdx97NcAHJu93S4wpCMklGkyhT-18NMo_BL5J_g8FEiFJjQu6TYtQWs8LBhUv9FhBGGxsye9aKj8AHz_wRMF4ss_au638u_uv3PGUvBPHNMbb6z04m-hRRzuL-54HSBOBMs4UHqvZIjqiM5Xjrg0uI7Z0gnvDiBQcDEMFext05TOlslZfghOqdfIj34jCnPhizSBTTKRYUgpYDK1HAs0FuUrkQPqlMy1VBeyWcQG3kgW-iPSfPuiMrg9klecwU1Oebfu63vTNObx--okFrwxSISZPIgYj5fx7BrKWQIGp5qi8H69gqvorz1qSGWJO2mgRDcJNPMTNbtUZ9CnLRePLF7lfsZBZXV5stoUyZRQfQxdqAK3fyk4-X9Xs77qbrOshgYjE11uoaiMFytT2ONeZY5UbUgPYfTA0l4ajTOdXOPltfQ-vPp884ZO6VNxLFGJeELFZYT1uA7bnMon4DFNvzcZexRbR-DW0J8PvF26IKKOVPmpF6gRH2lDJd5TnhvNSgJST29U5JjoKBWJEdtVREjW1zIZ3MMjQmLBHSgy-hOInRpYm40goJVtV5Grodd5ileT-FEjnYM2s9lZDssk4rDjPRrMR7fPwaHzYSaQyCm4a1XKoaoA6de_BmK5jBr15t6UQ";
 
+    private static final String BASE_URL = "http://128.199.130.94/api/v1/";
+ //  private static final String BASE_URL = "http://uysshopapi.herokuapp.com/api/";
+   //private static final String TOKEN = "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjU2ZWMyZWEyM2ExZmVjYmI0YTU2OGNiMWQzZmNmYWI1MzEyZjMwNTk1NjM1NWEyN2Y2Y2M2NmQwNGNkZDI5NWRmZDc5N2Q3MWM0YzQ4MTY3In0.eyJhdWQiOiIxIiwianRpIjoiNTZlYzJlYTIzYTFmZWNiYjRhNTY4Y2IxZDNmY2ZhYjUzMTJmMzA1OTU2MzU1YTI3ZjZjYzY2ZDA0Y2RkMjk1ZGZkNzk3ZDcxYzRjNDgxNjciLCJpYXQiOjE1NzcxMTE0NjgsIm5iZiI6MTU3NzExMTQ2OCwiZXhwIjoxNjA4NzMzODY4LCJzdWIiOiI1NzkzIiwic2NvcGVzIjpbXX0.ZZdWENMf0KO7R_XvBaJYHVojDUUO_pKpAmpaNUEdx97NcAHJu93S4wpCMklGkyhT-18NMo_BL5J_g8FEiFJjQu6TYtQWs8LBhUv9FhBGGxsye9aKj8AHz_wRMF4ss_au638u_uv3PGUvBPHNMbb6z04m-hRRzuL-54HSBOBMs4UHqvZIjqiM5Xjrg0uI7Z0gnvDiBQcDEMFext05TOlslZfghOqdfIj34jCnPhizSBTTKRYUgpYDK1HAs0FuUrkQPqlMy1VBeyWcQG3kgW-iPSfPuiMrg9klecwU1Oebfu63vTNObx--okFrwxSISZPIgYj5fx7BrKWQIGp5qi8H69gqvorz1qSGWJO2mgRDcJNPMTNbtUZ9CnLRePLF7lfsZBZXV5stoUyZRQfQxdqAK3fyk4-X9Xs77qbrOshgYjE11uoaiMFytT2ONeZY5UbUgPYfTA0l4ajTOdXOPltfQ-vPp884ZO6VNxLFGJeELFZYT1uA7bnMon4DFNvzcZexRbR-DW0J8PvF26IKKOVPmpF6gRH2lDJd5TnhvNSgJST29U5JjoKBWJEdtVREjW1zIZ3MMjQmLBHSgy-hOInRpYm40goJVtV5Grodd5ileT-FEjnYM2s9lZDssk4rDjPRrMR7fPwaHzYSaQyCm4a1XKoaoA6de_BmK5jBr15t6UQ";
+   private  String TOKEN = "";
     private static RemoteApiProvider mInstance;
     private Retrofit retrofit;
     OkHttpClient client = new OkHttpClient.Builder().addInterceptor(new Interceptor() {
@@ -29,7 +38,8 @@ public class RemoteApiProvider {
         }
     }).build();
 
-    private RemoteApiProvider() {
+    private RemoteApiProvider(Context context) {
+        this.TOKEN=SharedPrefUtil.GET_PREFERENCE(context, AppConstraints.AppCredential.API_TOKEN);
         retrofit = new Retrofit.Builder()
                 .baseUrl(BASE_URL)
                 .client(client)
@@ -37,9 +47,9 @@ public class RemoteApiProvider {
                 .build();
     }
 
-    public static synchronized RemoteApiProvider getInstance() {
+    public static synchronized RemoteApiProvider getInstance(Context context) {
         if (mInstance == null) {
-            mInstance = new RemoteApiProvider();
+            mInstance = new RemoteApiProvider(context);
         }
         return mInstance;
     }

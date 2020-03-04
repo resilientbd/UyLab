@@ -5,60 +5,51 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
+import com.squareup.picasso.Picasso;
+import com.uysys.util.remote.model.mentor_profile.Datum;
 import com.uysys.uylab.R;
+import com.uysys.uylab.databinding.MentorsRecylerBinding;
+import com.uysys.uylab.ui.base.BaseAdapter;
+import com.uysys.uylab.ui.base.BaseViewHolder;
 import com.uysys.uylab.ui.ourPartner.OfficialPartnerAdapter;
 
 import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.databinding.ViewDataBinding;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class MentorsAdapter extends RecyclerView.Adapter<OfficialPartnerAdapter.ViewHolder> {
+public class MentorsAdapter extends BaseAdapter<Datum> {
 
-    private MentorsAdapterClickListener mentorsAdapterClickListener;
-    @NonNull
+
     @Override
-    public OfficialPartnerAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        LayoutInflater inflater= LayoutInflater.from(parent.getContext());
-        View view = inflater.inflate(R.layout.mentors_recyler,parent,false);
-        OfficialPartnerAdapter.ViewHolder holder = new OfficialPartnerAdapter.ViewHolder(view);
-        return holder;
+    public boolean isEqual(Datum left, Datum right) {
+        return false;
     }
 
     @Override
-    public void onBindViewHolder(@NonNull OfficialPartnerAdapter.ViewHolder holder, final int position) {
-//        holder.constraintLayout.setConstraintSet(p);
-        holder.itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mentorsAdapterClickListener.onMentorsItemClick(position);
-            }
-        });
+    public BaseViewHolder<Datum> newViewHolder(ViewGroup parent, int viewType) {
+        return new MentorAdapterViewHolder(inflate(parent,R.layout.mentors_recyler));
     }
+    private class MentorAdapterViewHolder extends BaseAdapterViewHolder<Datum>{
+    private MentorsRecylerBinding mItemBinding;
+        public MentorAdapterViewHolder(ViewDataBinding viewDataBinding) {
+            super(viewDataBinding);
+            mItemBinding= (MentorsRecylerBinding) viewDataBinding;
+        }
 
-    public void setMentorsAdapterClickListener(MentorsAdapterClickListener mentorsAdapterClickListener) {
-        this.mentorsAdapterClickListener = mentorsAdapterClickListener;
-    }
-
-    @Override
-    public int getItemCount() {
-        return 9;
-    }
-
-    public static class ViewHolder extends RecyclerView.ViewHolder {
-
-        public ImageView imageView;
-        public View cons;
-
-        public ViewHolder(@NonNull View itemView) {
-            super(itemView);
-            imageView = itemView.findViewById(R.id.imageView);
-            cons = itemView.findViewById(R.id.mentorsProfileView);
-
+        @Override
+        public void bind(Datum item) {
+            Picasso.with(mItemBinding.getRoot().getContext()).load(item.getPhoto()).error(R.drawable.default_img).into(mItemBinding.profileImage);
+            mItemBinding.textView19.setText(item.getDesignation());
+            mItemBinding.textView14.setText(item.getName());
         }
     }
 
-    public interface MentorsAdapterClickListener{
-        public void onMentorsItemClick(int position);
-    }
+
+
+
+
+
+
 
 }

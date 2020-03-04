@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 
 import com.bumptech.glide.Glide;
+import com.squareup.picasso.Picasso;
 import com.uysys.util.remote.RetrofitUtil;
 import com.uysys.util.remote.model.profile.ProfileModel;
 import com.uysys.util.remote.retrofit.RemoteApiInterface;
@@ -63,7 +64,7 @@ public class ProfileFragment extends Fragment implements RetrofitUtil.RetrofitUt
         bankText = view.findViewById(R.id.globalrankbtn);
         rankText = view.findViewById(R.id.personalpoint);
         imageView = view.findViewById(R.id.userImg);
-        minService = RemoteApiProvider.getInstance().getRemoteApi();
+        minService = RemoteApiProvider.getInstance(getActivity()).getRemoteApi();
         mUtil = new RetrofitUtil();
         mUtil.setRetrofitUtilListener(this);
         Call call=minService.profile();
@@ -81,12 +82,12 @@ public class ProfileFragment extends Fragment implements RetrofitUtil.RetrofitUt
         ProfileModel profileModel= (ProfileModel) object;
         userName.setText(profileModel.getData().getName());
         userId.setText(profileModel.getData().getId());
-        //pointText.setText(profileModel.getData().getPoint());
-        //bankText.setText(profileModel.getData().getPoint());
-        //rankText=view.findViewById(R.id.rank);
+        pointText.setText(""+profileModel.getData().getPoint());
+        bankText.setText(""+profileModel.getData().getRank());
+        rankText.setText(""+profileModel.getData().getRank());
 
 
-        Glide.with(getActivity()).load(profileModel.getData().getPhoto()).into(imageView);
+        Picasso.with(getActivity()).load(profileModel.getData().getPhoto()).into(imageView);
     }
 
     @Override

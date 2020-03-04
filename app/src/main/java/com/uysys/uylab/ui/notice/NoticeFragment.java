@@ -55,7 +55,7 @@ public class NoticeFragment extends Fragment implements Retrofitutil1.Retrofitut
 
     }
     private void init(){
-        mService= RemoteApiProvider.getInstance().getRemoteApi();
+        mService= RemoteApiProvider.getInstance(getActivity()).getRemoteApi();
         mUtil=new Retrofitutil1();
         mUtil.setRetrofitutillistener(this);
         Call call = mService.notice();
