@@ -9,7 +9,10 @@
         android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="152dp"
-        android:background="#F2F2F2">
+        android:background="#F2F2F2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout19"
@@ -44,16 +47,31 @@
 
             <TextView
                 android:id="@+id/text3"
-                android:layout_width="99.33dp"
-                android:layout_height="19.87dp"
+                android:layout_width="94dp"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="3dp"
-                android:background="#409CE9"
-                android:text="Point    24523"
-                android:textAlignment="center"
-                android:textColor="#FFFFFF"
+                android:background="@drawable/btn_shape_dashboard1"
+                android:paddingRight="4dp"
+                android:text="24523"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/white"
                 android:textSize="8sp"
                 app:layout_constraintStart_toStartOf="@+id/text2"
                 app:layout_constraintTop_toBottomOf="@+id/text2" />
+
+            <TextView
+                android:layout_width="48dp"
+                android:layout_height="0dp"
+                android:background="@drawable/btn_shape_dashboard2"
+                android:paddingLeft="16dp"
+                android:text="@string/point_text"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/black"
+                android:textSize="8sp"
+                app:layout_constraintBottom_toBottomOf="@id/text3"
+                app:layout_constraintStart_toStartOf="@+id/text3"
+                app:layout_constraintTop_toTopOf="@id/text3" />
+
 
             <de.hdodenhof.circleimageview.CircleImageView
                 android:id="@+id/imageView3"
@@ -85,27 +103,26 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout18"
-        android:layout_width="328dp"
-        android:layout_height="454.92dp"
-
-
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/containts"
-        tools:layout_editor_absoluteX="42dp"
-        tools:layout_editor_absoluteY="178dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
         <TextView
             android:id="@+id/text4"
-            android:layout_width="137dp"
-            android:layout_height="49dp"
-            android:layout_marginStart="23dp"
-            android:layout_marginTop="37dp"
-            android:layout_marginEnd="168dp"
-            android:layout_marginBottom="368dp"
-            android:text="Course\nInformation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:text="Course Information"
             android:textColor="#000000"
             android:textSize="21sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/button"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -113,13 +130,12 @@
             android:id="@+id/text5"
             android:layout_width="211dp"
             android:layout_height="23dp"
-            android:layout_marginEnd="95dp"
-            android:layout_marginBottom="349dp"
+
             android:text="Graphic Design | GD-1919"
             android:textColor="#557BE2"
             android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
+
+
             app:layout_constraintStart_toStartOf="@+id/text4"
             app:layout_constraintTop_toBottomOf="@+id/text4" />
 
@@ -127,60 +143,84 @@
             android:id="@+id/button"
             android:layout_width="75dp"
             android:layout_height="29dp"
-            android:layout_marginTop="37dp"
             android:layout_marginEnd="22dp"
             android:layout_marginBottom="388dp"
-            android:background="#5680F6"
+            android:background="@drawable/button_shape"
             android:text="Close"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="12dp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="@+id/text4" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
             android:id="@+id/constraintLayout20"
-            android:layout_width="284dp"
-            android:layout_height="271dp"
-            android:layout_marginStart="28dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            app:layout_constraintBottom_toTopOf="@+id/button16"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/text5">
+            app:layout_constraintTop_toBottomOf="@+id/textView7">
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:clipToPadding="false"/>
 
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="283dp"
-                android:layout_height="33dp"
-                android:background="#5680F6"
-                android:text="Payment Status"
-                android:textAlignment="center"
-                android:textColor="#FFFFFF"
-                android:textSize="19sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                tools:layout_editor_absoluteX="22dp" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
-            <TextView
-                android:id="@+id/textView6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Course Fee: BDT 8500"
-                android:textColor="#000000"
-                android:textSize="16sp"
-                tools:layout_editor_absoluteX="94dp"
-                tools:layout_editor_absoluteY="136dp" />
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="283dp"
+            android:layout_height="33dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_shape"
+            android:text="Payment Status"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text5" />
 
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Paid: BDT 2000"
-                android:textColor="#000000"
-                android:textSize="15sp"
-                tools:layout_editor_absoluteX="118dp"
-                tools:layout_editor_absoluteY="170dp" />
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Course Fee: BDT 8500"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button2" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paid: BDT 2000"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <Button
+            android:id="@+id/button16"
+            android:layout_width="283dp"
+            android:layout_height="33dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/buttonshap2"
+            android:text="Back To DashBoard"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="19sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
