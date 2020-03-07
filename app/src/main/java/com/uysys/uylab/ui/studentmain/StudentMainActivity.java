@@ -18,6 +18,8 @@ import com.uysys.uylab.ui.more.MoreFragment;
 import com.uysys.uylab.ui.profile.ProfileFragment;
 import com.uysys.uylab.ui.refferal.RefferalFragment;
 
+import java.util.Stack;
+
 public class StudentMainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener,FragmentListener{
     FragmentManager manager;
     private DashboardFragment dashboardFragment;
@@ -26,12 +28,13 @@ public class StudentMainActivity extends AppCompatActivity implements BottomNavi
     private BlogFragment blogFragment;
     private MoreFragment moreFragment;
     private BottomNavigationView navigationView;
+    private Stack<Fragment> fragmentStack;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_student_main);
-
+        fragmentStack=new Stack<>();
         dashboardFragment=new DashboardFragment();
         dashboardFragment.setListener(this);
         profileFragment=new ProfileFragment();
@@ -73,17 +76,26 @@ public class StudentMainActivity extends AppCompatActivity implements BottomNavi
 
     @Override
     public void onAddFragment(Fragment fragment) {
-        manager.beginTransaction().replace(R.id.changelayout,fragment).commit();
+        manager.beginTransaction().add(R.id.changelayout,fragment).commit();
+        fragmentStack.push(fragment);
     }
 
     @Override
     public void onBackFragment() {
-       onAddFragment(dashboardFragment);
+     //  onAddFragment(dashboardFragment);
+        if(fragmentStack.isEmpty()){
+            super.onBackPressed();
+        }
+        else {
+            Fragment fragment=fragmentStack.pop();
+            manager.beginTransaction().remove(fragment).commit();
+        }
+
     }
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
-        //onBackFragment();
+       // super.onBackPressed();
+        onBackFragment();
     }
 }

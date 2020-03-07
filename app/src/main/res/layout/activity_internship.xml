@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-  >
+    android:background="@color/white">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraintLayout9"
@@ -118,8 +118,8 @@
         android:layout_width="322dp"
         android:layout_height="34dp"
         android:layout_marginTop="17dp"
-        android:entries="@array/array_subjects"
         android:background="@drawable/edit_text"
+        android:entries="@array/array_subjects"
         app:layout_constraintEnd_toEndOf="@+id/editText2"
         app:layout_constraintStart_toStartOf="@+id/editText2"
         app:layout_constraintTop_toBottomOf="@+id/editText2" />
@@ -127,8 +127,8 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/ic_arrow_drop_down"
         android:layout_marginRight="16dp"
+        android:src="@drawable/ic_arrow_drop_down"
         app:layout_constraintBottom_toBottomOf="@+id/spinner"
         app:layout_constraintEnd_toEndOf="@+id/spinner"
         app:layout_constraintTop_toTopOf="@+id/spinner" />
