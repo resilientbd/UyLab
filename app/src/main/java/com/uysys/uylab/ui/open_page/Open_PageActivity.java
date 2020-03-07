@@ -8,27 +8,36 @@ import android.view.View;
 import android.widget.Button;
 
 import com.uysys.uylab.R;
+import com.uysys.uylab.databinding.ActivityOpenPageBinding;
+import com.uysys.uylab.ui.base.BaseActivity;
 import com.uysys.uylab.ui.student_login.Student_LoginActivity;
 
-public class Open_PageActivity extends AppCompatActivity {
+public class Open_PageActivity extends BaseActivity {
     private Button btn;
+    ActivityOpenPageBinding mBinding;
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_open__page);
+    public int setLayoutId() {
+        return R.layout.activity_open__page;
+    }
 
-        btn = findViewById(R.id.guest_button);
+    @Override
+    public void startUI() {
+        mBinding= (ActivityOpenPageBinding) getViewDataBinding();
+        btn = mBinding.guestButton;
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                    Toaster.ShowLong("module is under development !");
+//                Intent intent = new Intent(Open_PageActivity.this, Student_LoginActivity.class);
+//                startActivity(intent);
+//                finish();
 
-                Intent intent = new Intent(Open_PageActivity.this, Student_LoginActivity.class);
-                startActivity(intent);
-                finish();
 
             }
         });
     }
+
+
 
     public void studentClick(View view) {
         Intent intent = new Intent(Open_PageActivity.this, Student_LoginActivity.class);

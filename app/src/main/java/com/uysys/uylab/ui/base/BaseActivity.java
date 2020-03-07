@@ -1,5 +1,6 @@
 package com.uysys.uylab.ui.base;
 
+import android.app.Application;
 import android.app.DatePickerDialog;
 import android.content.Context;
 import android.content.Intent;
@@ -31,6 +32,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
@@ -307,6 +309,31 @@ public abstract class BaseActivity extends FragmentActivity implements View.OnCl
     public RequestBody convertRequestBody(String string)
     {
         return RequestBody.create(MediaType.parse("text/plain"),string);
+    }
+    public static class Toaster{
+        public static void ShowLong(String msg)
+        {
+            Toast.makeText(getApplicationUsingReflection() ,msg,Toast.LENGTH_LONG).show();
+        }
+        public  void ShowShort(String msg)
+        {
+            Toast.makeText(getApplicationUsingReflection() ,msg,Toast.LENGTH_SHORT).show();
+        }
+        public static Application getApplicationUsingReflection()  {
+            try {
+                return (Application) Class.forName("android.app.ActivityThread")
+                        .getMethod("currentApplication").invoke(null, (Object[]) null);
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            } catch (InvocationTargetException e) {
+                e.printStackTrace();
+            } catch (NoSuchMethodException e) {
+                e.printStackTrace();
+            } catch (ClassNotFoundException e) {
+                e.printStackTrace();
+            }
+            return null;
+        }
     }
 
 }
