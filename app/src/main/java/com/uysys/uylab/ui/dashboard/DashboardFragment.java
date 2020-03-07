@@ -19,8 +19,15 @@ import com.glide.slider.library.slidertypes.BaseSliderView;
 import com.glide.slider.library.slidertypes.TextSliderView;
 import com.glide.slider.library.tricks.ViewPagerEx;
 import com.google.android.material.navigation.NavigationView;
+import com.squareup.picasso.Picasso;
+import com.uysys.util.remote.RetrofitUtil;
+import com.uysys.util.remote.model.profile.ProfileModel;
+import com.uysys.util.remote.retrofit.RemoteApiInterface;
+import com.uysys.util.remote.retrofit.RemoteApiProvider;
 import com.uysys.uylab.R;
+import com.uysys.uylab.databinding.FragmentDashboardBinding;
 import com.uysys.uylab.ui.backup.BackupFragment;
+import com.uysys.uylab.ui.base.MyBaseFragment;
 import com.uysys.uylab.ui.classContent.Class_Content_Activity;
 import com.uysys.uylab.ui.classactivity.ClassActivity;
 import com.uysys.uylab.ui.complain.ComplainActivity;
@@ -40,7 +47,9 @@ import com.uysys.uylab.ui.tutorial.Fragment_Tutorial;
 
 import java.util.HashMap;
 
-public class DashboardFragment  extends Fragment implements BaseSliderView.OnSliderClickListener, ViewPagerEx.OnPageChangeListener, View.OnClickListener {
+import retrofit2.Call;
+
+public class DashboardFragment  extends MyBaseFragment implements BaseSliderView.OnSliderClickListener, ViewPagerEx.OnPageChangeListener, View.OnClickListener, RetrofitUtil.RetrofitUtilListener {
     private View view;
     private SliderLayout mDemoSlider;
     private PagerIndicator mPageIndicator;
@@ -59,7 +68,6 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
     private View tutorialbtn;
     private View detailsBtn;
 
-    private View point1btn;
     private InternshipFragment internshipFragment;
     private BackupFragment backupFragment;
     private SupportFragment supportFragment;
@@ -73,38 +81,43 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
     private Point_Fragment point_fragment;
     private Point1_Fragment point1_fragment;
     private PaymentSummeryFragment paymentSummeryFragment;
-
-
-    @Nullable
+    private RetrofitUtil mUtil;
+    private RemoteApiInterface mService;
+    private FragmentDashboardBinding mBinding;
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        view=inflater.inflate(R.layout.fragment_dashboard,container,false);
-        mDemoSlider = view.findViewById(R.id.slider);
-        noticeView=view.findViewById(R.id.notice);
+    public int setLayoutId() {
+        return R.layout.fragment_dashboard;
+    }
 
+    @Override
+    public void startUI() {
+        mBinding= (FragmentDashboardBinding) getViewDataBinding();
+        mDemoSlider = mBinding.slider;
+        noticeView=mBinding.notice;
+        mService= RemoteApiProvider.getInstance(getActivity()).getRemoteApi();
         //for contestView
         //contestView = view.findViewById(R.id.contestView);
 
-        classView=view.findViewById(R.id.classview);
-        internshipView=view.findViewById(R.id.internshipclick);
-        backupBtn=view.findViewById(R.id.backupbtn);
-        supportBtn=view.findViewById(R.id.supportBtn);
-        eventBtn=view.findViewById(R.id.eventcardbutton);
-        liveClassBtn = view.findViewById(R.id.liveClassBtn);
-        jobhubButton = view.findViewById(R.id.jobhubbtn);
-        detailsBtn = view.findViewById(R.id.detailsview);
+        classView=mBinding.classview;
+        internshipView=mBinding.internshipclick;
+        backupBtn=mBinding.backupbtn;
+        supportBtn=mBinding.supportBtn;
+        eventBtn=mBinding.eventcardbutton;
+        liveClassBtn = mBinding.liveClassBtn;
+        jobhubButton = mBinding.jobhubbtn;
+        detailsBtn = mBinding.detailsview;
 
         supportBtn.setOnClickListener(this);
         eventBtn.setOnClickListener(this);
         liveClassBtn.setOnClickListener(this);
-        pointbtn=view.findViewById(R.id.pointbtn);
+        pointbtn=mBinding.pointbtn;
         pointbtn.setOnClickListener(this);
         jobhubButton.setOnClickListener(this);
-        tutorialbtn=view.findViewById(R.id.tutorialbtn);
+        tutorialbtn=mBinding.tutorialbtn;
         tutorialbtn.setOnClickListener(this);
         detailsBtn.setOnClickListener(this);
 
-      //  mPageIndicator=view.findViewById(R.id.custom_indicator);
+        //  mPageIndicator=view.findViewById(R.id.custom_indicator);
 
         HashMap<String,Integer> file_maps = new HashMap<String, Integer>();
         file_maps.put("Hannibal",R.drawable.bannersample1);
@@ -133,8 +146,14 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
         //contestView.setOnClickListener(this);
         internshipView.setOnClickListener(this);
         backupBtn.setOnClickListener(this);
-        return view;
+        mUtil=new RetrofitUtil();
+        Call call=mService.profile();
+        mUtil.setRetrofitUtilListener(this);
+        mUtil.networkcall(call);
+
     }
+
+
 
     public void setListener(FragmentListener listener) {
         this.listener = listener;
@@ -250,4 +269,22 @@ public class DashboardFragment  extends Fragment implements BaseSliderView.OnSli
         }
     }
 
+    @Override
+    public void onSuccess(Object object) {
+        if(object instanceof ProfileModel)
+        {
+            ProfileModel model= (ProfileModel) object;
+            mBinding.textView.setText(model.getData().getName());
+            mBinding.idtext.setText(model.getData().getId());
+            mBinding.paidamount.setText(""+model.getData().getPoint());
+
+            Picasso.with(getActivity()).load(model.getData().getPhoto()).error(R.drawable.default_img).into(mBinding.imageView3);
+
+        }
+    }
+
+    @Override
+    public void onError(String messege) {
+
+    }
 }

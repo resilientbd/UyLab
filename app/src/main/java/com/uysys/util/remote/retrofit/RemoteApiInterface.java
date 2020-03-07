@@ -53,8 +53,7 @@ public interface RemoteApiInterface {
     Call<Login> login(@Field("email") String email, @Field("password") String password,@Field("push_token") String push_token);
 
 
-    @GET("profile")
-    Call<ProfileInformation> proInfo();
+
 
     @GET("payment-information")
     Call<PaymentSummary> paymentSum();

@@ -51,5 +51,7 @@
     <color name="color_5">#FCD361</color>
     <color name="color_6">#6F92F4</color>
     <color name="bg_item_summery">#5680F6</color>
+    <color name="status0">#6B6B6B</color>
+    <color name="status1">#5680F6</color>
 
 </resources>

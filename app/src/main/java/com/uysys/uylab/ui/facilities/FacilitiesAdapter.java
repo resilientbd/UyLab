@@ -56,9 +56,9 @@ public class FacilitiesAdapter extends BaseAdapter<Datum> {
             {
                 num=random.nextInt(6);
             }
-            mItemBinding.button.setText(item.getTitle());
+            mItemBinding.btnExplandClose.setText(item.getTitle());
 
-            mItemBinding.button.setBackgroundTintList(ContextCompat.getColorStateList(mItemBinding.getRoot().getContext(),colorMap.get(num)));
+            mItemBinding.btnExplandClose.setBackgroundTintList(ContextCompat.getColorStateList(mItemBinding.getRoot().getContext(),colorMap.get(num)));
         }
 
         @Override

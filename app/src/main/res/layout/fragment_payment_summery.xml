@@ -107,6 +107,7 @@
         android:layout_height="0dp"
         android:paddingTop="16dp"
         android:clipToPadding="false"
+        android:id="@+id/summeryRecycler"
         tools:listitem="@layout/item_summery_main"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
