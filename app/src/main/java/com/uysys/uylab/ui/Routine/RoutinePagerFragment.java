@@ -20,7 +20,9 @@ private ItemRoutineBinding mBinding;
     @Override
     public void startUI() {
         mBinding= (ItemRoutineBinding) getViewDataBinding();
-        //mBinding.routineViewPager
+        mBinding.txtCourseCode.setText(""+datum.getBatchId());
+        mBinding.txtLabLocation.setText(""+datum.getLocation());
+        mBinding.txtDate.setText(""+datum.getClassDays());
 
     }
 }

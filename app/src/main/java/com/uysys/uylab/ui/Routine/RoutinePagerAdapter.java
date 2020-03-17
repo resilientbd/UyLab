@@ -31,7 +31,7 @@ public class RoutinePagerAdapter extends FragmentPagerAdapter {
             RoutinePagerFragment fr=new RoutinePagerFragment(datum);
             fragmentList.add(fr);
         }
-        fragmentList.addAll(fragmentList);
+
         notifyDataSetChanged();
     }
     public void clear()
